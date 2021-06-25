@@ -1,0 +1,31 @@
+@import "../../index.scss";
+
+.Nav {
+  .brand {
+    text-decoration: none;
+    color: #191919;
+    .myName {
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: -0.6px;
+    }
+    p {
+      font-size: 14px;
+      opacity: 0.7;
+      font-weight: normal;
+    }
+  }
+  .navItems {
+    li {
+      padding-left: 2rem !important;
+      a {
+        @include fontSize("14");
+        letter-spacing: 0.7px;
+        font-weight: 600;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
