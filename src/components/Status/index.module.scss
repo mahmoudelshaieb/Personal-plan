@@ -1,0 +1,32 @@
+@import "../../index.scss";
+
+.status {
+  h5 {
+    @include fontSize("18");
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6%;
+      height: 3px;
+      left: 0;
+      bottom: -12px;
+      background-color: #2563eb;
+    }
+  }
+  h6 {
+    @include fontSize("16");
+    line-height: 30px;
+    font-weight: 500;
+  }
+  p {
+    @include fontSize("14");
+    line-height: 22px;
+    font-weight: 400;
+    opacity: 0.87;
+    margin: 0;
+  }
+}

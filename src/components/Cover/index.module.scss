@@ -1,0 +1,31 @@
+@import "../../index.scss";
+
+.cover {
+  .desc {
+    h3 {
+      @include fontSize("40");
+      line-height: 40px;
+      font-weight: 600;
+    }
+    h5 {
+      @include fontSize("24");
+      line-height: 40px;
+      font-weight: 500;
+    }
+    p {
+      @include fontSize("16");
+      line-height: 28px;
+      color: #191919c2;
+      font-weight: 400;
+      width: 50%;
+      text-align: left;
+      span {
+        font-weight: 500;
+        color: #191919de;
+      }
+    }
+  }
+  .coverImg {
+    @include aspectRatio(36%, 2, hidden);
+  }
+}
