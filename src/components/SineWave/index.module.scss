@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.wave {
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding: 96px 0;
+  h2 {
+    @include fontSize("36");
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 3.6px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 4.2px;
+    }
+  }
+  p {
+    @include fontSize("16");
+    line-height: 28px;
+    color: #191919c2;
+    width: 90%;
+  }
+  .waveImg {
+    @include aspectRatio(55%, 2, hidden);
+  }
+}
