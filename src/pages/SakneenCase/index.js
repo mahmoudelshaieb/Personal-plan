@@ -1,6 +1,8 @@
 import Cover from "../../components/Cover";
 import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
+import FullPresent from "../../components/FullPresent";
+import NestedFullPresent from "../../components/NestedFullPresent";
 
 export default function SakneenCase() {
   const projectStatus = [
@@ -57,6 +59,17 @@ export default function SakneenCase() {
         background="#f4f4f4"
         RTL={true}
       />
+      <FullPresent
+        title="site map"
+        desc="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain"
+        img="./assets/img.jpg"
+      />
+      <FullPresent
+        title="prototyping"
+        img="./assets/img2.jpg"
+        background="#f4f4f4"
+      />
+      <NestedFullPresent title="styles & guides" />
     </>
   );
 }

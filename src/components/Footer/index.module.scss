@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.footer {
+  margin-top: 56px;
+  border-top: 4px solid #191919;
+  span {
+    @include fontSize("12");
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+  }
+}

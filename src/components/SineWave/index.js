@@ -23,8 +23,8 @@ export default function SineWave({
               </span>
               {title}
             </h2>
-            <p>{primaryDesc}</p>
-            {secondaryDesc ? <p>{secondaryDesc}</p> : null}
+            <p className="present-p">{primaryDesc}</p>
+            {secondaryDesc ? <p className="present-p">{secondaryDesc}</p> : null}
           </div>
           <div className="col-sm-12 col-md-7 p-0">
             <div className={`${styles.waveImg}`}>

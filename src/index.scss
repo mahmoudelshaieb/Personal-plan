@@ -18,7 +18,7 @@ $Fonts: (
   "40": 40px,
   // "48": 48px,
   // "60": 60px,
-  // "72": 72px,,,,,
+  // "72": 72px,,,,,,,,,,
 );
 
 // fix
@@ -29,10 +29,8 @@ $navbar-light-hover-color: $black;
 body {
   font-family: "Poppins", sans-serif !important;
   -webkit-font-smoothing: antialiased;
-  height: 5000px;
   color: $black !important;
 }
-
 
 // dynamic get system fonts
 @function Font($specificSize) {
@@ -70,6 +68,33 @@ body {
     z-index: 3;
     visibility: $overlay; // by default overlay is hidden !! pass (visible) to show overlay
   }
+}
+
+@mixin present-spacing() {
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding: 96px 0;
+}
+
+.present-heading {
+  @include fontSize("24");
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+}
+
+.present-subheading {
+  @include fontSize("18");
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: $black;
+}
+
+.present-p {
+  @include fontSize("16");
+  line-height: 28px;
+  color: #191919c2;
 }
 
 @import "~bootstrap/scss/bootstrap";

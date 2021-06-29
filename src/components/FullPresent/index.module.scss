@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.present {
+    @include present-spacing;
+  p {
+    width: 50%;
+    margin: auto;
+  }
+  img {
+    margin-top: 40px;
+  }
+}

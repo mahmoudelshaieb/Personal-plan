@@ -1,9 +1,7 @@
 @import "../../index.scss";
 
 .wave {
-  margin-top: 56px;
-  margin-bottom: 56px;
-  padding: 96px 0;
+  @include present-spacing;
   h2 {
     @include fontSize("36");
     font-weight: 500;
@@ -18,9 +16,6 @@
     }
   }
   p {
-    @include fontSize("16");
-    line-height: 28px;
-    color: #191919c2;
     width: 90%;
   }
   .waveImg {
