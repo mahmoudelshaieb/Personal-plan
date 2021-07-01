@@ -3,6 +3,8 @@ import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
+import BackButton from "../../components/BackBtn";
+import * as ROUTES from "../../constrains/routes";
 
 export default function SakneenCase() {
   const projectStatus = [
@@ -24,9 +26,7 @@ export default function SakneenCase() {
     <>
       <div className="container">
         <div className="mx-2 mx-md-5 mt-3 mt-md-5">
-          <button type="button" className="btn btn-primary">
-            back
-          </button>
+          <BackButton url={ROUTES.WORK} />
           <Cover
             title="sakneen"
             subTitle="Buy or sell homes in Egypt"

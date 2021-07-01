@@ -4,6 +4,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
+import AboutMe from "../AboutMe";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Nav fname="mahmoud" lname=" hassan" profession="product designer" />
       <Switch>
         <Route exact path={ROUTES.WORK} component={Work} />
+        <Route path={ROUTES.ABOUT} component={AboutMe} />
         <Route path={ROUTES.CASE_1} component={SakneenCase} />
       </Switch>
       <Footer fname="mahmoud" lname="Hassan 2021" />

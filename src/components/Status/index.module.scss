@@ -18,8 +18,8 @@
     }
   }
   h6 {
-    @include fontSize("16");
-    line-height: 30px;
+    @include fontSize("14");
+    line-height: 24px;
     font-weight: 500;
   }
   p {

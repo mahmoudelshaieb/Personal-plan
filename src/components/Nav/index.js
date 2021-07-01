@@ -1,18 +1,20 @@
 import styles from "./index.module.scss";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../../constrains/routes";
 
 export default function Nav({ fname, lname, profession }) {
   const navItems = [
     {
       name: "work",
-      url: "",
+      url: `${ROUTES.WORK}`,
     },
     {
       name: "about",
-      url: "",
+      url: `${ROUTES.ABOUT}`,
     },
     {
       name: "contact",
-      url: "",
+      url: `${ROUTES.CONTACT}`,
     },
   ];
   return (
@@ -23,12 +25,15 @@ export default function Nav({ fname, lname, profession }) {
         <header className={`${styles.Nav} mx-2 mx-md-0`}>
           <nav className="navbar navbar-expand-lg navbar-light py-2 py-md-3">
             <div className="container-fluid px-0">
-              <a className={`${styles.brand} text-capitalize`} href="#">
+              <Link
+                className={`${styles.brand} text-capitalize`}
+                to={ROUTES.WORK}
+              >
                 <span className={`${styles.myName}`}>
                   <span className="text-primary">{fname}</span> {lname}
                 </span>
                 <p className="text-capitalize m-0">{profession}</p>
-              </a>
+              </Link>
               <button
                 className="navbar-toggler border-0"
                 type="button"
@@ -46,15 +51,16 @@ export default function Nav({ fname, lname, profession }) {
               >
                 <ul className={`${styles.navItems} navbar-nav`}>
                   {navItems.map((item, index) => (
-                    <li key={index} className="nav-item text-uppercase">
-                      <a
-                        className="nav-link"
-                        aria-current="page"
-                        href={item.url}
-                      >
-                        {item.name}
-                      </a>
-                    </li>
+                    <Link
+                      key={index}
+                      to={item.url}
+                      className="nav-link"
+                      aria-current="page"
+                    >
+                      <li className="nav-item text-uppercase">
+                        <span>{item.name}</span>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
