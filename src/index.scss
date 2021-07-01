@@ -18,13 +18,17 @@ $Fonts: (
   "40": 40px,
   // "48": 48px,
   // "60": 60px,
-  // "72": 72px,,,,,,,,,,
+  // "72": 72px,,,,,,,,,,,
 );
 
 // fix
 $navbar-light-color: #19191985;
 $navbar-light-active-color: $black;
 $navbar-light-hover-color: $black;
+
+html {
+  scroll-behavior: unset !important;
+}
 
 body {
   font-family: "Poppins", sans-serif !important;

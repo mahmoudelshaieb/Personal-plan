@@ -5,6 +5,7 @@ import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
 import BackButton from "../../components/BackBtn";
 import * as ROUTES from "../../constrains/routes";
+import { Fade } from "react-reveal";
 
 export default function SakneenCase() {
   const projectStatus = [
@@ -23,7 +24,7 @@ export default function SakneenCase() {
   ];
 
   return (
-    <>
+    <Fade bottom duration={1000} distance="100px">
       <div className="container">
         <div className="mx-2 mx-md-5 mt-3 mt-md-5">
           <BackButton url={ROUTES.WORK} />
@@ -70,6 +71,6 @@ export default function SakneenCase() {
         background="#f4f4f4"
       />
       <NestedFullPresent title="styles & guides" />
-    </>
+    </Fade>
   );
 }
