@@ -9,10 +9,16 @@
     letter-spacing: 3.6px;
     display: flex;
     align-items: center;
+    @media (max-width: 600px) {
+      @include fontSize("24");
+    }
     span {
       font-size: 42px;
       font-weight: 700;
       letter-spacing: 4.2px;
+      @media (max-width: 600px) {
+        @include fontSize("30");
+      }
     }
   }
   p {

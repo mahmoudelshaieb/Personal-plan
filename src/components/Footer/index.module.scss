@@ -3,10 +3,19 @@
 .footer {
   margin-top: 56px;
   border-top: 4px solid #191919;
+  @media (max-width: 600px) {
+    margin-top: 40px;
+    border-width: 2px;
+  }
   span {
     @include fontSize("12");
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.6px;
+  }
+  a {
+    @media (max-width: 600px) {
+      padding-right: 1rem;
+    }
   }
 }

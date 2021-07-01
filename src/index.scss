@@ -74,6 +74,10 @@ body {
   margin-top: 56px;
   margin-bottom: 56px;
   padding: 96px 0;
+  @media (max-width: 800px) {
+    margin: 0;
+    padding: 64px 0;
+  }
 }
 
 .present-heading {
@@ -81,6 +85,9 @@ body {
   line-height: 50px;
   font-weight: 600;
   letter-spacing: 2.4px;
+  @media (max-width: 600px) {
+    @include fontSize("20");
+  }
 }
 
 .present-subheading {
@@ -89,12 +96,18 @@ body {
   font-weight: 600;
   letter-spacing: 1.8px;
   color: $black;
+  @media (max-width: 600px) {
+    @include fontSize("16");
+  }
 }
 
 .present-p {
   @include fontSize("16");
   line-height: 28px;
   color: #191919c2;
+  @media (max-width: 600px) {
+    @include fontSize("14");
+  }
 }
 
 @import "~bootstrap/scss/bootstrap";

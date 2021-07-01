@@ -12,7 +12,7 @@ export default function FullPresent({
       style={{ backgroundColor: background }}
     >
       <div className="container">
-        <div className="mx-5">
+        <div className="mx-2 mx-md-5">
           <h2 className="text-uppercase text-primary present-heading">
             {title}
           </h2>

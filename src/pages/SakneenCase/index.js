@@ -23,7 +23,7 @@ export default function SakneenCase() {
   return (
     <>
       <div className="container">
-        <div className="mx-5 mt-5">
+        <div className="mx-2 mx-md-5 mt-3 mt-md-5">
           <button type="button" className="btn btn-primary">
             back
           </button>
@@ -34,7 +34,7 @@ export default function SakneenCase() {
             bio="that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe."
             coverImg="/assets/img.jpg"
           />
-          <div className="row justify-content-center mt-5">
+          <div className="row justify-content-center mt-3 mt-md-5">
             {projectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-md-3">
                 <Status title={item.title} bio={item.bio} />

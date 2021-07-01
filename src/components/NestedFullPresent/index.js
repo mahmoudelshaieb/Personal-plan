@@ -16,12 +16,12 @@ export default function NestedFullPresent({ title }) {
   return (
     <section className={`${styles.present} container-fluid`}>
       <div className="container">
-        <div className="mx-5">
-          <h2 className="text-uppercase text-primary present-heading text-center mb-5">
+        <div className="mx-2 mx-md-5">
+          <h2 className="text-uppercase text-primary present-heading text-center mb-3 mb-md-5">
             {title}
           </h2>
           {guides.map((item, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-4 text-center text-md-start">
               <h4 className="present-subheading text-uppercase mb-2">
                 {item.subTitle}
               </h4>
