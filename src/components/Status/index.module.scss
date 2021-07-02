@@ -1,6 +1,9 @@
 @use "../../sass/fonts" as fs;
 
 .status {
+  @media (max-width: 992px) {
+    border-bottom: 1px solid #dee2e6;
+  }
   h5 {
     @include fs.fontSize("18");
     line-height: 28px;
@@ -26,7 +29,7 @@
     @include fs.fontSize("14");
     line-height: 22px;
     font-weight: 400;
-    opacity: 0.87;
+    opacity: 0.77;
     margin: 0;
   }
 }

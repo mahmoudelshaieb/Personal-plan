@@ -11,15 +11,27 @@ export default function SakneenCase() {
   const projectStatus = [
     {
       title: "date",
-      bio: "January 2020, present",
+      collection: [
+        {
+          bio: "January 2020, present",
+        },
+      ],
     },
     {
       title: "role",
-      bio: "Product Designer",
+      collection: [
+        {
+          bio: "Product Designer",
+        },
+      ],
     },
     {
       title: "location",
-      bio: "Cairo, Egypt",
+      collection: [
+        {
+          bio: "Cairo, Egypt",
+        },
+      ],
     },
   ];
 
@@ -38,7 +50,7 @@ export default function SakneenCase() {
           <div className="row justify-content-center mt-3 mt-md-5">
             {projectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-md-3">
-                <Status title={item.title} bio={item.bio} />
+                <Status title={item.title} collection={item.collection} />
               </div>
             ))}
           </div>

@@ -6,22 +6,47 @@ export default function About({ avatar, primaryBio, secondaryBio }) {
   const experience = [
     {
       title: "education",
-      subTitle: "Open Source Application Development",
-      bio: "Technical Trainer, Information Technology Institute (ITI)",
-      italic: "December 2019",
+      collection: [
+        {
+          subTitle: "Open Source Application Development",
+          bio: "Technical Trainer, Information Technology Institute (ITI)",
+          italic: "December 2019",
+        },
+        {
+          subTitle: "Faculty of Computer and Information",
+          bio: "Bachelor Degree, Computer Science",
+          italic: "June 2016",
+        },
+      ],
     },
     {
       title: "experience",
-      subTitle: "Sakneen",
-      italic: "April 2020 - Present",
+      collection: [
+        {
+          subTitle: "Sakneen",
+          italic: "April 2020 - Present",
+        },
+        {
+          subTitle: "Pioneers",
+          italic: "January 2020 - March 2020",
+        },
+      ],
     },
     {
       title: "design skills",
-      bio: "Technical Trainer, Information Technology Institute (ITI)",
+      collection: [
+        {
+          bio: "echnical Trainer, Information Technology Institut",
+        },
+      ],
     },
     {
       title: "technical skills",
-      bio: "Technical Trainer, Information Technology Institute (ITI)",
+      collection: [
+        {
+          bio: "echnical Trainer, Information Technology Institut",
+        },
+      ],
     },
   ];
   return (
@@ -41,16 +66,20 @@ export default function About({ avatar, primaryBio, secondaryBio }) {
             <GetSocial />
           </div>
         </div>
-        <div className="py-5 my-5 border-top">
+        <div className="py-3 py-lg-5 my-5 border-top">
           <div className="row">
             {experience.map((item, index) => (
-              <div key={index} className="col-sm-12 col-md-3">
-                <Status
-                  title={item.title}
-                  subTitle={item.subTitle}
-                  bio={item.bio}
-                  italic={item.italic}
-                />
+              <div
+                key={index}
+                className={`col-sm-12 ${
+                  index === 0
+                    ? "col-lg-4"
+                    : index === 1
+                    ? "col-lg-2 p-0"
+                    : "col-lg-3"
+                }`}
+              >
+                <Status title={item.title} collection={item.collection} />
               </div>
             ))}
           </div>
