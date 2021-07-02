@@ -1,0 +1,25 @@
+
+$Fonts: (
+  "12": 12px,
+  "14": 14px,
+  "16": 16px,
+  "18": 18px,
+  "20": 20px,
+  "24": 24px,
+  "30": 30px,
+  "36": 36px,
+  "40": 40px,
+  // "48": 48px,
+  // "60": 60px,
+  // "72": 72px,,,,,,,,,,,,
+);
+
+// dynamic get system fonts
+@function Font($specificSize) {
+  @return map-get($Fonts, $specificSize);
+}
+
+//dynamic font-size
+@mixin fontSize($value) {
+  font-size: Font($value);
+}

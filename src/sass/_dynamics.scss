@@ -1,0 +1,39 @@
+@use "./fonts" as fs;
+
+
+@mixin aspectRatio($ratio, $zIndex, $overlay: hidden) {
+  position: relative;
+  padding-bottom: $ratio; // 50%, 60%, 80%, etc....
+  img {
+    background-color: #f3f3f3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: $zIndex;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    visibility: $overlay; // by default overlay is hidden !! pass (visible) to show overlay
+  }
+}
+
+@mixin present-spacing() {
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding: 96px 0;
+  @media (max-width: 800px) {
+    margin: 0;
+    padding: 64px 0;
+  }
+}

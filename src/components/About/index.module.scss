@@ -1,13 +1,13 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
 
 .about {
   h2 {
-    @include fontSize("30");
+    @include fs.fontSize("30");
     line-height: 45px;
     letter-spacing: -0.75px;
     font-weight: 600;
     @media (max-width: 600px) {
-      @include fontSize("24");
+      @include fs.fontSize("24");
     }
   }
   p {

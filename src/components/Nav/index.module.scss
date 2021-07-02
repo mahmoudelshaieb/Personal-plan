@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
 
 .styledNav {
   z-index: 50;
@@ -11,18 +11,18 @@
       color: #191919;
       .myName {
         font-weight: 600;
-        @include fontSize("24");
+        @include fs.fontSize("24");
         letter-spacing: -0.6px;
         @media (max-width: 600px) {
-          @include fontSize("18");
+          @include fs.fontSize("18");
         }
       }
       p {
-        @include fontSize("14");
+        @include fs.fontSize("14");
         opacity: 0.7;
         font-weight: normal;
         @media (max-width: 600px) {
-          @include fontSize("12");
+          @include fs.fontSize("12");
         }
       }
     }
@@ -34,7 +34,7 @@
           text-align: center;
         }
         span {
-          @include fontSize("14");
+          @include fs.fontSize("14");
           letter-spacing: 0.7px;
           font-weight: 600;
           &:last-child {

@@ -1,0 +1,17 @@
+
+$theme-colors: (
+  "primary": #2563eb,
+  );
+  
+  $black: #191919;
+  
+  // fix
+  $navbar-light-color: #19191985;
+  $navbar-light-active-color: $black;
+  $navbar-light-hover-color: $black;
+  
+  
+  // @import "~bootstrap/scss/functions";
+  // @import "~bootstrap/scss/variables";
+  // @import "~bootstrap/scss/mixins";
+  @import "~bootstrap/scss/bootstrap";

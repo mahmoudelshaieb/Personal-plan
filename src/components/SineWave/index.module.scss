@@ -1,23 +1,24 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
+@use "../../sass/dynamics" as ut;
 
 .wave {
-  @include present-spacing;
+  @include ut.present-spacing;
   h2 {
-    @include fontSize("36");
+    @include fs.fontSize("36");
     font-weight: 500;
     line-height: 50px;
     letter-spacing: 3.6px;
     display: flex;
     align-items: center;
     @media (max-width: 600px) {
-      @include fontSize("24");
+      @include fs.fontSize("24");
     }
     span {
       font-size: 42px;
       font-weight: 700;
       letter-spacing: 4.2px;
       @media (max-width: 600px) {
-        @include fontSize("30");
+        @include fs.fontSize("30");
       }
     }
   }
@@ -25,6 +26,6 @@
     width: 90%;
   }
   .waveImg {
-    @include aspectRatio(55%, 2, hidden);
+    @include ut.aspectRatio(55%, 2, hidden);
   }
 }

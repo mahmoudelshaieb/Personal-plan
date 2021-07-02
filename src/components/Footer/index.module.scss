@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
 
 .footer {
   margin-top: 56px;
@@ -8,7 +8,7 @@
     border-width: 2px;
   }
   span {
-    @include fontSize("12");
+    @include fs.fontSize("12");
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.6px;

@@ -1,8 +1,8 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
 
 .status {
   h5 {
-    @include fontSize("18");
+    @include fs.fontSize("18");
     line-height: 28px;
     font-weight: 600;
     letter-spacing: 1.8px;
@@ -18,12 +18,12 @@
     }
   }
   h6 {
-    @include fontSize("14");
+    @include fs.fontSize("14");
     line-height: 24px;
     font-weight: 500;
   }
   p {
-    @include fontSize("14");
+    @include fs.fontSize("14");
     line-height: 22px;
     font-weight: 400;
     opacity: 0.87;

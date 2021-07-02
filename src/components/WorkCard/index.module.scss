@@ -1,14 +1,15 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
+@use "../../sass/dynamics" as ut;
 
 .card {
-  @include aspectRatio(60%, 2, visible);
+  @include ut.aspectRatio(60%, 2, visible);
   p {
     position: absolute;
     left: 40px;
     bottom: 15px;
     letter-spacing: 0.9px;
     font-weight: 600;
-    @include fontSize("18");
+    @include fs.fontSize("18");
     z-index: 4;
     @media (max-width: 600px) {
       left: 24px;

@@ -1,5 +1,5 @@
-@import "../../index.scss";
+@use "../../sass/dynamics" as ut;
 
 .present {
-    @include present-spacing;
+    @include ut.present-spacing;
 }

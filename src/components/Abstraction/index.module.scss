@@ -1,17 +1,17 @@
-@import "../../index.scss";
+@use "../../sass/fonts" as fs;
 
 .abstract {
   h2 {
-    @include fontSize("24");
+    @include fs.fontSize("24");
     font-weight: 600;
     letter-spacing: -0.6px;
     line-height: 36px;
     @media (max-width: 600px) {
-      @include fontSize("18");
+      @include fs.fontSize("18");
     }
   }
   p {
-    @include fontSize("16");
+    @include fs.fontSize("16");
     line-height: 24px;
     opacity: 0.87;
     letter-spacing: 0.8px;
@@ -19,7 +19,7 @@
     width: 50%;
     margin: auto;
     @media (max-width: 800px) {
-      @include fontSize("14");
+      @include fs.fontSize("14");
       width: 100%;
       margin: 0;
     }

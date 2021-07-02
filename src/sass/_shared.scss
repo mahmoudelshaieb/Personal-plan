@@ -1,0 +1,45 @@
+@use "customColors" as color;
+@use "fonts" as fs;
+
+@import "customBootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+html {
+  scroll-behavior: unset !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  color: color.$bodyColor !important;
+}
+
+.present-heading {
+  @include fs.fontSize("24");
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  @media (max-width: 600px) {
+    @include fs.fontSize("20");
+  }
+}
+
+.present-subheading {
+  @include fs.fontSize("18");
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: color.$bodyColor;
+  @media (max-width: 600px) {
+    @include fs.fontSize("16");
+  }
+}
+
+.present-p {
+  @include fs.fontSize("16");
+  line-height: 28px;
+  color: #191919c2;
+  @media (max-width: 600px) {
+    @include fs.fontSize("14");
+  }
+}
