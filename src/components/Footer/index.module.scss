@@ -6,6 +6,7 @@
   @media (max-width: 600px) {
     margin-top: 40px;
     border-width: 2px;
+    text-align: center;
   }
   span {
     @include fs.fontSize("12");

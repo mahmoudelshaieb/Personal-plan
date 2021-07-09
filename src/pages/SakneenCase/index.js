@@ -36,7 +36,7 @@ export default function SakneenCase() {
   ];
 
   return (
-    <Fade bottom duration={1000} distance="100px">
+    <Fade bottom duration={500} distance="100px">
       <div className="container">
         <div className="mx-2 mx-md-5 mt-3 mt-md-5">
           <BackButton url={ROUTES.WORK} />

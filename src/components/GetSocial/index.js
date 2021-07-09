@@ -1,25 +1,15 @@
-// import styles from "./index.module.scss";
+import styles from "./index.module.scss";
+
+import { getSocial } from "../../constrains/data";
 
 export default function GetSocial() {
-  const getSocial = [
-    {
-      title: "twitter",
-      icon: "./assets/test-icon.svg",
-      url: "",
-    },
-    {
-      title: "behace",
-      icon: "./assets/test-icon.svg",
-      url: "",
-    },
-  ];
   return (
-    <>
+    <div className={`${styles.social}`}>
       {getSocial.map((item, index) => (
-        <a href={item.url} key={index} className="ps-md-3">
+        <a href={item.url} key={index} className="p-3 p-lg-2" target="_blank" rel="noreferrer">
           <img src={item.icon} alt={item.title} loading="lazy" />
         </a>
       ))}
-    </>
+    </div>
   );
 }

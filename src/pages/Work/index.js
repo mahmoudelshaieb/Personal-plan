@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 
 export default function Work() {
   return (
-    <Fade bottom duration={1000} distance="50px">
+    <Fade bottom duration={500} distance="100px">
       <div className="container">
         <Abstract
           name="mahmoud"
