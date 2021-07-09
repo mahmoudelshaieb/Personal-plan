@@ -1,10 +1,30 @@
 export default function BackToTop() {
+  const rootElement = document.documentElement;
+  const handleScroll = () => {
+    const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+    if (rootElement.scrollTop / scrollTotal > 0.3) {
+      // Show button
+      document.getElementById("scrollToTopBtn").classList.add("showBtn");
+    } else {
+      // Hide button
+      document.getElementById("scrollToTopBtn").classList.remove("showBtn");
+    }
+  };
+  document.addEventListener("scroll", handleScroll);
+  const scrollTop = () => {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <button
+      onClick={scrollTop}
+      id="scrollToTopBtn"
       type="button"
-      className="btn btn-link position-fixed bottom-0 end-0"
+      className="btn btn-primary"
     >
-      <img src="../assets/back.png" alt="back button" loading="lazy" />
+      <img src="../assets/top.svg" alt="back button" loading="lazy" />
     </button>
   );
 }

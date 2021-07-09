@@ -1,3 +1,21 @@
+import * as ROUTES from "./routes";
+
+// Navigation bar items
+const navItems = [
+  {
+    name: "work",
+    url: `${ROUTES.WORK}`,
+  },
+  {
+    name: "about",
+    url: `${ROUTES.ABOUT}`,
+  },
+  {
+    name: "contact",
+    url: `${ROUTES.CONTACT}`,
+  },
+];
+// Experience section
 const experience = [
   {
     title: "education",
@@ -44,41 +62,41 @@ const experience = [
     ],
   },
 ];
-
+// Contacts section
 const contactInfo = [
   {
     title: "elshaieb_career@outlook.com",
-    icon: "../assets/mail.png",
+    icon: "../assets/mail.svg",
     url: "mailto:elshaieb_career@outlook.com",
   },
   {
     title: "+20 121 695 3899",
-    icon: "../assets/phone.png",
+    icon: "../assets/phone.svg",
     url: "tel:+01216953899",
   },
   {
     title: "Cairo, Egypt",
-    icon: "../assets/marker.png",
+    icon: "../assets/marker.svg",
     url: "",
   },
 ];
-
+// Social section
 const getSocial = [
   {
     title: "twitter",
-    icon: "./assets/twitter.png",
+    icon: "./assets/twitter.svg",
     url: "https://twitter.com/Mahmoud22_h",
   },
   {
     title: "behace",
-    icon: "./assets/behance.png",
+    icon: "./assets/behance.svg",
     url: "https://behance.net/mahmoudelshaieb",
   },
   {
     title: "linkedin",
-    icon: "./assets/linkedin.png",
+    icon: "./assets/linkedin.svg",
     url: "https://www.linkedin.com/in/mahmoudelshaieb/",
   },
 ];
 
-export { experience, contactInfo, getSocial };
+export { experience, contactInfo, getSocial, navItems };

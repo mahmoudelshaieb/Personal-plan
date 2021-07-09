@@ -1,27 +1,19 @@
 import styles from "./index.module.scss";
 import { NavLink } from "react-router-dom";
-import * as ROUTES from "../../constrains/routes";
+import { WORK } from "../../constrains/routes";
 import { Fade } from "react-reveal";
+import { navItems } from "../../constrains/data";
 
 export default function Nav({ fname, lname, profession }) {
-  const navItems = [
-    {
-      name: "work",
-      url: `${ROUTES.WORK}`,
-    },
-    {
-      name: "about",
-      url: `${ROUTES.ABOUT}`,
-    },
-    {
-      name: "contact",
-      url: `${ROUTES.CONTACT}`,
-    },
-  ];
+  const menuToggle = () => {
+    const navbarNav = document.getElementById("navbarNav");
+    navbarNav.classList.toggle("show");
+  };
+
   return (
     <Fade top duration={1000} distance="20px">
       <div
-        className={`${styles.styledNav} shadow-sm mb-4 mb-md-5 position-sticky top-0`}
+        className={`${styles.styledNav} shadow-sm mb-4 mb-lg-5 position-sticky top-0`}
       >
         <div className="container">
           <header className={`${styles.Nav} mx-2 mx-md-0`}>
@@ -29,7 +21,7 @@ export default function Nav({ fname, lname, profession }) {
               <div className="container-fluid px-0">
                 <NavLink
                   className={`${styles.brand} text-capitalize`}
-                  to={ROUTES.WORK}
+                  to={WORK}
                 >
                   <span className={`${styles.myName}`}>
                     <span className="text-primary">{fname}</span> {lname}
@@ -54,6 +46,7 @@ export default function Nav({ fname, lname, profession }) {
                   <ul className={`${styles.navItems} navbar-nav`}>
                     {navItems.map((item, index) => (
                       <NavLink
+                        onClick={menuToggle}
                         key={index}
                         to={item.url}
                         className="nav-link"

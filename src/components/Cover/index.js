@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 export default function Cover({ title, subTitle, strong, bio, coverImg }) {
   return (
-    <section className={`${styles.cover} mt-3 mt-md-5`}>
+    <section className={`${styles.cover} mt-3 mt-lg-5`}>
       <div className={`${styles.desc}`}>
         <h3 className="text-capitalize text-primary mb-2 mb-md-3">{title}</h3>
         <h5 className="mb-2 mb-md-3">{subTitle}</h5>

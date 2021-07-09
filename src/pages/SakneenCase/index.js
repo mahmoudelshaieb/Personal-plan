@@ -38,7 +38,7 @@ export default function SakneenCase() {
   return (
     <Fade bottom duration={500} distance="100px">
       <div className="container">
-        <div className="mx-2 mx-md-5 mt-3 mt-md-5">
+        <div className="mx-2 mx-md-5 mt-3 mt-lg-5">
           <BackButton url={ROUTES.WORK} />
           <Cover
             title="sakneen"
@@ -49,7 +49,7 @@ export default function SakneenCase() {
           />
           <div className="row justify-content-center mt-3 mt-md-5">
             {projectStatus.map((item, index) => (
-              <div key={index} className="col-sm-12 col-md-3">
+              <div key={index} className="col-sm-12 col-lg-3">
                 <Status title={item.title} collection={item.collection} />
               </div>
             ))}

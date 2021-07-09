@@ -1,9 +1,8 @@
 .social {
   a {
+    background-color: #ffffff;
     &:hover {
-      img {
-        opacity: 0.77;
-      }
+      background-color: #f3f3f3;
     }
   }
 }
