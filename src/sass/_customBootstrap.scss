@@ -9,6 +9,11 @@ $theme-colors: (
   $navbar-light-color: #19191985;
   $navbar-light-active-color: $black;
   $navbar-light-hover-color: $black;
+
+  .btn {
+    letter-spacing: 0.8px;
+    font-weight: 500 !important;
+  }
   
   
   // @import "~bootstrap/scss/functions";

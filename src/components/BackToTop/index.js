@@ -22,7 +22,7 @@ export default function BackToTop() {
       onClick={scrollTop}
       id="scrollToTopBtn"
       type="button"
-      className="btn btn-primary"
+      className="btn btn-primary rounded-pill"
     >
       <img src="../assets/top.svg" alt="back button" loading="lazy" />
     </button>

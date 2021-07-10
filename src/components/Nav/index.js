@@ -43,13 +43,15 @@ export default function Nav({ fname, lname, profession }) {
                   className="collapse navbar-collapse justify-content-end"
                   id="navbarNav"
                 >
-                  <ul className={`${styles.navItems} navbar-nav`}>
+                  <ul
+                    className={`${styles.navItems} navbar-nav align-items-center`}
+                  >
                     {navItems.map((item, index) => (
                       <NavLink
                         onClick={menuToggle}
                         key={index}
                         to={item.url}
-                        className="nav-link px-0"
+                        className="nav-link px-0 w-100"
                         aria-current="page"
                         exact
                       >
@@ -58,6 +60,12 @@ export default function Nav({ fname, lname, profession }) {
                         </li>
                       </NavLink>
                     ))}
+                    <a
+                      href="#"
+                      className="btn btn-primary text-uppercase ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4 rounded-pill w-100"
+                    >
+                      resume
+                    </a>
                   </ul>
                 </div>
               </div>
