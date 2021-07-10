@@ -49,12 +49,12 @@ export default function Nav({ fname, lname, profession }) {
                         onClick={menuToggle}
                         key={index}
                         to={item.url}
-                        className="nav-link"
+                        className="nav-link px-0"
                         aria-current="page"
                         exact
                       >
-                        <li className="nav-item text-uppercase">
-                          <span>{item.name}</span>
+                        <li className="nav-item text-uppercase ps-0 ps-lg-5 text-center">
+                          <span className="pb-2">{item.name}</span>
                         </li>
                       </NavLink>
                     ))}
