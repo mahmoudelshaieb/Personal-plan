@@ -4,7 +4,7 @@ import GetSocial from "../GetSocial"
 export default function Footer({ fname, lname }) {
   return (
     <div className="container">
-      <footer className={`${styles.footer} pt-4 pb-4 mx-2 mx-md-0`}>
+      <footer className={`${styles.footer} pt-3 pb-1 mx-2 mx-md-0 bg-white`}>
         <div className="row">
           <div className="col-sm-12 col-md-6 mb-3">
             <img className="px-2" src="./assets/copyright.svg" alt="copy" loading="lazy" />

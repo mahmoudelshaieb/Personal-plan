@@ -4,6 +4,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
+import CourseApp from "../CourseApp";
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import BackToTop from "../../components/BackToTop";
@@ -20,6 +21,7 @@ export default function App() {
         <Route path={ROUTES.ABOUT} component={AboutMe} />
         <Route path={ROUTES.CONTACT} component={ContactMe} />
         <Route path={ROUTES.CASE_1} component={SakneenCase} />
+        <Route path={ROUTES.CASE_2} component={CourseApp} />
       </Switch>
       <Footer fname="mahmoud" lname="Hassan 2021" />
     </Router>
