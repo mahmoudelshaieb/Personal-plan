@@ -27,7 +27,7 @@ export default function SineWave({
             {secondaryDesc ? <p className="present-p">{secondaryDesc}</p> : null}
           </div>
           <div className="col-sm-12 col-lg-7 p-0">
-            <div className={`${styles.waveImg}`}>
+            <div className={`${styles.waveImg} shadow`}>
               <img src={img} alt={`${title} img`} loading="lazy" />
             </div>
           </div>

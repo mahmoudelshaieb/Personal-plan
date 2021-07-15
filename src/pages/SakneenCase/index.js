@@ -6,34 +6,23 @@ import NestedFullPresent from "../../components/NestedFullPresent";
 import BackButton from "../../components/BackBtn";
 import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
+import {
+  sakCover,
+  sakProjectStatus,
+  sakProblem,
+  sakSolOne,
+  sakSolTwo,
+  sakSolThree,
+  sakAppGuide,
+} from "../../constrains/data";
 
 export default function SakneenCase() {
-  const projectStatus = [
-    {
-      title: "date",
-      collection: [
-        {
-          bio: "January 2020, present",
-        },
-      ],
-    },
-    {
-      title: "role",
-      collection: [
-        {
-          bio: "Product Designer",
-        },
-      ],
-    },
-    {
-      title: "location",
-      collection: [
-        {
-          bio: "Cairo, Egypt",
-        },
-      ],
-    },
-  ];
+  const { coverTitle, coverSubTitle, strong, bio, coverImg } = sakCover;
+  const { probDescPrimary, probDescsecondary, probImg } = sakProblem;
+  const { solOneDescPrimary, solOneDescsecondary, solOneImg } = sakSolOne;
+  const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = sakSolTwo;
+  const { solThreeDescPrimary, solThreeDescsecondary, solThreeImg } =
+    sakSolThree;
 
   return (
     <Fade bottom duration={500} distance="100px">
@@ -41,14 +30,14 @@ export default function SakneenCase() {
         <div className="mx-2 mx-md-5 mt-3 mt-lg-5">
           <BackButton url={ROUTES.WORK} />
           <Cover
-            title="sakneen"
-            subTitle="Buy or sell homes in Egypt"
-            strong="Sakneen, the online portal"
-            bio="that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe."
-            coverImg="/assets/img.jpg"
+            title={coverTitle}
+            subTitle={coverSubTitle}
+            strong={strong}
+            bio={bio}
+            coverImg={coverImg}
           />
           <div className="row justify-content-center mt-3 mt-md-5">
-            {projectStatus.map((item, index) => (
+            {sakProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">
                 <Status title={item.title} collection={item.collection} />
               </div>
@@ -59,30 +48,41 @@ export default function SakneenCase() {
       <SineWave
         title="problem"
         step="0"
-        primaryDesc="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain"
-        secondaryDesc="was born and I will give you a complete account of the system, and expound the actual teachings of th"
-        img="/assets/img2.jpg"
+        primaryDesc={probDescPrimary}
+        secondaryDesc={probDescsecondary}
+        img={probImg}
       />
       <SineWave
         title="solution"
         step="1"
-        primaryDesc="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain"
-        secondaryDesc="was born and I will give you a complete account of the system"
-        img="/assets/img.jpg"
+        primaryDesc={solOneDescPrimary}
+        secondaryDesc={solOneDescsecondary}
+        img={solOneImg}
+        background="#f4f4f4"
+        RTL={true}
+      />
+      <SineWave
+        title="solution"
+        step="2"
+        primaryDesc={solTwoDescPrimary}
+        secondaryDesc={solTwoDescsecondary}
+        img={solTwoImg}
+      />
+      <SineWave
+        title="solution"
+        step="3"
+        primaryDesc={solThreeDescPrimary}
+        secondaryDesc={solThreeDescsecondary}
+        img={solThreeImg}
         background="#f4f4f4"
         RTL={true}
       />
       <FullPresent
-        title="site map"
-        desc="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain"
-        img="./assets/img.jpg"
-      />
-      <FullPresent
         title="prototyping"
-        img="./assets/img2.jpg"
-        background="#f4f4f4"
+        desc="making a lot of prototyping and this sample of it, financing flow recently added feature"
+        img="./assets/sakneen/prototyping.png"
       />
-      <NestedFullPresent title="styles & guides" />
+      <NestedFullPresent title="styles & guides" guides={sakAppGuide} />
     </Fade>
   );
 }

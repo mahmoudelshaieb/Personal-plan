@@ -4,7 +4,7 @@ const caseLinks = [
   {
     title: "sakneen",
     url: ROUTES.CASE_1,
-    coverImg: "/assets/img.jpg",
+    coverImg: "/assets/sakneen/cover2.jpg",
   },
   {
     title: "couse app",
@@ -62,7 +62,7 @@ const experience = [
     title: "design skills",
     collection: [
       {
-        bio: "design thinking, site map, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theroy, wireframing, prototyping .",
+        bio: "design thinking, interaction design, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theroy, wireframing, prototyping .",
       },
     ],
   },
@@ -120,6 +120,100 @@ const aboutMe = {
   secondaryBio:
     "I develop myself in programming and frontend development, this current personal portfolio is completely customized and i have done it from scratch using react js (no website builder no CMS) .",
 };
+
+// sakneen Case
+const sakCover = {
+  coverTitle: "sakneen",
+  subTitle: "Buy or sell homes in Egypt",
+  strong: "Sakneen, the online portal",
+  bio: "that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
+  coverImg: "/assets/sakneen/cover2.jpg",
+};
+
+const sakProjectStatus = [
+  {
+    title: "date",
+    collection: [
+      {
+        bio: "January 2020, present",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "Product Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Cairo, Egypt",
+      },
+    ],
+  },
+];
+
+const sakProblem = {
+  probDescPrimary:
+    "Today, finding the right home is a time-consuming and overwhelming process that wastes valuable time, money, and effort. Sellers also lose out on opportunities simply because the buyer wasn’t aware of the seller’s offering.",
+  probDescsecondary:
+    "We’re looking to reinvent the real estate process. Standing in the way of a better real estate experience is disorganized public information, mismatched incentives in the sales process, and a lack of transparency around financials.",
+  probImg: "/assets/sakneen/problem2.jpg",
+};
+
+const sakSolOne = {
+  solOneDescPrimary:
+    "First task is to bring transparency to the search process by helping real estate developers and sellers connect directly with potential buyers.",
+  solOneDescsecondary:
+    "While the need for a superior digital experience was always clear.",
+  solOneImg: "/assets/sakneen/sol1.jpg",
+};
+
+const sakSolTwo = {
+  solTwoDescPrimary:
+    "Build a very exciting filter experience to helps home buyers reach to potential home that can save time and efforts.",
+  solTwoDescsecondary:
+    "The filteration system contain needs of home buyers to find potential home, can select specific location, developer, price range, property type and more. ",
+  solTwoImg: "/assets/sakneen/sol2.jpg",
+};
+
+const sakSolThree = {
+  solThreeDescPrimary:
+    "Build 3D viewer contain all information home buyers needs .",
+  solThreeDescsecondary:
+    "Call to actions by (call, mail and whatsApp) easily with home buyer hands.",
+  solThreeImg: "/assets/sakneen/3d-space.jpg",
+};
+
+const sakAppGuide = [
+  {
+    subTitle: "components",
+    desc: "Build component based on Material UI Design System",
+    img: "./assets/sakneen/components.png",
+  },
+  {
+    subTitle: "colors",
+    img: "./assets/sakneen/colors.png",
+  },
+  {
+    subTitle: "typography",
+    img: "./assets/sakneen/typo.png",
+  },
+  {
+    subTitle: "iconography",
+    img: "./assets/sakneen/icons.png",
+  },
+  {
+    subTitle: "imagery",
+    desc:"Work with professional photographers who go outdoor and take photos for homes then prepare images to work well in website .",
+    img: "./assets/sakneen/imagery.jpg",
+  },
+];
+// sakneen Case
 
 // CourseApp Case
 const courseAppCover = {
@@ -223,4 +317,11 @@ export {
   CourseAppPrototype,
   CourseAppGuide,
   aboutMe,
+  sakCover,
+  sakProjectStatus,
+  sakProblem,
+  sakSolOne,
+  sakSolTwo,
+  sakSolThree,
+  sakAppGuide
 };

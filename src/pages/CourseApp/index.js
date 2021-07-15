@@ -1,6 +1,6 @@
 import Cover from "../../components/Cover";
 import Status from "../../components/Status";
-import SineWave from "../../components/SineWave";
+// import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
 import BackButton from "../../components/BackBtn";
