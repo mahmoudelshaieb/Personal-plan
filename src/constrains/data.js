@@ -36,12 +36,12 @@ const experience = [
       {
         subTitle: "Open Source Application Development",
         bio: "Technical Trainer, Information Technology Institute (ITI)",
-        italic: "December 2019",
+        italic: "September 2019 - December 2019",
       },
       {
         subTitle: "Faculty of Computer and Information",
         bio: "Bachelor Degree, Computer Science",
-        italic: "June 2016",
+        italic: "June 2012 - June 2016",
       },
     ],
   },
