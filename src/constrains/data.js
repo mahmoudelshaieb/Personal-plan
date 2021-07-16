@@ -62,7 +62,7 @@ const experience = [
     title: "design skills",
     collection: [
       {
-        bio: "design thinking, interaction design, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theroy, wireframing, prototyping .",
+        bio: "design thinking, interaction design, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theory, wireframing, prototyping .",
       },
     ],
   },
@@ -87,11 +87,11 @@ const contactInfo = [
     icon: "../assets/phone.svg",
     url: "tel:+201016953899",
   },
-  {
-    title: "Cairo, Egypt",
-    icon: "../assets/marker.svg",
-    url: "",
-  },
+  // {
+  //   title: "Cairo, Egypt",
+  //   icon: "../assets/marker.svg",
+  //   url: "https://goo.gl/maps/B3nhKEt64fLiAFzFA",
+  // },
 ];
 // Social section
 const getSocial = [
