@@ -83,7 +83,7 @@ const contactInfo = [
     url: "mailto:elshaieb_career@outlook.com",
   },
   {
-    title: "+20 121 695 3899",
+    title: "+20 101 695 3899",
     icon: "../assets/phone.svg",
     url: "tel:+01216953899",
   },
