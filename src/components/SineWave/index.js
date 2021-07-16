@@ -15,8 +15,14 @@ export default function SineWave({
       style={{ backgroundColor: background }}
     >
       <div className="container">
-        <div className={`${RTL ? "flex-row-reverse" : ""} row mx-2 mx-lg-5 align-items-center`}>
-          <div className={`col-sm-12 col-lg-5 p-0 ${RTL ? "ps-2 ps-lg-5" : ""}`}>
+        <div
+          className={`${
+            RTL ? "flex-row-reverse" : ""
+          } row mx-2 mx-lg-5 align-items-center`}
+        >
+          <div
+            className={`col-sm-12 col-lg-5 p-0 ${RTL ? "ps-2 ps-lg-5" : ""}`}
+          >
             <h2 className="text-uppercase mb-3">
               <span className="pe-2">
                 0<span className="text-primary">{step}</span>
@@ -24,9 +30,11 @@ export default function SineWave({
               {title}
             </h2>
             <p className="present-p">{primaryDesc}</p>
-            {secondaryDesc ? <p className="present-p">{secondaryDesc}</p> : null}
+            {secondaryDesc ? (
+              <p className="present-p">{secondaryDesc}</p>
+            ) : null}
           </div>
-          <div className="col-sm-12 col-lg-7 p-0">
+          <div className="col-sm-12 col-lg-7 p-0 order-first order-lg-last mb-4 mb-lg-0">
             <div className={`${styles.waveImg} shadow`}>
               <img src={img} alt={`${title} img`} loading="lazy" />
             </div>

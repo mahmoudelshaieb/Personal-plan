@@ -85,7 +85,7 @@ const contactInfo = [
   {
     title: "+20 101 695 3899",
     icon: "../assets/phone.svg",
-    url: "tel:+01216953899",
+    url: "tel:+201016953899",
   },
   {
     title: "Cairo, Egypt",
