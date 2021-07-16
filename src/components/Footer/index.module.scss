@@ -1,5 +1,12 @@
 @use "../../sass/fonts" as fs;
 
+.mobFix {
+  @media (max-width: 800px) {
+    position: relative;
+    z-index: 0;
+  }
+}
+
 .footer {
   margin-top: 56px;
   border-top: 4px solid #191919;

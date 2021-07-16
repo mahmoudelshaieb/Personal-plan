@@ -5,7 +5,11 @@ import { useLocation } from "react-router-dom";
 export default function Footer({ fname, lname }) {
   const location = useLocation().pathname;
   return (
-    <div className={`container ${location === "/" ? "fixed-bottom" : ""}`}>
+    <div
+      className={`container ${location === "/" ? "fixed-bottom" : ""} ${
+        styles.mobFix
+      }`}
+    >
       <footer className={`${styles.footer} pt-3 pb-1 mx-2 mx-md-0 bg-white`}>
         <div className="row">
           <div className="col-sm-12 col-md-6 mb-3">
