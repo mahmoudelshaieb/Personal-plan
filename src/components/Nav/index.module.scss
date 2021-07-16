@@ -41,6 +41,9 @@
           }
         }
       }
+      .resume {
+        @include fs.fontSize("14");
+      }
     }
   }
 }

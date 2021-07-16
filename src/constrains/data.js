@@ -7,7 +7,7 @@ const caseLinks = [
     coverImg: "/assets/sakneen/cover2.jpg",
   },
   {
-    title: "couse app",
+    title: "course app",
     url: ROUTES.CASE_2,
     coverImg: "/assets/courseApp/visual.jpg",
   },
@@ -183,7 +183,7 @@ const sakSolTwo = {
 
 const sakSolThree = {
   solThreeDescPrimary:
-    "Build 3D viewer contain all information home buyers needs .",
+    "Build 3D viewer, home buyer can take a 3D virtual tour for potential home and contain all information home buyers needs .",
   solThreeDescsecondary:
     "Call to actions by (call, mail and whatsApp) easily with home buyer hands.",
   solThreeImg: "/assets/sakneen/3d-space.jpg",

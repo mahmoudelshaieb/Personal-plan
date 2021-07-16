@@ -14,6 +14,16 @@ body {
   color: color.$bodyColor !important;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50rem;
+}
+
 .present-heading {
   @include fs.fontSize("24");
   line-height: 50px;

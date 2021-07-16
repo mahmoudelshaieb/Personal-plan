@@ -63,7 +63,7 @@ export default function Nav({ fname, lname, profession }) {
                     <a
                       href="./assets/mahmoudhassancv.pdf"
                       target="_blank"
-                      className="btn btn-primary text-uppercase ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4 rounded-pill w-100"
+                      className={`${styles.resume} btn btn-primary text-uppercase ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4 rounded-pill w-100`}
                     >
                       resume
                     </a>
