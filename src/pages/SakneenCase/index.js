@@ -27,7 +27,7 @@ export default function SakneenCase() {
   return (
     <Fade bottom duration={500} distance="100px">
       <div className="container">
-        <div className="mx-2 mx-md-5 mt-3 mt-lg-5">
+        <div className="mx-2 mx-md-5 mt-3">
           <BackButton url={ROUTES.WORK} />
           <Cover
             title={coverTitle}
@@ -81,6 +81,11 @@ export default function SakneenCase() {
         title="prototyping"
         desc="making a lot of prototyping and this sample of it, financing flow recently added feature"
         img="./assets/sakneen/prototyping.png"
+      />
+      <FullPresent
+        title="technical tools"
+        img="./assets/sakneen/tech.png"
+        background="#f4f4f4"
       />
       <NestedFullPresent title="styles & guides" guides={sakAppGuide} />
     </Fade>

@@ -177,7 +177,7 @@ const sakSolTwo = {
   solTwoDescPrimary:
     "Build a very exciting filter experience to helps home buyers reach to potential home that can save time and efforts.",
   solTwoDescsecondary:
-    "The filteration system contain needs of home buyers to find potential home, can select specific location, developer, price range, property type and more. ",
+    "The filtration system contain needs of home buyers to find potential home, can select specific location, developer, price range, property type and more. ",
   solTwoImg: "/assets/sakneen/sol2.jpg",
 };
 

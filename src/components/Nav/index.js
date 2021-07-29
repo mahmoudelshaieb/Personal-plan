@@ -13,11 +13,11 @@ export default function Nav({ fname, lname, profession }) {
   return (
     <Fade top duration={1000} distance="20px">
       <div
-        className={`${styles.styledNav} shadow-sm mb-4 mb-lg-5 position-sticky top-0`}
+        className={`${styles.styledNav} shadow-sm mb-4 position-sticky top-0`}
       >
         <div className="container">
           <header className={`${styles.Nav} mx-2 mx-md-0`}>
-            <nav className="navbar navbar-expand-lg navbar-light py-2 py-md-3">
+            <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid px-0">
                 <NavLink
                   className={`${styles.brand} text-capitalize`}

@@ -21,8 +21,10 @@
         @include fs.fontSize("14");
         opacity: 0.7;
         font-weight: normal;
+        transform: translateY(-8px);
         @media (max-width: 600px) {
           @include fs.fontSize("12");
+          transform: translateY(-4px);
         }
       }
     }
