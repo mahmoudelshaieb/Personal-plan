@@ -11,7 +11,7 @@ export default function Cover({ title, subTitle, strong, bio, coverImg }) {
           {bio}
         </p>
       </div>
-      <div className={`${styles.coverImg} mt-3 mt-md-5`}>
+      <div className={`${styles.coverImg} mt-3 mt-md-5 rounded-3 overflow-hidden`}>
         <img src={coverImg} alt={`${title} case`} loading="lazy" />
       </div>
     </section>

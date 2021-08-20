@@ -21,7 +21,7 @@ export default function FullPresent({
             src={img}
             alt={`${title} img`}
             loading="lazy"
-            className="img-fluid"
+            className="img-fluid rounded-3 overflow-hidden"
           />
         </div>
       </div>
