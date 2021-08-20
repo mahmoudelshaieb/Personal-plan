@@ -10,11 +10,12 @@
     bottom: 15px;
     letter-spacing: 0.9px;
     font-weight: 600;
-    @include fs.fontSize("18");
+    @include fs.fontSize("24");
     z-index: 4;
     @media (max-width: 600px) {
       left: 24px;
       bottom: 8px;
+      @include fs.fontSize("18");
     }
   }
   button {

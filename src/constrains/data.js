@@ -98,7 +98,7 @@ const getSocial = [
   {
     title: "twitter",
     icon: "./assets/twitter.svg",
-    url: "https://twitter.com/Mahmoud22_h",
+    url: "https://twitter.com/HMahmouds",
   },
   {
     title: "behace",
@@ -111,7 +111,6 @@ const getSocial = [
     url: "https://www.linkedin.com/in/mahmoudelshaieb/",
   },
 ];
-
 // about
 const aboutMe = {
   avatar: "./assets/me.jpeg",

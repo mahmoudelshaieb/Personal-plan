@@ -35,7 +35,7 @@ export default function SineWave({
             ) : null}
           </div>
           <div className="col-sm-12 col-lg-7 p-0 order-first order-lg-last mb-4 mb-lg-0">
-            <div className={`${styles.waveImg} shadow`}>
+            <div className={`${styles.waveImg} shadow rounded-3 overflow-hidden`}>
               <img src={img} alt={`${title} img`} loading="lazy" />
             </div>
           </div>

@@ -8,7 +8,7 @@ export default function About({ avatar, primaryBio, secondaryBio }) {
     <section className={`${styles.about} container`}>
       <div className="row">
         <div className="col-sm-12 col-lg-4 text-center text-md-left mb-3 mb-lg-0 mt-0 mt-md-5">
-          <img className="img-fluid" src={avatar} alt="about" loading="lazy" />
+          <img className="img-fluid rounded-3 overflow-hidden shadow" src={avatar} alt="about" loading="lazy" />
         </div>
         <div className="col-sm-12 col-lg-8 px-md-5 mt-0 mt-md-5">
           <h2>

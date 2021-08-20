@@ -21,7 +21,7 @@ export default function NestedFullPresent({ title, guides }) {
                     src={item.img}
                     alt={`${title} img`}
                     loading="lazy"
-                    className="img-fluid mt-3"
+                    className="img-fluid mt-3 rounded-3 overflow-hidden"
                   />
                 </div>
               ))
