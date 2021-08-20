@@ -111,7 +111,7 @@ const getSocial = [
     url: "https://www.linkedin.com/in/mahmoudelshaieb/",
   },
 ];
-
+// Social section
 // about
 const aboutMe = {
   avatar: "./assets/me.jpeg",
