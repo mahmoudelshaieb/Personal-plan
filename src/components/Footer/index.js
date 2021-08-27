@@ -1,14 +1,13 @@
 import styles from "./index.module.scss";
 import GetSocial from "../GetSocial";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 export default function Footer({ fname, lname }) {
-  const location = useLocation().pathname;
+  // const location = useLocation().pathname;
+  // ${location === "/" ? "fixed-bottom" : ""} ${styles.mobFix}
   return (
     <div
-      className={`container ${location === "/" ? "fixed-bottom" : ""} ${
-        styles.mobFix
-      }`}
+      className={`container`}
     >
       <footer className={`${styles.footer} pt-3 pb-1 mx-2 mx-md-0 bg-white`}>
         <div className="row">

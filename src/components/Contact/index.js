@@ -18,7 +18,7 @@ export default function Contact({ contactImg, contactInfo }) {
   }, []);
   return (
     <section className={`${styles.contact} container`}>
-      <div className="row">
+      <div className="row align-items-center">
         <div className="col-sm-12 col-lg-4 text-center text-md-left mb-3 mb-lg-0 mt-0 mt-md-5">
           <div className="contactAnime" ref={contactAnime}></div>
         </div>

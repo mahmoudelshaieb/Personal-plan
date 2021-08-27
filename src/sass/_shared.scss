@@ -30,7 +30,7 @@ body {
   font-weight: 600;
   letter-spacing: 2.4px;
   @media (max-width: 600px) {
-    @include fs.fontSize("20");
+    @include fs.fontSize("18");
   }
 }
 
@@ -48,7 +48,7 @@ body {
 .present-p {
   @include fs.fontSize("16");
   line-height: 28px;
-  color: #191919c2;
+  color: #191919e3;
   @media (max-width: 600px) {
     @include fs.fontSize("14");
   }

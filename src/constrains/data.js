@@ -11,6 +11,11 @@ const caseLinks = [
     url: ROUTES.CASE_2,
     coverImg: "/assets/courseApp/visual.jpg",
   },
+  {
+    title: "agency portfolio",
+    url: ROUTES.CASE_3,
+    coverImg: "/assets/agencyPortfolio/cover.png",
+  },
 ];
 
 // Navigation bar items
@@ -302,6 +307,91 @@ const CourseAppGuide = [
 ];
 // CourseApp Case
 
+// agency portfolio case
+const agencyCover = {
+  coverTitle: "agency portfolio",
+  subTitle: "About the project",
+  strong: "Responsive website portfolio",
+  bio: "for software agency looking for build web and mobile applications, also make services like quality assurance, web and graphics design .",
+  coverImg: "/assets/agencyPortfolio/cover.png",
+};
+
+const agencyProjectStatus = [
+  {
+    title: "duration",
+    collection: [
+      {
+        bio: "3 weeks",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "UX/UI Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Cairo, Egypt",
+      },
+    ],
+  },
+];
+
+const agencyFlow = {
+  flowTitle: "information architecture",
+  flowImg: "/assets/agencyPortfolio/flow.jpg",
+};
+
+const agencyLanding = {
+  landingTitle: "landing page",
+  landingDesc:
+    "First task is build landing page to show what type of services agency build, some projects examples of work and analytics .",
+    landingImg: "/assets/agencyPortfolio/landing.png",
+};
+
+const agencyPre = {
+  preTitle: "presentation",
+  preDesc:
+    "Build full presentation to explain every project the agency built, show the problem, solution and used technologies",
+    preImg: "/assets/agencyPortfolio/pre.jpg",
+};
+
+const agencyService = {
+  serviceTitle: "services",
+  serviceDesc:
+    "Design page to show what type of services and can filter by each service like mobile or web",
+    serviceImg: "/assets/agencyPortfolio/work.png",
+};
+
+const agencyAbout = {
+  aboutTitle: "about & contact",
+  aboutImg: "/assets/agencyPortfolio/about-contact.png",
+};
+
+const agencyGuide = [
+  {
+    subTitle: "components",
+    desc: "Build component based on twitter bootstrap",
+    img: "/assets/agencyPortfolio/components.png",
+  },
+  {
+    subTitle: "colors",
+    img: "/assets/agencyPortfolio/colors.jpg",
+  },
+  {
+    subTitle: "typography",
+    img: "/assets/agencyPortfolio/typo.png",
+  },
+];
+
+// agency portfolio case
+
 export {
   experience,
   contactInfo,
@@ -322,5 +412,13 @@ export {
   sakSolOne,
   sakSolTwo,
   sakSolThree,
-  sakAppGuide
+  sakAppGuide,
+  agencyCover,
+  agencyProjectStatus,
+  agencyFlow,
+  agencyLanding,
+  agencyPre,
+  agencyService,
+  agencyAbout,
+  agencyGuide
 };
