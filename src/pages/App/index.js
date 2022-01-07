@@ -6,6 +6,7 @@ import Work from "../Work";
 import SakneenCase from "../SakneenCase";
 import CourseApp from "../CourseApp";
 import AgencyPortfolio from "../AgencyPortfolio";
+import BrokerApp from "../BrokerApp";
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import BackToTop from "../../components/BackToTop";
@@ -24,8 +25,9 @@ export default function App() {
         <Route path={ROUTES.CASE_1} component={SakneenCase} />
         <Route path={ROUTES.CASE_2} component={CourseApp} />
         <Route path={ROUTES.CASE_3} component={AgencyPortfolio} />
+        <Route path={ROUTES.CASE_4} component={BrokerApp} />
       </Switch>
-      <Footer fname="mahmoud" lname="Hassan 2021" />
+      <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>
   );
 }

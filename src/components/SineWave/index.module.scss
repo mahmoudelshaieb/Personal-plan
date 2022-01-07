@@ -26,6 +26,9 @@
     width: 90%;
   }
   .waveImg {
-    @include ut.aspectRatio(55%, 2, hidden);
+    @include ut.aspectRatio(55%, 2, cover, hidden);
+  }
+  .contained {
+    @include ut.aspectRatio(100%, 2, contain, hidden);
   }
 }

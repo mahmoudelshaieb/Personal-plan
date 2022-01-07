@@ -37,9 +37,9 @@
     }
   }
   .coverImg {
-    @include ut.aspectRatio(36%, 2, hidden);
+    @include ut.aspectRatio(36%, 2, cover, hidden);
     @media (max-width: 800px) {
-      @include ut.aspectRatio(45%, 2, hidden);
+      @include ut.aspectRatio(45%, 2, cover, hidden);
     }
   }
 }

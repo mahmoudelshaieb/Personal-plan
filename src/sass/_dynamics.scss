@@ -1,16 +1,15 @@
-@use "./fonts" as fs;
 
 
-@mixin aspectRatio($ratio, $zIndex, $overlay: hidden) {
+@mixin aspectRatio($ratio, $zIndex, $objectFit: cover, $overlay: hidden) {
   position: relative;
   padding-bottom: $ratio; // 50%, 60%, 80%, etc....
   img {
-    background-color: #f3f3f3;
+    // background-color: #f3f3f3;
     position: absolute;
     width: 100%;
     height: 100%;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: $objectFit;
     z-index: $zIndex;
   }
   &::before {

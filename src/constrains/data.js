@@ -16,6 +16,11 @@ const caseLinks = [
     url: ROUTES.CASE_3,
     coverImg: "/assets/agencyPortfolio/cover.png",
   },
+  {
+    title: "broker app",
+    url: ROUTES.CASE_4,
+    coverImg: "/assets/broker/cover.webp",
+  },
 ];
 
 // Navigation bar items
@@ -392,6 +397,92 @@ const agencyGuide = [
 
 // agency portfolio case
 
+// broker
+
+const brokerCover = {
+  coverTitle: "Broker App",
+  subTitle: "Buy or sell homes in Egypt",
+  strong: "Sakneen, the online portal",
+  bio: "that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
+  coverImg: "/assets/broker/cover.webp",
+};
+
+const brokerProjectStatus = [
+  {
+    title: "date",
+    collection: [
+      {
+        bio: "October 2020, February 2021",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "Product Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Cairo, Egypt",
+      },
+    ],
+  },
+];
+
+const brokerProblem = {
+  probDescPrimary:
+    "Today, finding the right home is a time-consuming and overwhelming process that wastes valuable time, money, and effort. Sellers also lose out on opportunities simply because the buyer wasn’t aware of the seller’s offering.",
+  probDescsecondary:
+    "We’re looking to reinvent the real estate process. Standing in the way of a better real estate experience is disorganized public information, mismatched incentives in the sales process, and a lack of transparency around financials.",
+  probImg: "/assets/sakneen/problem2.jpg",
+};
+
+const brokerSolOne = {
+  solOneDescPrimary:
+    "First task is to bring transparency to the search process by helping real estate developers and sellers connect directly with potential buyers.",
+  solOneDescsecondary:
+    "While the need for a superior digital experience was always clear.",
+  solOneImg: "/assets/broker/sol1.webp",
+};
+
+const brokerSolTwo = {
+  solTwoDescPrimary:
+    "Build a very exciting filter experience to helps home buyers reach to potential home that can save time and efforts.",
+  solTwoDescsecondary:
+    "The filtration system contain needs of home buyers to find potential home, can select specific location, developer, price range, property type and more. ",
+  solTwoImg: "/assets/broker/sol2.webp",
+};
+
+const brokerSolThree = {
+  solThreeDescPrimary:
+    "Build 3D viewer, home buyer can take a 3D virtual tour for potential home and contain all information home buyers needs .",
+  solThreeDescsecondary:
+    "Call to actions by (call, mail and whatsApp) easily with home buyer hands.",
+  solThreeImg: "/assets/broker/sol3.webp",
+};
+
+const brokerOnboardingFlow = {
+  flow1Title: "onboarding flow",
+  flow1Img: "/assets/broker/onboarding-flow.webp",
+};
+
+const brokerSearchFlow = {
+  flow2Title: "search flow",
+  flow2Img: "/assets/broker/search-flow.webp",
+};
+
+const brokerAccountFlow = {
+  flow3Title: "account flow",
+  flow3Img: "/assets/broker/account-flow.webp",
+};
+
+// broker
+
 export {
   experience,
   contactInfo,
@@ -420,5 +511,14 @@ export {
   agencyPre,
   agencyService,
   agencyAbout,
-  agencyGuide
+  agencyGuide,
+  brokerCover,
+  brokerProjectStatus,
+  brokerProblem,
+  brokerSolOne,
+  brokerSolTwo,
+  brokerSolThree,
+  brokerOnboardingFlow,
+  brokerSearchFlow,
+  brokerAccountFlow
 };
