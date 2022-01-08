@@ -2,27 +2,31 @@ import Cover from "../../components/Cover";
 import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
-import NestedFullPresent from "../../components/NestedFullPresent";
 import BackButton from "../../components/BackBtn";
 import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
 import {
-  sakCover,
-  sakProjectStatus,
-  sakProblem,
-  sakSolOne,
-  sakSolTwo,
-  sakSolThree,
-  sakAppGuide,
+  brokerCover,
+  brokerProjectStatus,
+  brokerProblem,
+  brokerSolOne,
+  brokerSolTwo,
+  brokerSolThree,
+  brokerOnboardingFlow,
+  brokerSearchFlow,
+  brokerAccountFlow
 } from "../../constrains/data";
 
-export default function SakneenCase() {
-  const { coverTitle, coverSubTitle, strong, bio, coverImg } = sakCover;
-  const { probDescPrimary, probDescsecondary, probImg } = sakProblem;
-  const { solOneDescPrimary, solOneDescsecondary, solOneImg } = sakSolOne;
-  const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = sakSolTwo;
+export default function BrokerApp() {
+  const { coverTitle, coverSubTitle, strong, bio, coverImg } = brokerCover;
+  const { probDescPrimary, probDescsecondary, probImg } = brokerProblem;
+  const { solOneDescPrimary, solOneDescsecondary, solOneImg } = brokerSolOne;
+  const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = brokerSolTwo;
   const { solThreeDescPrimary, solThreeDescsecondary, solThreeImg } =
-    sakSolThree;
+    brokerSolThree;
+  const { flow1Title, flow1Img } = brokerOnboardingFlow;
+  const { flow2Title, flow2Img } = brokerSearchFlow;
+  const { flow3Title, flow3Img } = brokerAccountFlow;
 
   return (
     <Fade bottom duration={500} distance="100px">
@@ -37,7 +41,7 @@ export default function SakneenCase() {
             coverImg={coverImg}
           />
           <div className="row justify-content-center mt-3 mt-md-5">
-            {sakProjectStatus.map((item, index) => (
+            {brokerProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">
                 <Status title={item.title} collection={item.collection} />
               </div>
@@ -60,6 +64,7 @@ export default function SakneenCase() {
         img={solOneImg}
         background="#f4f4f4"
         RTL={true}
+        containImg={true}
       />
       <SineWave
         title="solution"
@@ -67,6 +72,7 @@ export default function SakneenCase() {
         primaryDesc={solTwoDescPrimary}
         secondaryDesc={solTwoDescsecondary}
         img={solTwoImg}
+        containImg={true}
       />
       <SineWave
         title="solution"
@@ -76,18 +82,21 @@ export default function SakneenCase() {
         img={solThreeImg}
         background="#f4f4f4"
         RTL={true}
+        containImg={true}
       />
       <FullPresent
-        title="prototyping"
-        desc="making a lot of prototyping and this sample of it, financing flow recently added feature"
-        img="./assets/sakneen/prototyping.webp"
+        title={flow1Title}
+        img={flow1Img}
       />
       <FullPresent
-        title="technical tools"
-        img="./assets/sakneen/tech.webp"
+        title={flow2Title}
+        img={flow2Img}
         background="#f4f4f4"
       />
-      <NestedFullPresent title="styles & guides" guides={sakAppGuide} />
+      <FullPresent
+        title={flow3Title}
+        img={flow3Img}
+      />
     </Fade>
   );
 }

@@ -2,7 +2,7 @@
 @use "../../sass/dynamics" as ut;
 
 .card {
-  @include ut.aspectRatio(60%, 2, visible);
+  @include ut.aspectRatio(60%, 2, cover, visible);
   transition: transform 0.4s ease;
   p {
     position: absolute;

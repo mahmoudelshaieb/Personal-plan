@@ -7,6 +7,7 @@ export default function SineWave({
   secondaryDesc,
   img,
   RTL = false,
+  containImg = false,
   background = "#ffffff",
 }) {
   return (
@@ -16,9 +17,8 @@ export default function SineWave({
     >
       <div className="container">
         <div
-          className={`${
-            RTL ? "flex-row-reverse" : ""
-          } row mx-2 mx-lg-5 align-items-center`}
+          className={`${RTL ? "flex-row-reverse" : ""
+            } row mx-2 mx-lg-5 align-items-center`}
         >
           <div
             className={`col-sm-12 col-lg-5 p-0 ${RTL ? "ps-2 ps-lg-5" : ""}`}
@@ -35,7 +35,7 @@ export default function SineWave({
             ) : null}
           </div>
           <div className="col-sm-12 col-lg-7 p-0 order-first order-lg-last mb-4 mb-lg-0">
-            <div className={`${styles.waveImg} shadow rounded-3 overflow-hidden`}>
+            <div className={`${containImg ? `${styles.contained}` : `${styles.waveImg} shadow`} rounded-3 overflow-hidden`}>
               <img src={img} alt={`${title} img`} loading="lazy" />
             </div>
           </div>
