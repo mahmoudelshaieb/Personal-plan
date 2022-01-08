@@ -80,11 +80,11 @@ export default function SakneenCase() {
       <FullPresent
         title="prototyping"
         desc="making a lot of prototyping and this sample of it, financing flow recently added feature"
-        img="./assets/sakneen/prototyping.png"
+        img="./assets/sakneen/prototyping.webp"
       />
       <FullPresent
         title="technical tools"
-        img="./assets/sakneen/tech.png"
+        img="./assets/sakneen/tech.webp"
         background="#f4f4f4"
       />
       <NestedFullPresent title="styles & guides" guides={sakAppGuide} />
