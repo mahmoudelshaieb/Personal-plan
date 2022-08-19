@@ -16,8 +16,8 @@ export default function Work() {
           <div className="row">
             {caseLinks.map((item, index) => (
               <div key={index} className="col-sm-12 col-md-6 p-0 px-2 py-2">
-                <Link to={item.url}>
-                  <WorkCard img={item.coverImg} title={item.title} />
+                <Link to={item.url} className="text-decoration-none">
+                  <WorkCard img={item.coverImg} title={item.title} desc={item.desc} />
                 </Link>
               </div>
             ))}

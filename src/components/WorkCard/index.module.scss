@@ -1,44 +1,16 @@
-@use "../../sass/fonts" as fs;
+// @use "../../sass/fonts" as fs;
 @use "../../sass/dynamics" as ut;
 
 .card {
-  @include ut.aspectRatio(60%, 2, cover, visible);
-  transition: transform 0.4s ease;
-  p {
-    position: absolute;
-    left: 40px;
-    bottom: 15px;
-    letter-spacing: 0.9px;
-    font-weight: 600;
-    @include fs.fontSize("24");
-    z-index: 4;
-    @media (max-width: 600px) {
-      left: 24px;
-      bottom: 8px;
-      @include fs.fontSize("18");
-    }
+  .cardImg {
+    @include ut.aspectRatio(60%, 2, cover, visible);
   }
-  button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 4;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease, background-color 0.2s ease;
-    background-color: rgba(255, 255, 255, 0.9);
-    @include fs.fontSize("14");
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.77);
+  .cardInfo {
+    h4 {
+      color: #000000;
     }
-    @media (max-width: 992px) {
-      @include fs.fontSize("12");
+    p {
+      color: #000000;
     }
-  }
-  &:hover {
-    button {
-      opacity: 1;
-    }
-    transform: translateY(-3px);
   }
 }

@@ -2,14 +2,6 @@
 
 .present {
   @include ut.present-spacing;
-  p {
-    width: 50%;
-    margin: auto;
-    @media (max-width: 800px) {
-      width: 100%;
-      margin: 0;
-    }
-  }
   img {
     margin-top: 40px;
     @media (max-width: 800px) {

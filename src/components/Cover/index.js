@@ -1,18 +1,19 @@
 import styles from "./index.module.scss";
 
-export default function Cover({ title, subTitle, strong, bio, coverImg }) {
+export default function Cover({ title, strong, bio, coverImg }) {
   return (
-    <section className={`${styles.cover} mt-3`}>
-      <div className={`${styles.desc}`}>
-        <h3 className="text-capitalize text-primary mb-2 mb-md-3">{title}</h3>
-        <h5 className="mb-2 mb-md-3">{subTitle}</h5>
-        <p>
-          <span className="pe-1">{strong}</span>
-          {bio}
-        </p>
-      </div>
-      <div className={`${styles.coverImg} mt-3 mt-md-5 rounded-3 overflow-hidden`}>
+    <section className={`${styles.cover}`}>
+      <div className={`${styles.coverImg} overflow-hidden mb-5`}>
         <img src={coverImg} alt={`${title} case`} loading="lazy" />
+      </div>
+      <div className="container">
+        <div className={`${styles.desc}`}>
+          <h2 className="text-capitalize text-primary mb-2 mb-md-3">{title}</h2>
+          <p className="present-p">
+            <span className="pe-1">{strong}</span>
+            {bio}
+          </p>
+        </div>
       </div>
     </section>
   );

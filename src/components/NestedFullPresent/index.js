@@ -5,13 +5,13 @@ export default function NestedFullPresent({ title, guides }) {
     <section className={`${styles.present} container-fluid`}>
       <div className="container">
         <div className="mx-2 mx-md-5">
-          <h2 className="text-uppercase text-primary present-heading text-center mb-3 mb-md-5">
+          <h2 className="text-capitalize mb-3 mb-md-5">
             {title}
           </h2>
           {guides
             ? guides.map((item, index) => (
-                <div key={index} className="mb-4 text-center text-md-start">
-                  <h4 className="present-subheading text-uppercase mb-2">
+                <div key={index} className="mb-5">
+                  <h4 className="present-subheading text-capitalize mb-3">
                     {item.subTitle}
                   </h4>
                   {item.desc ? (
@@ -21,7 +21,7 @@ export default function NestedFullPresent({ title, guides }) {
                     src={item.img}
                     alt={`${title} img`}
                     loading="lazy"
-                    className="img-fluid mt-3 rounded-3 overflow-hidden"
+                    className="img-fluid mt-3   overflow-hidden"
                   />
                 </div>
               ))

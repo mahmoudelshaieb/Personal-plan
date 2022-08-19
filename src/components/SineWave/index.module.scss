@@ -3,25 +3,6 @@
 
 .wave {
   @include ut.present-spacing;
-  h2 {
-    @include fs.fontSize("36");
-    font-weight: 500;
-    line-height: 50px;
-    letter-spacing: 3.6px;
-    display: flex;
-    align-items: center;
-    @media (max-width: 600px) {
-      @include fs.fontSize("24");
-    }
-    span {
-      font-size: 42px;
-      font-weight: 700;
-      letter-spacing: 4.2px;
-      @media (max-width: 600px) {
-        @include fs.fontSize("30");
-      }
-    }
-  }
   p {
     width: 90%;
   }

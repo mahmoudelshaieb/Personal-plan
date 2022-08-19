@@ -3,8 +3,8 @@ import Status from "../../components/Status";
 // import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
-import BackButton from "../../components/BackBtn";
-import * as ROUTES from "../../constrains/routes";
+// import BackButton from "../../components/BackBtn";
+// import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
 import {
   courseAppCover,
@@ -17,7 +17,7 @@ import {
 } from "../../constrains/data";
 
 export default function CouserApp() {
-  const { coverTitle, subTitle, strong, bio, coverImg } = courseAppCover;
+  const { coverTitle, strong, bio, coverImg } = courseAppCover;
   const { flowTitle, flowDesc, flowImg } = CourseAppFlow;
   const { frameTitle, frameDesc, frameImg } = CourseAppFraming;
   const { visualTitle, visualDesc, visualImg } = CourseAppVisual;
@@ -25,16 +25,15 @@ export default function CouserApp() {
 
   return (
     <Fade bottom duration={500} distance="100px">
+      <Cover
+        title={coverTitle}
+        strong={strong}
+        bio={bio}
+        coverImg={coverImg}
+      />
       <div className="container">
-        <div className="mx-2 mx-md-5 mt-3 mt-lg-5">
-          <BackButton url={ROUTES.WORK} />
-          <Cover
-            title={coverTitle}
-            subTitle={subTitle}
-            strong={strong}
-            bio={bio}
-            coverImg={coverImg}
-          />
+        <div className="mt-3 mt-lg-5">
+          {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {courseAppProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">

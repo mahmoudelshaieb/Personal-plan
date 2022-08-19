@@ -13,7 +13,7 @@ export default function Nav({ fname, lname, profession }) {
   return (
     <Fade top duration={1000} distance="20px">
       <div
-        className={`${styles.styledNav} shadow-sm mb-4 position-sticky top-0`}
+        className={`${styles.styledNav} shadow-sm position-sticky top-0`}
       >
         <div className="container">
           <header className={`${styles.Nav} mx-2 mx-md-0`}>
@@ -55,7 +55,7 @@ export default function Nav({ fname, lname, profession }) {
                         aria-current="page"
                         exact
                       >
-                        <li className="nav-item text-uppercase ps-0 ps-lg-5 text-center">
+                        <li className="nav-item text-capitalize ps-0 ps-lg-5 text-center">
                           <span className="pb-2">{item.name}</span>
                         </li>
                       </NavLink>
@@ -63,7 +63,7 @@ export default function Nav({ fname, lname, profession }) {
                     <a
                       href="./assets/mahmoudhassancv.pdf"
                       target="_blank"
-                      className={`${styles.resume} btn btn-primary text-uppercase ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4 rounded-3 w-100`}
+                      className={`${styles.resume} btn btn-primary text-capitalize ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4   w-100`}
                     >
                       resume
                     </a>

@@ -3,8 +3,8 @@ import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
-import BackButton from "../../components/BackBtn";
-import * as ROUTES from "../../constrains/routes";
+// import BackButton from "../../components/BackBtn";
+// import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
 import {
   agencyCover,
@@ -18,7 +18,7 @@ import {
 } from "../../constrains/data";
 
 export default function Agency() {
-  const { coverTitle, coverSubTitle, strong, bio, coverImg } = agencyCover;
+  const { coverTitle, strong, bio, coverImg } = agencyCover;
   const { flowTitle, flowImg } = agencyFlow;
   const { landingTitle, landingDesc, landingImg } = agencyLanding;
   const { preTitle, preDesc, preImg } = agencyPre;
@@ -26,16 +26,15 @@ export default function Agency() {
   const { aboutTitle, aboutImg } = agencyAbout;
   return (
     <Fade bottom duration={500} distance="100px">
+      <Cover
+        title={coverTitle}
+        strong={strong}
+        bio={bio}
+        coverImg={coverImg}
+      />
       <div className="container">
         <div className="mx-2 mx-md-5 mt-3 mt-lg-5">
-          <BackButton url={ROUTES.WORK} />
-          <Cover
-            title={coverTitle}
-            subTitle={coverSubTitle}
-            strong={strong}
-            bio={bio}
-            coverImg={coverImg}
-          />
+          {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {agencyProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">

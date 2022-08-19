@@ -8,21 +8,24 @@ export default function FullPresent({
 }) {
   return (
     <section
-      className={`${styles.present} text-center container-fluid`}
+      className={`${styles.present} container-fluid`}
       style={{ backgroundColor: background }}
     >
       <div className="container">
         <div className="mx-2 mx-md-5">
-          <h2 className="text-uppercase text-primary present-heading">
+          <h3 className="text-capitalize mb-4">
             {title}
-          </h2>
+          </h3>
           {desc ? <p className="present-p">{desc}</p> : null}
-          <img
-            src={img}
-            alt={`${title} img`}
-            loading="lazy"
-            className="img-fluid rounded-3 overflow-hidden"
-          />
+          {
+            img ?
+              <img
+                src={img}
+                alt={`${title} img`}
+                loading="lazy"
+                className="img-fluid   overflow-hidden"
+              /> : null
+          }
         </div>
       </div>
     </section>

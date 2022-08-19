@@ -3,8 +3,8 @@ import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 import NestedFullPresent from "../../components/NestedFullPresent";
-import BackButton from "../../components/BackBtn";
-import * as ROUTES from "../../constrains/routes";
+// import BackButton from "../../components/BackBtn";
+// import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
 import {
   sakCover,
@@ -17,7 +17,7 @@ import {
 } from "../../constrains/data";
 
 export default function SakneenCase() {
-  const { coverTitle, coverSubTitle, strong, bio, coverImg } = sakCover;
+  const { coverTitle, strong, bio, coverImg } = sakCover;
   const { probDescPrimary, probDescsecondary, probImg } = sakProblem;
   const { solOneDescPrimary, solOneDescsecondary, solOneImg } = sakSolOne;
   const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = sakSolTwo;
@@ -26,16 +26,15 @@ export default function SakneenCase() {
 
   return (
     <Fade bottom duration={500} distance="100px">
+      <Cover
+        title={coverTitle}
+        strong={strong}
+        bio={bio}
+        coverImg={coverImg}
+      />
       <div className="container">
-        <div className="mx-2 mx-md-5 mt-3">
-          <BackButton url={ROUTES.WORK} />
-          <Cover
-            title={coverTitle}
-            subTitle={coverSubTitle}
-            strong={strong}
-            bio={bio}
-            coverImg={coverImg}
-          />
+        <div className="mt-3">
+          {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {sakProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">
@@ -47,14 +46,12 @@ export default function SakneenCase() {
       </div>
       <SineWave
         title="problem"
-        step="0"
         primaryDesc={probDescPrimary}
         secondaryDesc={probDescsecondary}
         img={probImg}
       />
       <SineWave
-        title="solution"
-        step="1"
+        title="search page"
         primaryDesc={solOneDescPrimary}
         secondaryDesc={solOneDescsecondary}
         img={solOneImg}
@@ -62,15 +59,13 @@ export default function SakneenCase() {
         RTL={true}
       />
       <SineWave
-        title="solution"
-        step="2"
+        title="filters"
         primaryDesc={solTwoDescPrimary}
         secondaryDesc={solTwoDescsecondary}
         img={solTwoImg}
       />
       <SineWave
-        title="solution"
-        step="3"
+        title="virtual tour"
         primaryDesc={solThreeDescPrimary}
         secondaryDesc={solThreeDescsecondary}
         img={solThreeImg}
@@ -82,11 +77,11 @@ export default function SakneenCase() {
         desc="making a lot of prototyping and this sample of it, financing flow recently added feature"
         img="./assets/sakneen/prototyping.webp"
       />
-      <FullPresent
+      {/* <FullPresent
         title="technical tools"
         img="./assets/sakneen/tech.webp"
         background="#f4f4f4"
-      />
+      /> */}
       <NestedFullPresent title="styles & guides" guides={sakAppGuide} />
     </Fade>
   );

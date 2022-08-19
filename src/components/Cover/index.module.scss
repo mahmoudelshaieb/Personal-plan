@@ -1,45 +1,22 @@
-@use "../../sass/fonts" as fs;
+// @use "../../sass/fonts" as fs;
 @use "../../sass/dynamics" as ut;
 
 .cover {
   .desc {
-    h3 {
-      @include fs.fontSize("40");
-      line-height: 40px;
-      font-weight: 600;
-      @media (max-width: 800px) {
-        @include fs.fontSize("30");
-      }
-    }
-    h5 {
-      @include fs.fontSize("24");
-      line-height: 40px;
-      font-weight: 500;
-      @media (max-width: 800px) {
-        @include fs.fontSize("18");
-      }
-    }
     p {
-      @include fs.fontSize("16");
-      line-height: 28px;
-      color: #191919e3;
-      font-weight: 400;
-      width: 50%;
+      color: #000000;
+      font-weight: 300;
+      width: 75%;
       text-align: left;
-      @media (max-width: 800px) {
+      @media (max-width: 1000px) {
         width: 100%;
-        @include fs.fontSize("14");
-      }
-      span {
-        font-weight: 500;
-        color: #191919de;
       }
     }
   }
   .coverImg {
-    @include ut.aspectRatio(36%, 2, cover, hidden);
-    @media (max-width: 800px) {
-      @include ut.aspectRatio(45%, 2, cover, hidden);
-    }
+    @include ut.aspectRatio(40%, 2, cover, visible);
+    // @media (max-width: 800px) {
+    //   @include ut.aspectRatio(45%, 2, cover, visible);
+    // }
   }
 }

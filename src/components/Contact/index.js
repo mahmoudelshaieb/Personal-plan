@@ -1,29 +1,16 @@
-import React, { useRef, useEffect } from "react";
-import styles from "./index.module.scss";
 import GetSocial from "../GetSocial";
 import Status from "../Status";
 import { experience } from "../../constrains/data";
-import lottie from "lottie-web";
 
 export default function Contact({ contactImg, contactInfo }) {
-  const contactAnime = useRef(null);
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: contactAnime.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("./contact.json"),
-    });
-  }, []);
   return (
-    <section className={`${styles.contact} container`}>
+    <section className={"container"}>
       <div className="row align-items-center">
         <div className="col-sm-12 col-lg-4 text-center text-md-left mb-3 mb-lg-0 mt-0 mt-md-5">
-          <div className="contactAnime" ref={contactAnime}></div>
+          <img className="img-fluid overflow-hidden" src={contactImg} alt="messages" loading="lazy" />
         </div>
         <div className="col-sm-12 col-lg-8 px-md-5 mt-0 mt-md-5">
-          <h2>
+          <h2 className="mb-3 mb-lg-5">
             Contact <span className="text-primary">info</span>
           </h2>
           {contactInfo.map((item, index) => (
@@ -47,13 +34,7 @@ export default function Contact({ contactImg, contactInfo }) {
           {experience.map((item, index) => (
             <div
               key={index}
-              className={`col-sm-12 ${
-                index === 0
-                  ? "col-lg-4"
-                  : index === 1
-                  ? "col-lg-2 px-3 p-lg-0"
-                  : "col-lg-3"
-              }`}
+              className={"col-sm-12 col-lg-6 mb-2 mb-lg-5"}
             >
               <Status title={item.title} collection={item.collection} />
             </div>

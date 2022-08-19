@@ -2,8 +2,8 @@ import Cover from "../../components/Cover";
 import Status from "../../components/Status";
 import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
-import BackButton from "../../components/BackBtn";
-import * as ROUTES from "../../constrains/routes";
+// import BackButton from "../../components/BackBtn";
+// import * as ROUTES from "../../constrains/routes";
 import { Fade } from "react-reveal";
 import {
   brokerCover,
@@ -18,7 +18,7 @@ import {
 } from "../../constrains/data";
 
 export default function BrokerApp() {
-  const { coverTitle, coverSubTitle, strong, bio, coverImg } = brokerCover;
+  const { coverTitle, strong, bio, coverImg } = brokerCover;
   const { probDescPrimary, probDescsecondary, probImg } = brokerProblem;
   const { solOneDescPrimary, solOneDescsecondary, solOneImg } = brokerSolOne;
   const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = brokerSolTwo;
@@ -30,16 +30,15 @@ export default function BrokerApp() {
 
   return (
     <Fade bottom duration={500} distance="100px">
+      <Cover
+        title={coverTitle}
+        strong={strong}
+        bio={bio}
+        coverImg={coverImg}
+      />
       <div className="container">
         <div className="mx-2 mx-md-5 mt-3">
-          <BackButton url={ROUTES.WORK} />
-          <Cover
-            title={coverTitle}
-            subTitle={coverSubTitle}
-            strong={strong}
-            bio={bio}
-            coverImg={coverImg}
-          />
+          {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {brokerProjectStatus.map((item, index) => (
               <div key={index} className="col-sm-12 col-lg-3">
@@ -51,14 +50,12 @@ export default function BrokerApp() {
       </div>
       <SineWave
         title="problem"
-        step="0"
         primaryDesc={probDescPrimary}
         secondaryDesc={probDescsecondary}
         img={probImg}
       />
       <SineWave
-        title="solution"
-        step="1"
+        title="search"
         primaryDesc={solOneDescPrimary}
         secondaryDesc={solOneDescsecondary}
         img={solOneImg}
@@ -67,16 +64,14 @@ export default function BrokerApp() {
         containImg={true}
       />
       <SineWave
-        title="solution"
-        step="2"
+        title="house card design"
         primaryDesc={solTwoDescPrimary}
         secondaryDesc={solTwoDescsecondary}
         img={solTwoImg}
         containImg={true}
       />
       <SineWave
-        title="solution"
-        step="3"
+        title="filters"
         primaryDesc={solThreeDescPrimary}
         secondaryDesc={solThreeDescsecondary}
         img={solThreeImg}

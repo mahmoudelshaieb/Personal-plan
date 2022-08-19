@@ -1,25 +1,10 @@
-@use "../../sass/fonts" as fs;
+// @use "../../sass/fonts" as fs;
 
 .abstract {
-  h2 {
-    @include fs.fontSize("24");
-    font-weight: 600;
-    letter-spacing: -0.6px;
-    line-height: 36px;
-    @media (max-width: 600px) {
-      @include fs.fontSize("18");
-    }
-  }
   p {
-    @include fs.fontSize("16");
-    line-height: 24px;
-    opacity: 0.87;
-    letter-spacing: 0.8px;
-    font-weight: normal;
     width: 50%;
     margin: auto;
-    @media (max-width: 800px) {
-      @include fs.fontSize("14");
+    @media (max-width: 1000px) {
       width: 100%;
       margin: 0;
     }

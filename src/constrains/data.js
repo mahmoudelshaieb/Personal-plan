@@ -3,21 +3,25 @@ import * as ROUTES from "./routes";
 const caseLinks = [
   {
     title: "sakneen",
+    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
     url: ROUTES.CASE_1,
     coverImg: "/assets/sakneen/cover2.webp",
   },
   {
     title: "course app",
+    desc: "IOS appcontain various of online course in programming, algorithms and data structures",
     url: ROUTES.CASE_2,
     coverImg: "/assets/courseApp/visual.webp",
   },
   {
     title: "agency portfolio",
+    desc: "Responsive website portfoliofor software agency looking for build web and mobile applications",
     url: ROUTES.CASE_3,
     coverImg: "/assets/agencyPortfolio/cover.webp",
   },
   {
     title: "broker app",
+    desc: "Mobile app for Brokers that is simple and easy to navigate and helps them to find their preferred project",
     url: ROUTES.CASE_4,
     coverImg: "/assets/broker/cover.webp",
   },

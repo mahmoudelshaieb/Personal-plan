@@ -1,17 +1,16 @@
-import styles from "./index.module.scss";
 import GetSocial from "../GetSocial";
 import Status from "../Status";
 import { experience } from "../../constrains/data";
 
 export default function About({ avatar, primaryBio, secondaryBio }) {
   return (
-    <section className={`${styles.about} container`}>
+    <section className={`container`}>
       <div className="row">
         <div className="col-sm-12 col-lg-4 text-center text-md-left mb-3 mb-lg-0 mt-0 mt-md-5">
-          <img className="img-fluid rounded-3 overflow-hidden shadow" src={avatar} alt="about" loading="lazy" />
+          <img className="img-fluid   overflow-hidden shadow" src={avatar} alt="about" loading="lazy" />
         </div>
         <div className="col-sm-12 col-lg-8 px-md-5 mt-0 mt-md-5">
-          <h2>
+          <h2 className="mb-3 mb-lg-5">
             <span className="text-primary">Hello</span>, Nice to{" "}
             <span className="text-primary">meet </span>you !
           </h2>
@@ -27,13 +26,7 @@ export default function About({ avatar, primaryBio, secondaryBio }) {
           {experience.map((item, index) => (
             <div
               key={index}
-              className={`col-sm-12 ${
-                index === 0
-                  ? "col-lg-4"
-                  : index === 1
-                  ? "col-lg-2 px-3 p-lg-0"
-                  : "col-lg-3"
-              }`}
+              className={"col-sm-12 col-lg-6 mb-2 mb-lg-5"}
             >
               <Status title={item.title} collection={item.collection} />
             </div>

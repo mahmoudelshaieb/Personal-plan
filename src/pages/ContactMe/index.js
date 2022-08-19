@@ -5,8 +5,8 @@ import { contactInfo } from "../../constrains/data";
 export default function ContactMe() {
   return (
     <Fade bottom duration={500} distance="100px">
-      <div className="mt-5 mx-2 mx-md-5">
-        <Contact contactImg="" contactInfo={contactInfo} />
+      <div className="mt-5">
+        <Contact contactImg="./assets/Messages.jpg" contactInfo={contactInfo} />
       </div>
     </Fade>
   );
