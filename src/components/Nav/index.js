@@ -7,7 +7,9 @@ import { navItems } from "../../constrains/data";
 export default function Nav({ fname, lname, profession }) {
   const menuToggle = () => {
     const navbarNav = document.getElementById("navbarNav");
+    const brandName = document.getElementById("brandName");
     navbarNav.classList.toggle("show");
+    brandName.classList.toggle("show");
   };
 
   return (
@@ -20,7 +22,9 @@ export default function Nav({ fname, lname, profession }) {
             <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid px-0">
                 <NavLink
+                  onClick={menuToggle}
                   className={`${styles.brand} text-capitalize`}
+                  id="brandName"
                   to={WORK}
                 >
                   <span className={`${styles.myName}`}>

@@ -32,7 +32,7 @@ export default function CouserApp() {
         coverImg={coverImg}
       />
       <div className="container">
-        <div className="mt-3 mt-lg-5">
+        <div className="mx-2 mx-md-5 mt-3">
           {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {courseAppProjectStatus.map((item, index) => (

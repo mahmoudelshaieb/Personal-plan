@@ -7,6 +7,7 @@ import SakneenCase from "../SakneenCase";
 import CourseApp from "../CourseApp";
 import AgencyPortfolio from "../AgencyPortfolio";
 import BrokerApp from "../BrokerApp";
+import SodicCase from "../SodicApp"
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
 import BackToTop from "../../components/BackToTop";
@@ -26,6 +27,7 @@ export default function App() {
         <Route path={ROUTES.CASE_2} component={CourseApp} />
         <Route path={ROUTES.CASE_3} component={AgencyPortfolio} />
         <Route path={ROUTES.CASE_4} component={BrokerApp} />
+        <Route path={ROUTES.CASE_5} component={SodicCase} />
       </Switch>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>

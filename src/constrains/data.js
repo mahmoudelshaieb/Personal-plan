@@ -2,28 +2,34 @@ import * as ROUTES from "./routes";
 
 const caseLinks = [
   {
-    title: "sakneen",
-    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
-    url: ROUTES.CASE_1,
-    coverImg: "/assets/sakneen/cover2.webp",
-  },
-  {
-    title: "course app",
-    desc: "IOS appcontain various of online course in programming, algorithms and data structures",
-    url: ROUTES.CASE_2,
-    coverImg: "/assets/courseApp/visual.webp",
-  },
-  {
-    title: "agency portfolio",
-    desc: "Responsive website portfoliofor software agency looking for build web and mobile applications",
-    url: ROUTES.CASE_3,
-    coverImg: "/assets/agencyPortfolio/cover.webp",
+    title: "SODIC",
+    desc: "Mobile application for one of the famous real estate developers in Egypt called SODIC",
+    url: ROUTES.CASE_5,
+    coverImg: "/assets/sodic/banner.webp",
   },
   {
     title: "broker app",
     desc: "Mobile app for Brokers that is simple and easy to navigate and helps them to find their preferred project",
     url: ROUTES.CASE_4,
     coverImg: "/assets/broker/cover.webp",
+  },
+  {
+    title: "course app",
+    desc: "IOS app contain various of online course in programming, algorithms and data structures",
+    url: ROUTES.CASE_2,
+    coverImg: "/assets/courseApp/visual.webp",
+  },
+  // {
+  //   title: "sakneen",
+  //   desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
+  //   url: ROUTES.CASE_1,
+  //   coverImg: "/assets/sakneen/cover2.webp",
+  // },
+  {
+    title: "agency portfolio",
+    desc: "Responsive website portfolio for software agency looking for build web and mobile applications",
+    url: ROUTES.CASE_3,
+    coverImg: "/assets/agencyPortfolio/cover.webp",
   },
 ];
 
@@ -405,7 +411,6 @@ const agencyGuide = [
 
 const brokerCover = {
   coverTitle: "Broker App",
-  coverSubTitle: "About the project",
   strong: "Broker, mobile application,",
   bio: " Because the world of real estate is complicated enough as it is, we've decided to create an app for Brokers that is simple and easy to navigate and helps them to find their preferred project and compare it to other compounds.",
   coverImg: "/assets/broker/cover.webp",
@@ -484,6 +489,97 @@ const brokerAccountFlow = {
 
 // broker
 
+// sodic
+
+const sodicCover = {
+  coverTitle: "sodic App",
+  strong: "",
+  bio: "As a part of my work with sakneen I had an opportunity to work with a mobile application for one of the famous real estate developers in Egypt called SODIC alongside my teammates. this app build a new buyer experience aim for an unprecedented level of transparency both for new buyers as well as for the existing community with features like (View Unit Details, Payment Notifications, ROI Calculator, Personalized Investment Opportunities, and Price Tracker).",
+  coverImg: "/assets/sodic/cover.webp",
+};
+
+const sodicProjectStatus = [
+  {
+    title: "date",
+    collection: [
+      {
+        bio: "February 2022, Present",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "Product Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Cairo, Egypt",
+      },
+    ],
+  },
+];
+
+const sodicProblem = {
+  probTitle: "The problem",
+  probDesc:
+    "Today, finding the right home is a time-consuming and overwhelming process that wastes valuable time, money, and effort. Sellers also lose out on opportunities simply because the buyer wasn’t aware of the seller’s offering.",
+};
+
+const sodicSolution = {
+  solTitle: "The solution",
+  solDesc:
+    "A mobile application for SODIC that makes the experience for a new buyer, homeowner, and Developer Analytics.",
+};
+
+const sodicUserResearch = {
+  sodicResearhTitle: "User Research",
+  sodicResearhDesc:
+    "Alongside sakneen business owners, we made a survey and collect quantitative and statistical data for the SODIC Marketing budget and had able to conduct an interview with SODIC owners and offer sakneen solution.",
+  sodicResearhImg: "/assets/sodic/research.jpg",
+};
+
+const sodicPersona = {
+  sodicPersonaTitle: "User Persona",
+  sodicPersonaImg: "/assets/sodic/persona.webp",
+};
+
+const sodicIteration = [
+  {
+    subTitle: "Iteration 2",
+    desc: "Design a chart to show the price changes in the last 1 and 5 years",
+    img: "/assets/sodic/iteration-2.webp",
+  },
+  {
+    subTitle: "Iteration 5",
+    desc: "Some sudden changes occurred in the market value of the property due to the decision of the Central Bank of Egypt to float the currency again and in this iteration designed a chart to show Investment Value Comparison with USD",
+    img: "/assets/sodic/iteration-5.webp",
+  },
+];
+
+const sodicGuide = [
+  {
+    subTitle: "design system",
+    img: "/assets/sodic/style-guide.webp",
+  },
+  {
+    subTitle: "components",
+    img: "/assets/sodic/components.webp",
+  },
+];
+
+const sodicDesigns = {
+  sodicDesignsTitle: "Final designs",
+  sodicDesignsImg: "/assets/sodic/visuals.webp",
+};
+
+// sodic
+
 export {
   experience,
   contactInfo,
@@ -521,5 +617,14 @@ export {
   brokerSolThree,
   brokerOnboardingFlow,
   brokerSearchFlow,
-  brokerAccountFlow
+  brokerAccountFlow,
+  sodicCover,
+  sodicProjectStatus,
+  sodicProblem,
+  sodicSolution,
+  sodicUserResearch,
+  sodicPersona,
+  sodicIteration,
+  sodicGuide,
+  sodicDesigns
 };

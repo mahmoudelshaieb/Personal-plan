@@ -11,6 +11,9 @@
     }
     p {
       color: #000000;
+      @media (min-width: 1400px) {
+        width: 85%;
+      }
     }
   }
 }

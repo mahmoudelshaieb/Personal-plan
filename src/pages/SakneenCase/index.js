@@ -33,7 +33,7 @@ export default function SakneenCase() {
         coverImg={coverImg}
       />
       <div className="container">
-        <div className="mt-3">
+        <div className="mx-2 mx-md-5 mt-3">
           {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {sakProjectStatus.map((item, index) => (

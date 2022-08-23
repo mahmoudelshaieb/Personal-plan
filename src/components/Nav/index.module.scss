@@ -45,6 +45,7 @@
       }
       .resume {
         @include fs.fontSize("14");
+        border-radius: 0!important;
       }
     }
   }
