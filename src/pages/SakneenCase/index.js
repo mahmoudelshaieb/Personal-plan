@@ -34,6 +34,7 @@ export default function SakneenCase() {
         </div>
         {sakScroll.map((item, index) => (
           <ClassicScroll key={index} images={item} />
+          
         ))}
       </div>
     </>
