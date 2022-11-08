@@ -1,0 +1,8 @@
+// @use "../../sass/fonts" as fs;
+@use "../../sass/dynamics" as ut;
+
+.card {
+  .cardImg {
+    @include ut.aspectRatio(100%, 2, cover, hidden);
+  }
+}
