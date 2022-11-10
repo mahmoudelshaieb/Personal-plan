@@ -4,6 +4,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
+import DrivingApp from "../DrivingApp";
 import CourseApp from "../CourseApp";
 import AgencyPortfolio from "../AgencyPortfolio";
 import BrokerApp from "../BrokerApp";
@@ -28,6 +29,7 @@ export default function App() {
         <Route path={ROUTES.CASE_3} component={AgencyPortfolio} />
         <Route path={ROUTES.CASE_4} component={BrokerApp} />
         <Route path={ROUTES.CASE_5} component={SodicCase} />
+        <Route path={ROUTES.CASE_6} component={DrivingApp} />
       </Switch>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>

@@ -2,29 +2,35 @@ import * as ROUTES from "./routes";
 
 const caseLinks = [
   {
+    title: "Real Estate Marketplace",
+    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
+    url: ROUTES.CASE_1,
+    coverImg: "/assets/sakneen/sak-cover.webp",
+  },  
+  {
+    title: "Driving Mobile App",
+    desc: "Driving mobile app in a specific area of Egypt",
+    url: ROUTES.CASE_6,
+    coverImg: "/assets/drivingApp/d-cover.webp",
+  },
+  {
     title: "Real Estate Mobile App",
     desc: "Mobile application for one of the famous real estate developers in Egypt called SODIC",
     url: ROUTES.CASE_5,
     coverImg: "/assets/sodic/banner.webp",
   },
   {
-    title: "Real Estate Marketplace",
-    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
-    url: ROUTES.CASE_1,
-    coverImg: "/assets/sakneen/sak-cover.webp",
-  },
-  {
-    title: "IOS Mobile App (Course App)",
+    title: "IOS Mobile App",
     desc: "IOS app contain various of online course in programming, algorithms and data structures",
     url: ROUTES.CASE_2,
-    coverImg: "/assets/courseApp/visual.webp",
+    coverImg: "/assets/courseApp/cover.webp",
   },
-  {
-    title: "agency portfolio",
-    desc: "Responsive website portfolio for software agency looking for build web and mobile applications",
-    url: ROUTES.CASE_3,
-    coverImg: "/assets/agencyPortfolio/cover.webp",
-  },
+  // {
+  //   title: "agency portfolio",
+  //   desc: "Responsive website portfolio for software agency looking for build web and mobile applications",
+  //   url: ROUTES.CASE_3,
+  //   coverImg: "/assets/agencyPortfolio/cover.webp",
+  // },
   // {
   //   title: "broker app",
   //   desc: "Mobile app for Brokers that is simple and easy to navigate and helps them to find their preferred project",
@@ -241,13 +247,58 @@ const sakAppGuide = [
 ];
 // sakneen Case
 
+// driving Case
+const drivingCover = {
+  coverTitle: "Driving Mobile App",
+  coverSubTitle: "Driving mobile app in a specific area of Egypt",
+  strong: "",
+  bio: "Driving mobile app in a specific area of Egypt",
+  coverImg: "/assets/drivingApp/d-cover.webp",
+};
+const drivingAppProjectStatus = [
+  {
+    title: "duration",
+    collection: [
+      {
+        bio: "4 weeks",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "UX/UI Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Cairo, Egypt",
+      },
+    ],
+  },
+];
+
+const drivingScroll = [
+  "/assets/drivingApp/d-1.webp",
+  "/assets/drivingApp/d-2.webp",
+  "/assets/drivingApp/d-3.webp",
+  "/assets/drivingApp/d-4.webp",
+  "/assets/drivingApp/d-com.webp",
+]
+
+// driving Case
+
 // CourseApp Case
 const courseAppCover = {
   coverTitle: "course app",
   subTitle: "About the project",
   strong: "ios app",
   bio: "contain various of online course in programming, algorithms and data structures, can select favorites course with specific teachers in this field .",
-  coverImg: "/assets/courseApp/visual.webp",
+  coverImg: "/assets/courseApp/cover.webp",
 };
 
 const courseAppProjectStatus = [
@@ -499,7 +550,7 @@ const brokerAccountFlow = {
 // sodic
 
 const sodicCover = {
-  coverTitle: "sodic App",
+  coverTitle: "Real Estate Mobile App",
   strong: "",
   bio: "As a part of my work with sakneen I had an opportunity to work with a mobile application for one of the famous real estate developers in Egypt called SODIC alongside my teammates. this app build a new buyer experience aim for an unprecedented level of transparency both for new buyers as well as for the existing community with features like (View Unit Details, Payment Notifications, ROI Calculator, Personalized Investment Opportunities, and Price Tracker).",
   coverImg: "/assets/sodic/cover.webp",
@@ -609,6 +660,9 @@ export {
   sakSolThree,
   sakAppGuide,
   sakScroll,
+  drivingCover,
+  drivingAppProjectStatus,
+  drivingScroll,
   agencyCover,
   agencyProjectStatus,
   agencyFlow,

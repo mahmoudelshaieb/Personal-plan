@@ -3,7 +3,7 @@
 
 .card {
   .cardImg {
-    @include ut.aspectRatio(60%, 2, cover, visible);
+    @include ut.aspectRatio(60%, 2, cover, hidden);
   }
   .cardInfo {
     h4 {
