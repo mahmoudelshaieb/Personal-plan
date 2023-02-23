@@ -6,3 +6,4 @@ export const CASE_2 = "/course-app";
 export const CASE_3 = "/agency-portfolio";
 export const CASE_4 = "/broker-app";
 export const CASE_5 = "/sodic-app";
+export const CASE_6 = "/driving-app";

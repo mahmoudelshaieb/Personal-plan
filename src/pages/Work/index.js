@@ -10,7 +10,7 @@ export default function Work() {
       <div className="container">
         <Abstract
           name="mahmoud"
-          bio="I'm a digital product designer, user interface creator for web and mobile applications based on user experience and business goals."
+          bio="I am a digital product designer with over 3 years of experience. I have completed several projects such as an e-commerce web app, a real estate marketplace, as well as SaaS projects such as dashboards and landing pages."
         />
         <div className="mt-3 mx-2 mx-md-5">
           <div className="row">
