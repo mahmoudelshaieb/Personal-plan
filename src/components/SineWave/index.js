@@ -17,7 +17,7 @@ export default function SineWave({
       <div className="container">
         <div
           className={`${RTL ? "flex-row-reverse" : ""
-            } mx-2 mx-md-5 row align-items-center`}
+            } row align-items-center`}
         >
           <div
             className={`col-sm-12 col-lg-5 p-0 ${RTL ? "ps-2 ps-lg-5" : ""}`}

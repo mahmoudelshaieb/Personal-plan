@@ -9,7 +9,7 @@ export default function Footer({ fname, lname }) {
     <div
       className={`container`}
     >
-      <footer className={`${styles.footer} pt-4 mx-2 mx-md-0 bg-white`}>
+      <footer className={`${styles.footer} pt-4 bg-white`}>
         <div className="row">
           <div className="col-sm-12 col-md-6 mb-3">
             <img

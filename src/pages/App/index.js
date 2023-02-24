@@ -5,8 +5,6 @@ import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
 import DrivingApp from "../DrivingApp";
-import CourseApp from "../CourseApp";
-import AgencyPortfolio from "../AgencyPortfolio";
 import BrokerApp from "../BrokerApp";
 import SodicCase from "../SodicApp"
 import AboutMe from "../AboutMe";
@@ -25,8 +23,6 @@ export default function App() {
         <Route path={ROUTES.ABOUT} component={AboutMe} />
         <Route path={ROUTES.CONTACT} component={ContactMe} />
         <Route path={ROUTES.CASE_1} component={SakneenCase} />
-        <Route path={ROUTES.CASE_2} component={CourseApp} />
-        <Route path={ROUTES.CASE_3} component={AgencyPortfolio} />
         <Route path={ROUTES.CASE_4} component={BrokerApp} />
         <Route path={ROUTES.CASE_5} component={SodicCase} />
         <Route path={ROUTES.CASE_6} component={DrivingApp} />

@@ -6,7 +6,7 @@ const caseLinks = [
     desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
     url: ROUTES.CASE_1,
     coverImg: "/assets/sakneen/sak-cover.webp",
-  },  
+  },
   {
     title: "Driving Mobile App",
     desc: "Driving mobile app in a specific area of Egypt",
@@ -15,28 +15,10 @@ const caseLinks = [
   },
   {
     title: "Real Estate Mobile App",
-    desc: "Mobile application for one of the famous real estate developers in Egypt called SODIC",
+    desc: "Mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics",
     url: ROUTES.CASE_5,
     coverImg: "/assets/sodic/banner.webp",
   },
-  {
-    title: "IOS Mobile App",
-    desc: "IOS app contain various of online course in programming, algorithms and data structures",
-    url: ROUTES.CASE_2,
-    coverImg: "/assets/courseApp/cover.webp",
-  },
-  // {
-  //   title: "agency portfolio",
-  //   desc: "Responsive website portfolio for software agency looking for build web and mobile applications",
-  //   url: ROUTES.CASE_3,
-  //   coverImg: "/assets/agencyPortfolio/cover.webp",
-  // },
-  // {
-  //   title: "broker app",
-  //   desc: "Mobile app for Brokers that is simple and easy to navigate and helps them to find their preferred project",
-  //   url: ROUTES.CASE_4,
-  //   coverImg: "/assets/broker/cover.webp",
-  // },
 ];
 
 // Navigation bar items
@@ -148,11 +130,13 @@ const aboutMe = {
 
 // sakneen Case
 const sakCover = {
-  coverTitle: "Real Estate Marketplace (Sakneen)",
-  coverSubTitle: "Buy or sell homes in Egypt",
-  strong: "Sakneen, the online portal",
-  bio: "that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
   coverImg: "/assets/sakneen/sak-cover.webp",
+};
+
+const sakOverview = {
+  projectName: "Real Estate Marketplace (Sakneen)",
+  title: "overview",
+  desc: "Sakneen, the online portal that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
 };
 
 const sakProjectStatus = [
@@ -182,79 +166,25 @@ const sakProjectStatus = [
   },
 ];
 
-const sakProblem = {
-  probDescPrimary:
-    "Today, finding the right home is a time-consuming and overwhelming process that wastes valuable time, money, and effort. Sellers also lose out on opportunities simply because the buyer wasn’t aware of the seller’s offering.",
-  probDescsecondary:
-    "We’re looking to reinvent the real estate process. Standing in the way of a better real estate experience is disorganized public information, mismatched incentives in the sales process, and a lack of transparency around financials.",
-  probImg: "/assets/sakneen/problem2.webp",
-};
-
-const sakSolOne = {
-  solOneDescPrimary:
-    "First task is to bring transparency to the search process by helping real estate developers and sellers connect directly with potential buyers.",
-  solOneDescsecondary:
-    "While the need for a superior digital experience was always clear.",
-  solOneImg: "/assets/sakneen/sol1.webp",
-};
-
-const sakSolTwo = {
-  solTwoDescPrimary:
-    "Build a very exciting filter experience to helps home buyers reach to potential home that can save time and efforts.",
-  solTwoDescsecondary:
-    "The filtration system contain needs of home buyers to find potential home, can select specific location, developer, price range, property type and more. ",
-  solTwoImg: "/assets/sakneen/sol2.webp",
-};
-
-const sakSolThree = {
-  solThreeDescPrimary:
-    "Build 3D viewer, home buyer can take a 3D virtual tour for potential home and contain all information home buyers needs .",
-  solThreeDescsecondary:
-    "Call to actions by (call, mail and whatsApp) easily with home buyer hands.",
-  solThreeImg: "/assets/sakneen/3d-space.webp",
-};
-
 const sakScroll = [
   "/assets/sakneen/sak-1.webp",
   "/assets/sakneen/sak-2.webp",
   "/assets/sakneen/sak-3.webp",
-]
-
-
-const sakAppGuide = [
-  {
-    subTitle: "components",
-    desc: "Build component based on Material UI Design System",
-    img: "./assets/sakneen/components.webp",
-  },
-  {
-    subTitle: "colors",
-    img: "./assets/sakneen/colors.webp",
-  },
-  {
-    subTitle: "typography",
-    img: "./assets/sakneen/typo.webp",
-  },
-  {
-    subTitle: "iconography",
-    img: "./assets/sakneen/icons.webp",
-  },
-  {
-    subTitle: "imagery",
-    desc: "Work with professional photographers who go outdoor and take photos for homes then prepare images to work well in website .",
-    img: "./assets/sakneen/imagery.webp",
-  },
 ];
+
 // sakneen Case
 
 // driving Case
 const drivingCover = {
-  coverTitle: "Driving Mobile App",
-  coverSubTitle: "Driving mobile app in a specific area of Egypt",
-  strong: "",
-  bio: "Driving mobile app in a specific area of Egypt",
   coverImg: "/assets/drivingApp/d-cover.webp",
 };
+
+const drivingOverview = {
+  projectName: "Driving Mobile App",
+  title: "overview",
+  desc: "Driving mobile app in a specific area of Egypt",
+};
+
 const drivingAppProjectStatus = [
   {
     title: "duration",
@@ -288,189 +218,15 @@ const drivingScroll = [
   "/assets/drivingApp/d-3.webp",
   "/assets/drivingApp/d-4.webp",
   "/assets/drivingApp/d-com.webp",
-]
+];
 
 // driving Case
-
-// CourseApp Case
-const courseAppCover = {
-  coverTitle: "course app",
-  subTitle: "About the project",
-  strong: "ios app",
-  bio: "contain various of online course in programming, algorithms and data structures, can select favorites course with specific teachers in this field .",
-  coverImg: "/assets/courseApp/cover.webp",
-};
-
-const courseAppProjectStatus = [
-  {
-    title: "duration",
-    collection: [
-      {
-        bio: "4 weeks",
-      },
-    ],
-  },
-  {
-    title: "role",
-    collection: [
-      {
-        bio: "UX/UI Designer",
-      },
-    ],
-  },
-  {
-    title: "location",
-    collection: [
-      {
-        bio: "Cairo, Egypt",
-      },
-    ],
-  },
-];
-
-const CourseAppFlow = {
-  flowTitle: "user flow",
-  flowDesc:
-    "simple flow to show important screens and how user can navigate within those screens",
-  flowImg: "/assets/courseApp/userflow.webp",
-};
-
-const CourseAppFraming = {
-  frameTitle: "wireframing",
-  frameDesc:
-    "black and white low fidelity illustrations to show how elements working together before applying visuals",
-  frameImg: "/assets/courseApp/wireframing.webp",
-};
-
-const CourseAppVisual = {
-  visualTitle: "visual design",
-  visualDesc:
-    "high fidelity mockups illustrations after applying colors, icon, typography and any other UI elements",
-  visualImg: "/assets/courseApp/visual.webp",
-};
-
-const CourseAppPrototype = {
-  prototypeTitle: "prototyping",
-  prototypeDesc:
-    "make connections with all screens and present how user can move from frame to another with suitable transitions and easing",
-  prototypeImg: "/assets/courseApp/prototyping.webp",
-};
-
-const CourseAppGuide = [
-  {
-    subTitle: "colors",
-    img: "./assets/courseApp/colors.webp",
-  },
-  {
-    subTitle: "typography",
-    img: "./assets/courseApp/typography.webp",
-  },
-  {
-    subTitle: "iconography",
-    img: "./assets/courseApp/icons.webp",
-  },
-  {
-    subTitle: "illustration",
-    img: "./assets/courseApp/illastrations.webp",
-  },
-  {
-    subTitle: "components",
-    img: "./assets/courseApp/components.webp",
-  },
-];
-// CourseApp Case
-
-// agency portfolio case
-const agencyCover = {
-  coverTitle: "agency portfolio",
-  coverSubTitle: "About the project",
-  strong: "Responsive website portfolio",
-  bio: "for software agency looking for build web and mobile applications, also make services like quality assurance, web and graphics design .",
-  coverImg: "/assets/agencyPortfolio/cover.webp",
-};
-
-const agencyProjectStatus = [
-  {
-    title: "duration",
-    collection: [
-      {
-        bio: "3 weeks",
-      },
-    ],
-  },
-  {
-    title: "role",
-    collection: [
-      {
-        bio: "UX/UI Designer",
-      },
-    ],
-  },
-  {
-    title: "location",
-    collection: [
-      {
-        bio: "Cairo, Egypt",
-      },
-    ],
-  },
-];
-
-const agencyFlow = {
-  flowTitle: "information architecture",
-  flowImg: "/assets/agencyPortfolio/flow.webp",
-};
-
-const agencyLanding = {
-  landingTitle: "landing page",
-  landingDesc:
-    "First task is build landing page to show what type of services agency build, some projects examples of work and analytics .",
-  landingImg: "/assets/agencyPortfolio/landing.webp",
-};
-
-const agencyPre = {
-  preTitle: "presentation",
-  preDesc:
-    "Build full presentation to explain every project the agency built, show the problem, solution and used technologies",
-  preImg: "/assets/agencyPortfolio/pre.webp",
-};
-
-const agencyService = {
-  serviceTitle: "services",
-  serviceDesc:
-    "Design page to show what type of services and can filter by each service like mobile or web",
-  serviceImg: "/assets/agencyPortfolio/work.webp",
-};
-
-const agencyAbout = {
-  aboutTitle: "about & contact",
-  aboutImg: "/assets/agencyPortfolio/about-contact.webp",
-};
-
-const agencyGuide = [
-  {
-    subTitle: "components",
-    desc: "Build component based on twitter bootstrap",
-    img: "/assets/agencyPortfolio/components.webp",
-  },
-  {
-    subTitle: "colors",
-    img: "/assets/agencyPortfolio/colors.webp",
-  },
-  {
-    subTitle: "typography",
-    img: "/assets/agencyPortfolio/typo.webp",
-  },
-];
-
-// agency portfolio case
 
 // broker
 
 const brokerCover = {
   coverTitle: "Broker App",
-  strong: "Broker, mobile application,",
-  bio: " Because the world of real estate is complicated enough as it is, we've decided to create an app for Brokers that is simple and easy to navigate and helps them to find their preferred project and compare it to other compounds.",
+  bio: " Broker, mobile application,Because the world of real estate is complicated enough as it is, we've decided to create an app for Brokers that is simple and easy to navigate and helps them to find their preferred project and compare it to other compounds.",
   coverImg: "/assets/broker/cover.webp",
 };
 
@@ -504,7 +260,8 @@ const brokerProjectStatus = [
 const brokerProblem = {
   probDescPrimary:
     "In the real estate world, brokers suffer to find preferred projects, and compounds this wastes valuable time, money, and effort.",
-  probDescsecondary: "So we've decided to create an app for Brokers to help them to find their preferred projects and compounds.",
+  probDescsecondary:
+    "So we've decided to create an app for Brokers to help them to find their preferred projects and compounds.",
   probImg: "/assets/sakneen/problem2.webp",
 };
 
@@ -550,15 +307,18 @@ const brokerAccountFlow = {
 // sodic
 
 const sodicCover = {
-  coverTitle: "Real Estate Mobile App",
-  strong: "",
-  bio: "As a part of my work with sakneen I had an opportunity to work with a mobile application for one of the famous real estate developers in Egypt called SODIC alongside my teammates. this app build a new buyer experience aim for an unprecedented level of transparency both for new buyers as well as for the existing community with features like (View Unit Details, Payment Notifications, ROI Calculator, Personalized Investment Opportunities, and Price Tracker).",
   coverImg: "/assets/sodic/cover.webp",
+};
+
+const sodicOverview = {
+  projectName: "Real Estate Mobile App",
+  title: "overview",
+  desc: "As a part of my work with sakneen I had the opportunity to work with a mobile application for real estate developers in Egypt alongside my teammates. This app builds a new buyer experience aims for an unprecedented level of transparency both for new buyers as well as for the existing community with features like (View Unit Details, Payment Notifications, ROI Calculator, Personalized Investment Opportunities, and Price Tracker).",
 };
 
 const sodicProjectStatus = [
   {
-    title: "date",
+    title: "timeline",
     collection: [
       {
         bio: "February 2022, Present",
@@ -574,10 +334,10 @@ const sodicProjectStatus = [
     ],
   },
   {
-    title: "location",
+    title: "team size",
     collection: [
       {
-        bio: "Cairo, Egypt",
+        bio: "4 people",
       },
     ],
   },
@@ -590,33 +350,40 @@ const sodicProblem = {
 };
 
 const sodicSolution = {
-  solTitle: "The solution",
+  solTitle: "The challenge",
   solDesc:
-    "A mobile application for SODIC that makes the experience for a new buyer, homeowner, and Developer Analytics.",
+    "A mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics.",
+  solImages: [
+    "/assets/sodic/s1.webp",
+    "/assets/sodic/s2.webp",
+    "/assets/sodic/s3.webp",
+  ],
 };
 
 const sodicUserResearch = {
   sodicResearhTitle: "User Research",
   sodicResearhDesc:
     "Alongside sakneen business owners, we made a survey and collect quantitative and statistical data for the SODIC Marketing budget and had able to conduct an interview with SODIC owners and offer sakneen solution.",
-  sodicResearhImg: "/assets/sodic/research.jpg",
+  sodicResearhImg: ["/assets/sodic/research.jpg"],
 };
 
 const sodicPersona = {
   sodicPersonaTitle: "User Persona",
-  sodicPersonaImg: "/assets/sodic/persona.webp",
+  sodicPersonaImg: ["/assets/sodic/persona.webp"],
 };
 
 const sodicIteration = [
   {
     subTitle: "Iteration 2",
-    desc: "Design a chart to show the price changes in the last 1 and 5 years",
-    img: "/assets/sodic/iteration-2.webp",
+    img: "/assets/sodic/test-1.webp",
+  },
+  {
+    subTitle: "Iteration 3",
+    img: "/assets/sodic/test-2.webp",
   },
   {
     subTitle: "Iteration 5",
-    desc: "Some sudden changes occurred in the market value of the property due to the decision of the Central Bank of Egypt to float the currency again and in this iteration designed a chart to show Investment Value Comparison with USD",
-    img: "/assets/sodic/iteration-5.webp",
+    img: "/assets/sodic/test-3.webp",
   },
 ];
 
@@ -633,8 +400,20 @@ const sodicGuide = [
 
 const sodicDesigns = {
   sodicDesignsTitle: "Final designs",
-  sodicDesignsImg: "/assets/sodic/visuals.webp",
+  sodicDesignsImg: [
+    "/assets/sodic/v1.webp",
+    "/assets/sodic/v2.webp",
+    "/assets/sodic/v3.webp",
+    "/assets/sodic/v4.webp",
+    "/assets/sodic/v5.webp",
+    "/assets/sodic/v6.webp",
+  ],
 };
+
+const sodicSuccess = {
+  successTitle: "product success 🏅",
+  successDesc: "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app"
+}
 
 // sodic
 
@@ -644,33 +423,15 @@ export {
   getSocial,
   navItems,
   caseLinks,
-  courseAppCover,
-  courseAppProjectStatus,
-  CourseAppFlow,
-  CourseAppFraming,
-  CourseAppVisual,
-  CourseAppPrototype,
-  CourseAppGuide,
   aboutMe,
   sakCover,
+  sakOverview,
   sakProjectStatus,
-  sakProblem,
-  sakSolOne,
-  sakSolTwo,
-  sakSolThree,
-  sakAppGuide,
   sakScroll,
   drivingCover,
+  drivingOverview,
   drivingAppProjectStatus,
   drivingScroll,
-  agencyCover,
-  agencyProjectStatus,
-  agencyFlow,
-  agencyLanding,
-  agencyPre,
-  agencyService,
-  agencyAbout,
-  agencyGuide,
   brokerCover,
   brokerProjectStatus,
   brokerProblem,
@@ -681,6 +442,7 @@ export {
   brokerSearchFlow,
   brokerAccountFlow,
   sodicCover,
+  sodicOverview,
   sodicProjectStatus,
   sodicProblem,
   sodicSolution,
@@ -688,5 +450,6 @@ export {
   sodicPersona,
   sodicIteration,
   sodicGuide,
-  sodicDesigns
+  sodicDesigns,
+  sodicSuccess,
 };

@@ -1,11 +1,13 @@
 import styles from "./index.module.scss";
+import ClassicScroll from "../ClassicScroll";
 
 export default function FullPresent({
+  projectName,
   title,
   desc,
-  img,
+  img = [],
   background = "#ffffff",
-  padding = "96px 0"
+  padding = "96px 0",
 }) {
   return (
     <section
@@ -13,20 +15,19 @@ export default function FullPresent({
       style={{ backgroundColor: background, padding: padding }}
     >
       <div className="container">
-        <div className="mx-2 mx-md-5">
-          <h3 className="text-capitalize mb-4">
-            {title}
-          </h3>
-          {desc ? <p className="present-p">{desc}</p> : null}
-          {
-            img ?
-              <img
-                src={img}
-                alt={`${title} img`}
-                loading="lazy"
-                className="img-fluid   overflow-hidden"
-              /> : null
-          }
+        {projectName ? (
+          <h2 className="text-capitalize text-primary mb-2 mb-md-5">
+            {projectName}
+          </h2>
+        ) : null}
+        <h3 className="text-capitalize mb-4">{title}</h3>
+        {desc ? <p className="present-p">{desc}</p> : null}
+        <div>
+          {img
+            ? img.map((item, index) => (
+                <ClassicScroll key={index} images={item} />
+              ))
+            : null}
         </div>
       </div>
     </section>
