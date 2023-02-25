@@ -9,7 +9,7 @@ const caseLinks = [
   },
   {
     title: "Driving Mobile App",
-    desc: "Driving mobile app in a specific area of Egypt",
+    desc: "Make travel between Egypt's governorates easier and more affordable for travellers by sharing trips with nearby networks",
     url: ROUTES.CASE_6,
     coverImg: "/assets/drivingApp/d-cover.webp",
   },
@@ -182,7 +182,7 @@ const drivingCover = {
 const drivingOverview = {
   projectName: "Driving Mobile App",
   title: "overview",
-  desc: "Driving mobile app in a specific area of Egypt",
+  desc: "UCAR is a freelance project on Upwork. This project's goal is to make travel between Egypt's governorates easier and more affordable for travellers by sharing trips with nearby networks.",
 };
 
 const drivingAppProjectStatus = [
@@ -206,19 +206,102 @@ const drivingAppProjectStatus = [
     title: "location",
     collection: [
       {
-        bio: "Cairo, Egypt",
+        bio: "Upwork",
       },
     ],
   },
 ];
 
-const drivingScroll = [
-  "/assets/drivingApp/d-1.webp",
-  "/assets/drivingApp/d-2.webp",
-  "/assets/drivingApp/d-3.webp",
-  "/assets/drivingApp/d-4.webp",
-  "/assets/drivingApp/d-com.webp",
-];
+const drivingProblem = {
+  probTitle: "The problem",
+  probDesc:
+    "Egyptians are having difficulty traveling from one governorate to another. Traveling within Egypt between governorates is painful and unsafe, and finding the right ride or transportation is an overwhelming process that wastes valuable time, effort, and money.",
+};
+
+const drivingSolution = {
+  solTitle: "project goals",
+  solSubTitle: "Trip sharing, Drive or Ride",
+  solDesc1:
+    "As a driver, can utilize his personal vehicle and share a trip with surrounding networks of riders and make money.",
+  solDesc2:
+    "As a rider, can submit incoming trips and connect with drivers if their trips match. it’s lower cost and save money.",
+  solImages: [
+    "/assets/drivingApp/s1.webp",
+    "/assets/drivingApp/s2.webp",
+    "/assets/drivingApp/s3.webp",
+  ],
+};
+
+const drivingResearch = {
+  researchTitle: "User Research",
+  researchDesc1:
+    "The problem of travel between governorates in Egypt began due to a lack of interest in the public transportation network. I and people nearby are traveling a lot, and a huge majority of travelers experience the same problem while traveling between governorates.",
+  researchDesc2:
+    "So I began researching this topic in order to find a solution, and I asked a group of people if there could be an application like Uber that could solve this problem. I interviewed people who are already using travel apps like Uber. Some of the pain points are:",
+  researchLists: [
+    "It's only in the capital of Egypt",
+    "The price is very high",
+  ],
+};
+
+const drivingAnalysis = {
+  analysisTitle: "Competitive analysis",
+  analysisDesc:
+    "After the interview, take notes. I analyzed 4 most popular apps surrounding this goal and topic and I found that none of them can solve the problem and help passengers have a comfortable and affordable trip.",
+  analysisLists: [
+    "Uber",
+    "SWVL",
+    "InDriver",
+    "HitchHiker",
+  ],
+};
+
+const drivingPersona = {
+  personaTitle: "User Persona",
+  personaImages: [
+    "/assets/drivingApp/persona1.webp",
+    "/assets/drivingApp/persona2.webp",
+  ],
+};
+
+const drivingFlow = {
+  flowTitle: "User Flow",
+  flowImages: [
+    "/assets/drivingApp/user-flow.png",
+  ],
+};
+
+const drivingTesting = {
+  testTitle: "User testing, iteration designs",
+  testDesc:"Conducting user tests with a group of target users and getting feedback. We've gone through several design iterations in order to improve some designs and add new features.",
+  testImages: [
+    "/assets/drivingApp/test1.webp",
+    "/assets/drivingApp/test2.webp",
+    "/assets/drivingApp/test3.webp",
+  ],
+};
+const drivingDesigns = {
+  designsTitle: "Final designs",
+  designsImg: [
+    "/assets/drivingApp/d-1.webp",
+    "/assets/drivingApp/d-2.webp",
+    "/assets/drivingApp/d-3.webp",
+    "/assets/drivingApp/d-4.webp",
+    "/assets/drivingApp/d-com.webp",
+  ],
+};
+
+const drivingLearning = {
+  learnTitle: "what i learned 👨🏼‍💻",
+  learnList: [
+    "How to conduct user research and make a competitive analysis",
+    "How to listen to potential users to improve UX usability",
+    "Analyzed the most popular apps surrounding this goal to conduct a competitive analysis",
+    "Built UI/UX mobile application with 2+ iterations of user flows and prototyping",
+    "Designed 20+ reusable components in Figma to increase design speed and ensure quality delivery on time",
+  ],
+};
+
 
 // driving Case
 
@@ -412,8 +495,9 @@ const sodicDesigns = {
 
 const sodicSuccess = {
   successTitle: "product success 🏅",
-  successDesc: "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app"
-}
+  successDesc:
+    "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app",
+};
 
 const sodicLearning = {
   learnTitle: "what i learned 👨🏼‍💻",
@@ -423,7 +507,7 @@ const sodicLearning = {
     "Managed incoming designs, assisted teammates and reviewed styles",
     "Cooperated with software engineers to deliver design assets for development process",
   ],
-}
+};
 
 // sodic
 
@@ -441,7 +525,15 @@ export {
   drivingCover,
   drivingOverview,
   drivingAppProjectStatus,
-  drivingScroll,
+  drivingProblem,
+  drivingSolution,
+  drivingResearch,
+  drivingAnalysis,
+  drivingPersona,
+  drivingFlow,
+  drivingTesting,
+  drivingLearning,
+  drivingDesigns,
   brokerCover,
   brokerProjectStatus,
   brokerProblem,

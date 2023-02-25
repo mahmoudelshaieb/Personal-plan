@@ -5,7 +5,9 @@ import ListItem from "../ListItem";
 export default function FullPresent({
   projectName,
   title,
+  subTitle,
   desc,
+  descSecondry,
   img = [],
   lists = [],
   background = "#ffffff",
@@ -23,7 +25,9 @@ export default function FullPresent({
           </h2>
         ) : null}
         <h3 className="text-capitalize mb-4">{title}</h3>
+        {subTitle ? <h5 className="">{subTitle}</h5> : null}
         {desc ? <p className="present-p">{desc}</p> : null}
+        {descSecondry ? <p className="present-p">{descSecondry}</p> : null}
         <div>
           {img
             ? img.map((item, index) => (
