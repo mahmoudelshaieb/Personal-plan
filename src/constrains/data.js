@@ -415,6 +415,16 @@ const sodicSuccess = {
   successDesc: "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app"
 }
 
+const sodicLearning = {
+  learnTitle: "what i learned 👨🏼‍💻",
+  learnList: [
+    "Collaborated closely with management and product design team regularly in order to get feedback and show progress on designs",
+    "Increase design speed and ensure quality delivery on time by designing reusable components in Figma",
+    "Managed incoming designs, assisted teammates and reviewed styles",
+    "Cooperated with software engineers to deliver design assets for development process",
+  ],
+}
+
 // sodic
 
 export {
@@ -452,4 +462,5 @@ export {
   sodicGuide,
   sodicDesigns,
   sodicSuccess,
+  sodicLearning,
 };

@@ -15,7 +15,8 @@ import {
   sodicGuide,
   sodicIteration,
   sodicDesigns,
-  sodicSuccess
+  sodicSuccess,
+  sodicLearning
 } from "../../constrains/data";
 
 export default function SodicCase() {
@@ -28,6 +29,7 @@ export default function SodicCase() {
   const { sodicPersonaTitle, sodicPersonaImg } = sodicPersona;
   const { sodicDesignsTitle, sodicDesignsImg } = sodicDesigns;
   const { successTitle, successDesc } = sodicSuccess;
+  const { learnTitle, learnList } = sodicLearning;
 
   return (
     <>
@@ -83,6 +85,7 @@ export default function SodicCase() {
           padding={"24px 0"}
         />
         <FullPresent title={successTitle} desc={successDesc} padding={"24px 0"} />
+        <FullPresent title={learnTitle} lists={learnList} padding={"24px 0"} />
       </div>
     </>
   );

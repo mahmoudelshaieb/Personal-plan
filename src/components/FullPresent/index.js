@@ -1,11 +1,13 @@
 import styles from "./index.module.scss";
 import ClassicScroll from "../ClassicScroll";
+import ListItem from "../ListItem";
 
 export default function FullPresent({
   projectName,
   title,
   desc,
   img = [],
+  lists = [],
   background = "#ffffff",
   padding = "96px 0",
 }) {
@@ -29,6 +31,13 @@ export default function FullPresent({
               ))
             : null}
         </div>
+        {lists ? (
+          <ul className="ps-4">
+            {lists.map((list, index) => (
+              <ListItem key={index} lists={list} />
+            ))}
+          </ul>
+        ) : null}
       </div>
     </section>
   );
