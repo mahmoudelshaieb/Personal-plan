@@ -30,16 +30,14 @@ export default function SakneenCase() {
             {/* <BackButton url={ROUTES.WORK} /> */}
             <div className="row justify-content-between mt-3 mt-md-5">
               {sakProjectStatus.map((item, index) => (
-                <div key={index} className="col-sm-12 col-lg-3 pe-0">
+                <div key={index} className="col-sm-12 col-lg-3 pe-0 mb-5">
                   <Status title={item.title} collection={item.collection} />
                 </div>
               ))}
             </div>
           </div>
-          {sakScroll.map((item, index) => (
-            <ClassicScroll key={index} images={item} background={true} />
-          ))}
         </div>
+        <ClassicScroll images={sakScroll} />
       </div>
     </>
   );

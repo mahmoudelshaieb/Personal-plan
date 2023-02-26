@@ -2,6 +2,10 @@
 
 export default function ListItem({ lists }) {
   return (
-      <li className="pb-2 present-p">{lists}</li>
+    <ul className="ps-4">
+      {lists.map((list, index) => (
+        <li key={index} className="present-p">{list}</li>
+      ))}
+    </ul>
   );
 }

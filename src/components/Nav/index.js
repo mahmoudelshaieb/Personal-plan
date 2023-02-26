@@ -18,7 +18,7 @@ export default function Nav({ fname, lname, profession }) {
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid px-0">
               <NavLink
-                onClick={menuToggle}
+                // onClick={menuToggle}
                 className={`${styles.brand} text-capitalize`}
                 id="brandName"
                 to={WORK}

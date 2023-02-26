@@ -11,12 +11,11 @@ export default function FullPresent({
   img = [],
   lists = [],
   background = "#ffffff",
-  padding = "96px 0",
 }) {
   return (
     <section
       className={`${styles.present} container-fluid`}
-      style={{ backgroundColor: background, padding: padding }}
+      style={{ backgroundColor: background }}
     >
       <div className="container">
         {projectName ? (
@@ -28,20 +27,8 @@ export default function FullPresent({
         {subTitle ? <h5 className="">{subTitle}</h5> : null}
         {desc ? <p className="present-p">{desc}</p> : null}
         {descSecondry ? <p className="present-p">{descSecondry}</p> : null}
-        <div>
-          {img
-            ? img.map((item, index) => (
-                <ClassicScroll key={index} images={item} />
-              ))
-            : null}
-        </div>
-        {lists ? (
-          <ul className="ps-4">
-            {lists.map((list, index) => (
-              <ListItem key={index} lists={list} />
-            ))}
-          </ul>
-        ) : null}
+        {img ? <ClassicScroll images={img} /> : null}
+        {lists ? <ListItem lists={lists} /> : null}
       </div>
     </section>
   );

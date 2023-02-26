@@ -265,7 +265,7 @@ const drivingPersona = {
 };
 
 const drivingFlow = {
-  flowTitle: "User Flow",
+  flowTitle: "Information Architecture",
   flowImages: [
     "/assets/drivingApp/user-flow.png",
   ],

@@ -16,7 +16,7 @@ import {
   sodicIteration,
   sodicDesigns,
   sodicSuccess,
-  sodicLearning
+  sodicLearning,
 } from "../../constrains/data";
 
 export default function SodicCase() {
@@ -35,12 +35,7 @@ export default function SodicCase() {
     <>
       <Cover coverImg={coverImg} />
       <div className="compact-page">
-        <FullPresent
-          projectName={projectName}
-          title={title}
-          desc={desc}
-          padding={"24px 0"}
-        />
+        <FullPresent projectName={projectName} title={title} desc={desc} />
         <div className="container">
           {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-between mt-3 mt-md-5">
@@ -62,29 +57,16 @@ export default function SodicCase() {
           title={sodicResearhTitle}
           desc={sodicResearhDesc}
           img={sodicResearhImg}
-          padding={"24px 0"}
         />
+        <FullPresent title={sodicPersonaTitle} img={sodicPersonaImg} />
+        <NestedFullPresent title="design iterations" guides={sodicIteration} />
+        <NestedFullPresent title="styles & guides" guides={sodicGuide} />
+        <FullPresent title={sodicDesignsTitle} img={sodicDesignsImg} />
         <FullPresent
-          title={sodicPersonaTitle}
-          img={sodicPersonaImg}
+          title={successTitle}
+          desc={successDesc}
           padding={"24px 0"}
         />
-        <NestedFullPresent
-          title="design iterations"
-          guides={sodicIteration}
-          padding={"24px 0"}
-        />
-        <NestedFullPresent
-          title="styles & guides"
-          guides={sodicGuide}
-          padding={"24px 0"}
-        />
-        <FullPresent
-          title={sodicDesignsTitle}
-          img={sodicDesignsImg}
-          padding={"24px 0"}
-        />
-        <FullPresent title={successTitle} desc={successDesc} padding={"24px 0"} />
         <FullPresent title={learnTitle} lists={learnList} padding={"24px 0"} />
       </div>
     </>

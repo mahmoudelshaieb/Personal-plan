@@ -37,12 +37,7 @@ export default function DrivingApp() {
     <>
       <Cover coverImg={coverImg} />
       <div className="compact-page">
-        <FullPresent
-          projectName={projectName}
-          title={title}
-          desc={desc}
-          padding={"24px 0"}
-        />
+        <FullPresent projectName={projectName} title={title} desc={desc} />
         {/* <BackButton url={ROUTES.WORK} /> */}
         <div className="container">
           <div className="row justify-content-between mt-3 mt-md-5">
@@ -53,42 +48,30 @@ export default function DrivingApp() {
             ))}
           </div>
         </div>
-        <FullPresent title={probTitle} desc={probDesc} padding={"24px 0"} />
+        <FullPresent title={probTitle} desc={probDesc} />
         <FullPresent
           title={solTitle}
           subTitle={solSubTitle}
           desc={solDesc1}
           descSecondry={solDesc2}
           img={solImages}
-          padding={"0"}
         />
         <FullPresent
           title={researchTitle}
           desc={researchDesc1}
           descSecondry={researchDesc2}
           lists={researchLists}
-          padding={"24px 0"}
         />
         <FullPresent
           title={analysisTitle}
           desc={analysisDesc}
           lists={analysisLists}
-          padding={"24px 0"}
         />
-        <FullPresent
-          title={personaTitle}
-          img={personaImages}
-          padding={"24px 0"}
-        />
-        <FullPresent title={flowTitle} img={flowImages} padding={"24px 0"} />
-        <FullPresent
-          title={testTitle}
-          desc={testDesc}
-          img={testImages}
-          padding={"24px 0"}
-        />
-        <FullPresent title={designsTitle} img={designsImg} padding={"24px 0"} />
-        <FullPresent title={learnTitle} lists={learnList} padding={"24px 0"} />
+        <FullPresent title={personaTitle} img={personaImages} />
+        <FullPresent title={flowTitle} img={flowImages} />
+        <FullPresent title={testTitle} desc={testDesc} img={testImages} />
+        <FullPresent title={designsTitle} img={designsImg} />
+        <FullPresent title={learnTitle} lists={learnList} />
       </div>
     </>
   );
