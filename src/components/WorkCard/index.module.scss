@@ -3,7 +3,9 @@
 
 .card {
   .cardImg {
-    @include ut.aspectRatio(60%, 2, cover, hidden);
+    border-radius: 8px;
+    overflow: hidden;
+    @include ut.aspectRatio(55%, 2, cover, hidden);
     background: linear-gradient(0deg, #00000020 50%, #ffffff00 100%);
   }
   .cardInfo {

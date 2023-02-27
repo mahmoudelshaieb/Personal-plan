@@ -15,7 +15,7 @@ export default function Nav({ fname, lname, profession }) {
     <div className={`${styles.styledNav} shadow-sm position-sticky top-0`}>
       <div className="container">
         <header className={`${styles.Nav}`}>
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className="navbar navbar-expand-lg navbar-light p-0">
             <div className="container-fluid px-0">
               <NavLink
                 // onClick={menuToggle}
@@ -63,7 +63,7 @@ export default function Nav({ fname, lname, profession }) {
                   <a
                     href="./assets/mahmoudhassancv.pdf"
                     target="_blank"
-                    className={`${styles.resume} btn btn-primary text-capitalize ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4   w-100`}
+                    className={`${styles.resume} btn btn-primary text-capitalize rounded-3 ms-0 ms-lg-5 my-2 my-lg-0 py-2 px-4 w-100`}
                   >
                     resume
                   </a>

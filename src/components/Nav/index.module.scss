@@ -9,8 +9,12 @@
     .brand {
       text-decoration: none;
       color: #000000;
+      transform: translateY(4px);
+      @media (max-width: 992px) {
+        transform: translateY(0);
+      }
       .myName {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         @include fs.fontSize("24");
         @media (max-width: 600px) {
@@ -45,7 +49,6 @@
       }
       .resume {
         @include fs.fontSize("14");
-        border-radius: 0!important;
       }
     }
   }

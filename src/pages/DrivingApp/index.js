@@ -1,6 +1,7 @@
 import Cover from "../../components/Cover";
 import Status from "../../components/Status";
 import FullPresent from "../../components/FullPresent";
+import InsightCard from "../../components/SummaryInsights";
 // import BackButton from "../../components/BackBtn";
 // import * as ROUTES from "../../constrains/routes";
 import {
@@ -16,6 +17,7 @@ import {
   drivingFlow,
   drivingTesting,
   drivingLearning,
+  drivingInsights
 } from "../../constrains/data";
 
 export default function DrivingApp() {
@@ -38,7 +40,7 @@ export default function DrivingApp() {
       <Cover coverImg={coverImg} />
       <div className="compact-page">
         <FullPresent projectName={projectName} title={title} desc={desc} />
-        {/* <BackButton url={ROUTES.WORK} /> */}
+        <InsightCard insights={drivingInsights} />
         <div className="container">
           <div className="row justify-content-between mt-3 mt-md-5">
             {drivingAppProjectStatus.map((item, index) => (

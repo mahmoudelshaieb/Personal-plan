@@ -302,6 +302,21 @@ const drivingLearning = {
   ],
 };
 
+const drivingInsights = [
+  {
+    title: "Tools",
+    desc: "Figma, miro, user research, competitive analysis,mobile app design"
+  },
+  {
+    title: "Deliverables",
+    desc: "accessible figma file of 20+ components and mobile screens"
+  },
+  {
+    title: "Impacts",
+    desc: "Build UI/UX mobile app with 2+ iterations of user flows and prototyping"
+  },
+]
+
 
 // driving Case
 
@@ -534,6 +549,7 @@ export {
   drivingTesting,
   drivingLearning,
   drivingDesigns,
+  drivingInsights,
   brokerCover,
   brokerProjectStatus,
   brokerProblem,
