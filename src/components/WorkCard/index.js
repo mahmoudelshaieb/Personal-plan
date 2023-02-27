@@ -7,7 +7,7 @@ export default function WorkCard({ title, desc, img }) {
         <img className="img-fluid" src={img} alt={title} loading="lazy" />
       </div>
       <div className={`${styles.cardInfo}`}>
-        <h4 className="text-capitalize">{title}</h4>
+        <h3 className="text-capitalize">{title}</h3>
         <p className="present-p">{desc}</p>
       </div>
     </div>

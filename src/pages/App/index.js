@@ -5,7 +5,8 @@ import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
 import DrivingApp from "../DrivingApp";
-import BrokerApp from "../BrokerApp";
+import CoinApp from "../CoinApp";
+// import BrokerApp from "../BrokerApp";
 import SodicCase from "../SodicApp"
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
@@ -23,9 +24,9 @@ export default function App() {
         <Route path={ROUTES.ABOUT} component={AboutMe} />
         <Route path={ROUTES.CONTACT} component={ContactMe} />
         <Route path={ROUTES.CASE_1} component={SakneenCase} />
-        <Route path={ROUTES.CASE_4} component={BrokerApp} />
         <Route path={ROUTES.CASE_5} component={SodicCase} />
         <Route path={ROUTES.CASE_6} component={DrivingApp} />
+        <Route path={ROUTES.CASE_2} component={CoinApp} />
       </Switch>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>

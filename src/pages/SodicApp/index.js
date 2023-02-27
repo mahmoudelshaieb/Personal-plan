@@ -46,13 +46,8 @@ export default function SodicCase() {
             ))}
           </div>
         </div>
-        <FullPresent title={probTitle} desc={probDesc} padding={"24px 0"} />
-        <FullPresent
-          title={solTitle}
-          desc={solDesc}
-          img={solImages}
-          padding={"0"}
-        />
+        <FullPresent title={probTitle} desc={probDesc} />
+        <FullPresent title={solTitle} desc={solDesc} img={solImages} />
         <FullPresent
           title={sodicResearhTitle}
           desc={sodicResearhDesc}
@@ -62,12 +57,8 @@ export default function SodicCase() {
         <NestedFullPresent title="design iterations" guides={sodicIteration} />
         <NestedFullPresent title="styles & guides" guides={sodicGuide} />
         <FullPresent title={sodicDesignsTitle} img={sodicDesignsImg} />
-        <FullPresent
-          title={successTitle}
-          desc={successDesc}
-          padding={"24px 0"}
-        />
-        <FullPresent title={learnTitle} lists={learnList} padding={"24px 0"} />
+        <FullPresent title={successTitle} desc={successDesc} />
+        <FullPresent title={learnTitle} lists={learnList} />
       </div>
     </>
   );

@@ -2,10 +2,10 @@ import * as ROUTES from "./routes";
 
 const caseLinks = [
   {
-    title: "Real Estate Marketplace",
-    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
-    url: ROUTES.CASE_1,
-    coverImg: "/assets/sakneen/sak-cover.webp",
+    title: "Bitcoin Jungle",
+    desc: "Redesigning a responsive website for an existing mobile application as a freelancer on Upwork",
+    url: ROUTES.CASE_2,
+    coverImg: "/assets/coinApp/banner.webp",
   },
   {
     title: "Driving Mobile App",
@@ -18,6 +18,12 @@ const caseLinks = [
     desc: "Mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics",
     url: ROUTES.CASE_5,
     coverImg: "/assets/sodic/banner.webp",
+  },
+  {
+    title: "Real Estate Marketplace",
+    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
+    url: ROUTES.CASE_1,
+    coverImg: "/assets/sakneen/sak-cover.webp",
   },
 ];
 
@@ -248,12 +254,7 @@ const drivingAnalysis = {
   analysisTitle: "Competitive analysis",
   analysisDesc:
     "After the interview, take notes. I analyzed 4 most popular apps surrounding this goal and topic and I found that none of them can solve the problem and help passengers have a comfortable and affordable trip.",
-  analysisLists: [
-    "Uber",
-    "SWVL",
-    "InDriver",
-    "HitchHiker",
-  ],
+  analysisLists: ["Uber", "SWVL", "InDriver", "HitchHiker"],
 };
 
 const drivingPersona = {
@@ -266,14 +267,13 @@ const drivingPersona = {
 
 const drivingFlow = {
   flowTitle: "Information Architecture",
-  flowImages: [
-    "/assets/drivingApp/user-flow.png",
-  ],
+  flowImages: ["/assets/drivingApp/user-flow.png"],
 };
 
 const drivingTesting = {
   testTitle: "User testing, iteration designs",
-  testDesc:"Conducting user tests with a group of target users and getting feedback. We've gone through several design iterations in order to improve some designs and add new features.",
+  testDesc:
+    "Conducting user tests with a group of target users and getting feedback. We've gone through several design iterations in order to improve some designs and add new features.",
   testImages: [
     "/assets/drivingApp/test1.webp",
     "/assets/drivingApp/test2.webp",
@@ -305,20 +305,126 @@ const drivingLearning = {
 const drivingInsights = [
   {
     title: "Tools",
-    desc: "Figma, miro, user research, competitive analysis,mobile app design"
+    desc: "Figma, miro, user research, competitive analysis,mobile app design",
   },
   {
     title: "Deliverables",
-    desc: "accessible figma file of 20+ components and mobile screens"
+    desc: "Accessible Figma file of 20+ components and mobile screens",
   },
   {
     title: "Impacts",
-    desc: "Build UI/UX mobile app with 2+ iterations of user flows and prototyping"
+    desc: "Build UI/UX mobile app with 2+ iterations of user flows and prototyping",
   },
-]
-
+];
 
 // driving Case
+
+// coin app
+
+const coinCover = {
+  coverImg: "/assets/coinApp/cover.webp",
+};
+
+const coinOverview = {
+  projectName: "Bitcoin Jungle",
+  title: "overview",
+  desc: "I had the opportunity to work on a project redesigning a responsive website for an existing mobile application as a freelancer on Upwork. This project aims to display the latest posts about subjects such as vehicles, restaurants, and properties, among others. Users can search for any subject, and the app includes a map search flow that makes the search process easier.",
+};
+
+const coinInsights = [
+  {
+    title: "Tools",
+    desc: "Figma, user research, website design",
+  },
+  {
+    title: "Deliverables",
+    desc: "Accessible Figma file of 23+ components and user flows",
+  },
+  {
+    title: "Impacts",
+    desc: "Build Responsive wesite design with 2+ iterations of user flows and prototyping",
+  },
+];
+
+const coinProjectStatus = [
+  {
+    title: "Duration",
+    collection: [
+      {
+        bio: "4 Weeks",
+      },
+    ],
+  },
+  {
+    title: "role",
+    collection: [
+      {
+        bio: "UX/UX Designer",
+      },
+    ],
+  },
+  {
+    title: "location",
+    collection: [
+      {
+        bio: "Upwork",
+      },
+    ],
+  },
+];
+
+const coinProblem = {
+  probTitle: "The Problem, Research Summary",
+  probDesc:
+    "Before considering redesigning, I needed to learn more about the concept.",
+  probDesc2:
+    "Analyzed an existing mobile app and Looked at similar apps, and get some insights:",
+  probLists: [
+    "lack of text accessibility for map pins and Text sizes, white spacing, and the layout grid are all inconsistent",
+    "unclear toggle control between map and list view",
+    "The filter experience is overwhelming because it appears above the main view",
+    "Many users are unable to install the mobile app on their smartphones, so they need a website to access via a laptop or phone browser",
+  ],
+};
+
+const coinFlow = {
+  flowTitle: "User Flow",
+  flowImages: ["/assets/coinApp/user-flow.png"],
+};
+
+const coinDesigns = {
+  designsTitle: "Designs, Iterations",
+  designsImg: [
+    "/assets/coinApp/s1.webp",
+    "/assets/coinApp/s2.webp",
+    "/assets/coinApp/s3.webp",
+  ],
+};
+
+const coinSuccess = {
+  successTitle: "product success 🏅",
+  successDesc:
+    "Collaborated with a software engineer to deliver assets and components for the development process. (Still in the testing phase).",
+};
+
+const cointesting = {
+  testTitle: "Feedbacks",
+  testDesc:
+    "We evaluated the designs with a group of users and received some feedback.",
+  testImages: ["/assets/coinApp/feedback.webp"],
+};
+
+const coinLearning = {
+  learnTitle: "what i learned 👨🏼‍💻",
+  learnList: [
+    "Conducted user research with a group of target users",
+    "Collaborated with a software engineer to deliver user flows for the implementation process",
+    "Think and look for ways to make the user's search experience better",
+    "Learned to work per hour and organize tasks and milestones on upwork",
+  ],
+};
+
+// coin app
 
 // broker
 
@@ -571,4 +677,14 @@ export {
   sodicDesigns,
   sodicSuccess,
   sodicLearning,
+  coinCover,
+  coinOverview,
+  coinInsights,
+  coinProjectStatus,
+  coinProblem,
+  coinFlow,
+  coinDesigns,
+  coinSuccess,
+  cointesting,
+  coinLearning,
 };

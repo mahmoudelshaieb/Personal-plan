@@ -10,6 +10,7 @@ export default function FullPresent({
   descSecondry,
   img = [],
   lists = [],
+  url,
   background = "#ffffff",
 }) {
   return (
@@ -29,6 +30,11 @@ export default function FullPresent({
         {descSecondry ? <p className="present-p">{descSecondry}</p> : null}
         {img ? <ClassicScroll images={img} /> : null}
         {lists ? <ListItem lists={lists} /> : null}
+        {url ? (
+          <a href={url} target="_blank" className="w-100 d-inline-block text-center fs-5">
+            See Live Demo
+          </a>
+        ) : null}
       </div>
     </section>
   );
