@@ -1,15 +1,8 @@
 import styles from "./index.module.scss";
 
-export default function NestedFullPresent({
-  title,
-  guides,
-  padding = "96px 0",
-}) {
+export default function NestedFullPresent({ title, guides }) {
   return (
-    <section
-      className={`${styles.present} container-fluid`}
-      style={{ padding: padding }}
-    >
+    <section className={`${styles.present} container-fluid`}>
       <div className="container">
         <h2 className="text-capitalize mb-3 mb-md-5">{title}</h2>
         {guides

@@ -14,17 +14,17 @@
         transform: translateY(0);
       }
       .myName {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        @include fs.fontSize("24");
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        @include fs.fontSize("30");
         @media (max-width: 600px) {
           @include fs.fontSize("18");
         }
       }
       p {
         @include fs.fontSize("14");
-        opacity: 0.7;
-        font-weight: normal;
+        opacity: 0.78;
+        font-weight: 500;
         transform: translateY(-8px);
         @media (max-width: 600px) {
           @include fs.fontSize("12");
@@ -37,7 +37,7 @@
         span {
           font-size: calc((1 - 1) * 1.2vw + 1rem);
           line-height: 1.8;
-          font-weight: 500;
+          font-weight: 700;
           background: linear-gradient(currentColor 0 0) var(--p, 0) 100% /
             var(--d, 0) 3px no-repeat;
           transition: 0.3s, background-position 0s 0.3s;
@@ -49,6 +49,7 @@
       }
       .resume {
         @include fs.fontSize("14");
+        font-weight: 700 !important;
       }
     }
   }
