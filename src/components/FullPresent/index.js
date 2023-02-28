@@ -31,7 +31,12 @@ export default function FullPresent({
         {img ? <ClassicScroll images={img} /> : null}
         {lists ? <ListItem lists={lists} /> : null}
         {url ? (
-          <a href={url} target="_blank" className="w-100 d-inline-block text-center fs-5">
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            className="w-100 d-inline-block text-center fs-5"
+          >
             See Live Demo
           </a>
         ) : null}
