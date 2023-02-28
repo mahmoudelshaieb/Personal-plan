@@ -5,7 +5,7 @@ const caseLinks = [
     title: "Bitcoin Jungle",
     desc: "Redesigning a responsive website for an existing mobile application as a freelancer on Upwork",
     url: ROUTES.CASE_2,
-    coverImg: "/assets/coinApp/banner.webp",
+    coverImg: "/assets/cJungle/banner.webp",
   },
   {
     title: "Driving Mobile App",
@@ -322,7 +322,7 @@ const drivingInsights = [
 // coin app
 
 const coinCover = {
-  coverImg: "/assets/coinApp/cover.webp",
+  coverImg: "/assets/cJungle/cover.webp",
 };
 
 const coinOverview = {
@@ -389,15 +389,15 @@ const coinProblem = {
 
 const coinFlow = {
   flowTitle: "User Flow",
-  flowImages: ["/assets/coinApp/user-flow.png"],
+  flowImages: ["/assets/cJungle/user-flow.png"],
 };
 
 const coinDesigns = {
   designsTitle: "Designs, Iterations",
   designsImg: [
-    "/assets/coinApp/s1.webp",
-    "/assets/coinApp/s2.webp",
-    "/assets/coinApp/s3.webp",
+    "/assets/cJungle/s1.webp",
+    "/assets/cJungle/s2.webp",
+    "/assets/cJungle/s3.webp",
   ],
 };
 
@@ -411,7 +411,7 @@ const cointesting = {
   testTitle: "Feedbacks",
   testDesc:
     "We evaluated the designs with a group of users and received some feedback.",
-  testImages: ["/assets/coinApp/feedback.webp"],
+  testImages: ["/assets/cJungle/feedback.webp"],
 };
 
 const coinLearning = {
