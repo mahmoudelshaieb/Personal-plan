@@ -127,11 +127,17 @@ const getSocial = [
 ];
 // about
 const aboutMe = {
-  avatar: "./assets/me.jpeg",
+  avatar: "./assets/me.jpg",
   primaryBio:
-    "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I'm digital product designer, user interface creator for web and mobile applications based on user experience and business goals .",
-  secondaryBio:
-    "I develop myself in programming and frontend development, this current personal portfolio is completely customized and i have done it from scratch using react js (no website builder no CMS) .",
+    "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 3 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
+  secondaryBio:"I believe that good design is easy to understand, appropriate for people of various abilities and backgrounds, and solves user problems",
+  lists: [
+    "Empathize with users to identify their goal, pinpoint and motivations, also business objectives",
+    "Define user problem space based on research like (user stories, personas, Affinity Diagrams)",
+    "Take information, insights, and data gathered from research and create design solutions. That is the ideation process",
+    "Finally create prototypes of the designs and test with a group of users to get feedback",
+    "It’s an iterative process Test -> Ideate -> prototype (user-centered-design and iterative process)"
+  ],
 };
 
 // sakneen Case
