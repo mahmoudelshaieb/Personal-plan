@@ -130,13 +130,14 @@ const aboutMe = {
   avatar: "./assets/me.jpg",
   primaryBio:
     "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 3 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
-  secondaryBio:"I believe that good design is easy to understand, appropriate for people of various abilities and backgrounds, and solves user problems",
+  secondaryBio:
+    "I believe that good design is easy to understand, appropriate for people of various abilities and backgrounds, and solves user problems",
   lists: [
     "Empathize with users to identify their goal, pinpoint and motivations, also business objectives",
     "Define user problem space based on research like (user stories, personas, Affinity Diagrams)",
     "Take information, insights, and data gathered from research and create design solutions. That is the ideation process",
     "Finally create prototypes of the designs and test with a group of users to get feedback",
-    "It’s an iterative process Test -> Ideate -> prototype (user-centered-design and iterative process)"
+    "It’s an iterative process Test -> Ideate -> prototype (user-centered-design and iterative process)",
   ],
 };
 
@@ -179,9 +180,15 @@ const sakProjectStatus = [
 ];
 
 const sakScroll = [
-  "/assets/sakneen/sak-1.webp",
-  "/assets/sakneen/sak-2.webp",
-  "/assets/sakneen/sak-3.webp",
+  {
+    src: "/assets/sakneen/sak-1.webp",
+  },
+  {
+    src: "/assets/sakneen/sak-2.webp",
+  },
+  {
+    src: "/assets/sakneen/sak-3.webp",
+  },
 ];
 
 // sakneen Case
@@ -238,9 +245,15 @@ const drivingSolution = {
   solDesc2:
     "As a rider, can submit incoming trips and connect with drivers if their trips match. it’s lower cost and save money.",
   solImages: [
-    "/assets/drivingApp/s1.webp",
-    "/assets/drivingApp/s2.webp",
-    "/assets/drivingApp/s3.webp",
+    {
+      src: "/assets/drivingApp/s1.webp",
+    },
+    {
+      src: "/assets/drivingApp/s2.webp",
+    },
+    {
+      src: "/assets/drivingApp/s3.webp",
+    },
   ],
 };
 
@@ -266,14 +279,22 @@ const drivingAnalysis = {
 const drivingPersona = {
   personaTitle: "User Persona",
   personaImages: [
-    "/assets/drivingApp/persona1.webp",
-    "/assets/drivingApp/persona2.webp",
+    {
+      src: "/assets/drivingApp/persona1.webp",
+    },
+    {
+      src: "/assets/drivingApp/persona2.webp",
+    },
   ],
 };
 
 const drivingFlow = {
   flowTitle: "Information Architecture",
-  flowImages: ["/assets/drivingApp/user-flow.png"],
+  flowImages: [
+    {
+      src: "/assets/drivingApp/user-flow.png",
+    },
+  ],
 };
 
 const drivingTesting = {
@@ -281,19 +302,35 @@ const drivingTesting = {
   testDesc:
     "Conducting user tests with a group of target users and getting feedback. We've gone through several design iterations in order to improve some designs and add new features.",
   testImages: [
-    "/assets/drivingApp/test1.webp",
-    "/assets/drivingApp/test2.webp",
-    "/assets/drivingApp/test3.webp",
+    {
+      src: "/assets/drivingApp/test1.webp",
+    },
+    {
+      src: "/assets/drivingApp/test2.webp",
+    },
+    {
+      src: "/assets/drivingApp/test3.webp",
+    },
   ],
 };
 const drivingDesigns = {
   designsTitle: "Final designs",
   designsImg: [
-    "/assets/drivingApp/d-1.webp",
-    "/assets/drivingApp/d-2.webp",
-    "/assets/drivingApp/d-3.webp",
-    "/assets/drivingApp/d-4.webp",
-    "/assets/drivingApp/d-com.webp",
+    {
+      src: "/assets/drivingApp/d-1.webp",
+    },
+    {
+      src: "/assets/drivingApp/d-2.webp",
+    },
+    {
+      src: "/assets/drivingApp/d-3.webp",
+    },
+    {
+      src: "/assets/drivingApp/d-4.webp",
+    },
+    {
+      src: "/assets/drivingApp/d-com.webp",
+    },
   ],
 };
 
@@ -395,15 +432,25 @@ const coinProblem = {
 
 const coinFlow = {
   flowTitle: "User Flow",
-  flowImages: ["/assets/cJungle/user-flow.png"],
+  flowImages: [
+    {
+      src: "/assets/cJungle/user-flow.png",
+    },
+  ],
 };
 
 const coinDesigns = {
   designsTitle: "Designs, Iterations",
   designsImg: [
-    "/assets/cJungle/s1.webp",
-    "/assets/cJungle/s2.webp",
-    "/assets/cJungle/s3.webp",
+    {
+      src: "/assets/cJungle/s1.webp",
+    },
+    {
+      src: "/assets/cJungle/s2.webp",
+    },
+    {
+      src: "/assets/cJungle/s3.webp",
+    },
   ],
 };
 
@@ -417,7 +464,11 @@ const cointesting = {
   testTitle: "Feedbacks",
   testDesc:
     "We evaluated the designs with a group of users and received some feedback.",
-  testImages: ["/assets/cJungle/feedback.webp"],
+  testImages: [
+    {
+      src: "/assets/cJungle/feedback.webp",
+    },
+  ],
 };
 
 const coinLearning = {
@@ -564,9 +615,15 @@ const sodicSolution = {
   solDesc:
     "A mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics.",
   solImages: [
-    "/assets/sodic/s1.webp",
-    "/assets/sodic/s2.webp",
-    "/assets/sodic/s3.webp",
+    {
+      src: "/assets/sodic/s1.webp",
+    },
+    {
+      src: "/assets/sodic/s2.webp",
+    },
+    {
+      src: "/assets/sodic/s3.webp",
+    },
   ],
 };
 
@@ -574,12 +631,20 @@ const sodicUserResearch = {
   sodicResearhTitle: "User Research",
   sodicResearhDesc:
     "Alongside sakneen business owners, we made a survey and collect quantitative and statistical data for the SODIC Marketing budget and had able to conduct an interview with SODIC owners and offer sakneen solution.",
-  sodicResearhImg: ["/assets/sodic/research.jpg"],
+  sodicResearhImg: [
+    {
+      src: "/assets/sodic/research.jpg",
+    },
+  ],
 };
 
 const sodicPersona = {
   sodicPersonaTitle: "User Persona",
-  sodicPersonaImg: ["/assets/sodic/persona.webp"],
+  sodicPersonaImg: [
+    {
+      src: "/assets/sodic/persona.webp",
+    },
+  ],
 };
 
 const sodicIteration = [
@@ -611,12 +676,24 @@ const sodicGuide = [
 const sodicDesigns = {
   sodicDesignsTitle: "Final designs",
   sodicDesignsImg: [
-    "/assets/sodic/v1.webp",
-    "/assets/sodic/v2.webp",
-    "/assets/sodic/v3.webp",
-    "/assets/sodic/v4.webp",
-    "/assets/sodic/v5.webp",
-    "/assets/sodic/v6.webp",
+    {
+      src: "/assets/sodic/v1.webp",
+    },
+    {
+      src: "/assets/sodic/v2.webp",
+    },
+    {
+      src: "/assets/sodic/v3.webp",
+    },
+    {
+      src: "/assets/sodic/v4.webp",
+    },
+    {
+      src: "/assets/sodic/v5.webp",
+    },
+    {
+      src: "/assets/sodic/v6.webp",
+    },
   ],
 };
 

@@ -1,4 +1,6 @@
 import styles from "./index.module.scss";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export default function NestedFullPresent({ title, guides }) {
   return (
@@ -14,12 +16,14 @@ export default function NestedFullPresent({ title, guides }) {
                 {item.desc ? (
                   <p className="present-p m-0">{item.desc}</p>
                 ) : null}
-                <img
-                  src={item.img}
-                  alt={`${title} img`}
-                  loading="lazy"
-                  className="img-fluid mt-3   overflow-hidden"
-                />
+                <Zoom>
+                  <img
+                    src={item.img}
+                    alt={`${title} img`}
+                    loading="lazy"
+                    className="img-fluid mt-3   overflow-hidden"
+                  />
+                </Zoom>
               </div>
             ))
           : null}
