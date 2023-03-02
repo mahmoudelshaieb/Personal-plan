@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import * as ROUTES from "../../constrains/routes";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
@@ -19,15 +19,15 @@ export default function App() {
       <Nav fname="mahmoud" lname=" hassan" profession="product designer" />
       <ScrollToTop />
       <BackToTop />
-      <Switch>
-        <Route exact path={ROUTES.WORK} component={Work} />
-        <Route path={ROUTES.ABOUT} component={AboutMe} />
-        <Route path={ROUTES.CONTACT} component={ContactMe} />
-        <Route path={ROUTES.CASE_1} component={SakneenCase} />
-        <Route path={ROUTES.CASE_5} component={SodicCase} />
-        <Route path={ROUTES.CASE_6} component={DrivingApp} />
-        <Route path={ROUTES.CASE_2} component={CoinApp} />
-      </Switch>
+      <Routes>
+        <Route path={ROUTES.WORK} element={<Work />} />
+        <Route path={ROUTES.ABOUT} element={<AboutMe/>} />
+        <Route path={ROUTES.CONTACT} element={<ContactMe/>} />
+        <Route path={ROUTES.CASE_1} element={<SakneenCase/>} />
+        <Route path={ROUTES.CASE_5} element={<SodicCase/>} />
+        <Route path={ROUTES.CASE_6} element={<DrivingApp/>} />
+        <Route path={ROUTES.CASE_2} element={<CoinApp/>} />
+      </Routes>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>
   );
