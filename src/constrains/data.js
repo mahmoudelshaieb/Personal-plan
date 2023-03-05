@@ -3,24 +3,28 @@ import * as ROUTES from "./routes";
 const caseLinks = [
   {
     title: "Bitcoin Jungle",
+    workFlow:"Finished",
     desc: "Redesigning a responsive website for an existing mobile application as a freelancer on Upwork",
     url: ROUTES.CASE_2,
     coverImg: "/assets/cJungle/banner.webp",
   },
   {
     title: "Driving Mobile App",
+    workFlow:"Finished",
     desc: "Make travel between Egypt's governorates easier and more affordable for travellers by sharing trips with nearby networks",
     url: ROUTES.CASE_6,
     coverImg: "/assets/drivingApp/d-cover.webp",
   },
   {
     title: "Real Estate Mobile App",
+    workFlow:"In Testing",
     desc: "Mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics",
     url: ROUTES.CASE_5,
     coverImg: "/assets/sodic/banner.webp",
   },
   {
     title: "Real Estate Marketplace",
+    workFlow:"In Progress",
     desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
     url: ROUTES.CASE_1,
     coverImg: "/assets/sakneen/sak-cover.webp",
@@ -63,11 +67,15 @@ const experience = [
     title: "experience",
     collection: [
       {
-        subTitle: "Sakneen",
+        subTitle: "Product Designer at sakneen",
         italic: "April 2020 - Present",
       },
       {
-        subTitle: "Pioneers",
+        subTitle: "UI Developer at sakneen",
+        italic: "April 2020 - October 2021",
+      },
+      {
+        subTitle: "UX/UI Designer at Pioneers",
         italic: "January 2020 - March 2020",
       },
     ],
@@ -402,7 +410,7 @@ const coinProjectStatus = [
     title: "role",
     collection: [
       {
-        bio: "UX/UX Designer",
+        bio: "UX/UI Designer",
       },
     ],
   },

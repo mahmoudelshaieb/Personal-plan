@@ -53,7 +53,7 @@ export default function Nav({ fname, lname, profession }) {
                       to={item.url}
                       className="nav-link px-0 w-100"
                       aria-current="page"
-                      exact
+                      exact={item.toString()}
                     >
                       <li className="nav-item text-capitalize ps-0 ps-lg-5 text-center">
                         <span className="pb-2">{item.name}</span>

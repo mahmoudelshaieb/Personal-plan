@@ -18,6 +18,7 @@ export default function Work() {
                 <WorkCard
                   img={item.coverImg}
                   title={item.title}
+                  workFlow={item.workFlow}
                   desc={item.desc}
                 />
               </Link>
