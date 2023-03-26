@@ -6,6 +6,7 @@ import FullPresent from "../../components/FullPresent";
 // import * as ROUTES from "../../constrains/routes";
 import {
   sakCover,
+  saknUrls,
   sakOverview,
   sakProjectStatus,
   sakScroll,
@@ -23,6 +24,7 @@ export default function SakneenCase() {
           projectName={projectName}
           title={title}
           desc={desc}
+          liveUrls={saknUrls}
           padding={"24px 0"}
         />
         <div className="container">

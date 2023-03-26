@@ -6,6 +6,7 @@ import NestedFullPresent from "../../components/NestedFullPresent";
 // import * as ROUTES from "../../constrains/routes";
 import {
   sodicCover,
+  sodicUrls,
   sodicOverview,
   sodicProjectStatus,
   sodicProblem,
@@ -35,7 +36,12 @@ export default function SodicCase() {
     <>
       <Cover coverImg={coverImg} />
       <div className="compact-page">
-        <FullPresent projectName={projectName} title={title} desc={desc} />
+        <FullPresent
+          projectName={projectName}
+          title={title}
+          desc={desc}
+          liveUrls={sodicUrls}
+        />
         <div className="container">
           {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-between mt-3 mt-md-5">
@@ -57,7 +63,11 @@ export default function SodicCase() {
         <NestedFullPresent title="design iterations" guides={sodicIteration} />
         <NestedFullPresent title="styles & guides" guides={sodicGuide} />
         <FullPresent title={sodicDesignsTitle} img={sodicDesignsImg} />
-        <FullPresent title={successTitle} desc={successDesc} />
+        <FullPresent
+          title={successTitle}
+          desc={successDesc}
+          url={"https://play.google.com/store/apps/details?id=com.sakneen.App"}
+        />
         <FullPresent title={learnTitle} lists={learnList} />
       </div>
     </>

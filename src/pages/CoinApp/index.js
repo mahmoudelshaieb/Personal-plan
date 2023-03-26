@@ -6,6 +6,7 @@ import InsightCard from "../../components/SummaryInsights";
 // import * as ROUTES from "../../constrains/routes";
 import {
   coinCover,
+  coinUrls,
   coinOverview,
   coinInsights,
   coinProjectStatus,
@@ -31,7 +32,12 @@ export default function CoinApp() {
     <>
       <Cover coverImg={coverImg} />
       <div className="compact-page">
-        <FullPresent projectName={projectName} title={title} desc={desc} />
+        <FullPresent
+          projectName={projectName}
+          title={title}
+          desc={desc}
+          liveUrls={coinUrls}
+        />
         <InsightCard insights={coinInsights} />
         <div className="container">
           <div className="row justify-content-between mt-3 mt-md-5">

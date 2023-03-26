@@ -154,8 +154,15 @@ const sakCover = {
   coverImg: "/assets/sakneen/sak-cover.webp",
 };
 
+const saknUrls = [
+  {
+    label: "Sakneen Website",
+    url: "https://www.sakneen.com/en"
+  },
+]
+
 const sakOverview = {
-  projectName: "Real Estate Marketplace (Sakneen)",
+  projectName: "Real Estate Marketplace",
   title: "overview",
   desc: "Sakneen, the online portal that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
 };
@@ -205,6 +212,13 @@ const sakScroll = [
 const drivingCover = {
   coverImg: "/assets/drivingApp/d-cover.webp",
 };
+
+const drivingUrls = [
+  {
+    label: "Figma File",
+    url: "https://www.figma.com/file/ERjPy53J2fmJH1Y5DMfLqU/%F0%9F%9A%97-Ucar-Mobile-App?node-id=0-1&t=22fFosLupkla45by-0"
+  },
+]
 
 const drivingOverview = {
   projectName: "Driving Mobile App",
@@ -375,6 +389,17 @@ const drivingInsights = [
 const coinCover = {
   coverImg: "/assets/cJungle/cover.webp",
 };
+
+const coinUrls = [
+  {
+    label: "Figma File",
+    url: "https://www.figma.com/file/8KAKHkUXWoZLxoJ1VMJubD/Bitcoinjungle-Website-(Freelance-Copy)?node-id=0-1&t=QB5g6P0lpohXUhJR-0"
+  },
+  {
+    label: "Beta Website",
+    url: "https://market.staging.pvbtc.cloud/"
+  },
+]
 
 const coinOverview = {
   projectName: "Bitcoin Jungle",
@@ -579,6 +604,13 @@ const sodicCover = {
   coverImg: "/assets/sodic/cover.webp",
 };
 
+const sodicUrls = [
+  {
+    label: "Android App",
+    url: "https://play.google.com/store/apps/details?id=com.sakneen.App"
+  },
+]
+
 const sodicOverview = {
   projectName: "Real Estate Mobile App",
   title: "overview",
@@ -708,7 +740,7 @@ const sodicDesigns = {
 const sodicSuccess = {
   successTitle: "product success 🏅",
   successDesc:
-    "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app",
+    "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app, (Still in beta version for android and will be available soon for IOS)",
 };
 
 const sodicLearning = {
@@ -731,10 +763,12 @@ export {
   caseLinks,
   aboutMe,
   sakCover,
+  saknUrls,
   sakOverview,
   sakProjectStatus,
   sakScroll,
   drivingCover,
+  drivingUrls,
   drivingOverview,
   drivingAppProjectStatus,
   drivingProblem,
@@ -757,6 +791,7 @@ export {
   brokerSearchFlow,
   brokerAccountFlow,
   sodicCover,
+  sodicUrls,
   sodicOverview,
   sodicProjectStatus,
   sodicProblem,
@@ -769,6 +804,7 @@ export {
   sodicSuccess,
   sodicLearning,
   coinCover,
+  coinUrls,
   coinOverview,
   coinInsights,
   coinProjectStatus,

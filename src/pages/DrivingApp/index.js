@@ -6,6 +6,7 @@ import InsightCard from "../../components/SummaryInsights";
 // import * as ROUTES from "../../constrains/routes";
 import {
   drivingCover,
+  drivingUrls,
   drivingOverview,
   drivingAppProjectStatus,
   drivingDesigns,
@@ -17,7 +18,7 @@ import {
   drivingFlow,
   drivingTesting,
   drivingLearning,
-  drivingInsights
+  drivingInsights,
 } from "../../constrains/data";
 
 export default function DrivingApp() {
@@ -39,7 +40,12 @@ export default function DrivingApp() {
     <>
       <Cover coverImg={coverImg} />
       <div className="compact-page">
-        <FullPresent projectName={projectName} title={title} desc={desc} />
+        <FullPresent
+          projectName={projectName}
+          title={title}
+          desc={desc}
+          liveUrls={drivingUrls}
+        />
         <InsightCard insights={drivingInsights} />
         <div className="container">
           <div className="row justify-content-between mt-3 mt-md-5">
