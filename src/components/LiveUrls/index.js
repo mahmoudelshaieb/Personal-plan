@@ -1,6 +1,8 @@
+import styles from "./index.module.scss";
+
 export default function LiveUrls({ urls }) {
   return urls.map((link, index) => (
-    <span key={index} className="pe-3">
+    <span key={index} className={`${styles.link} pe-3`}>
       <a
         href={link.url}
         target="_blank"

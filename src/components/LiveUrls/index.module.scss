@@ -1,0 +1,13 @@
+.link {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  &:hover {
+    a {
+      color: #2563eb !important;
+    }
+    svg {
+      fill: #2563eb;
+    }
+  }
+}
