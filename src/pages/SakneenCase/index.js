@@ -2,8 +2,6 @@ import Cover from "../../components/Cover";
 import Status from "../../components/Status";
 import ClassicScroll from "../../components/ClassicScroll";
 import FullPresent from "../../components/FullPresent";
-// import BackButton from "../../components/BackBtn";
-// import * as ROUTES from "../../constrains/routes";
 import {
   sakCover,
   saknUrls,

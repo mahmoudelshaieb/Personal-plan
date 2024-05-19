@@ -1,6 +1,25 @@
 import * as ROUTES from "./routes";
 
+const welcometxt = {
+  name: "Mahmoud",
+  bio: "I'm currently working as a digital product designer with 4 years of experience, I've had the opportunity to work on different projects such as digital sales tools for real estate developers, learning management system, and B2B dashboard."
+}
+
 const caseLinks = [
+  {
+    title: "Real Estate CRM",
+    workFlow:"Trending",
+    desc: "Modern, powerful, affordable platform to manage your projects and supercharge your sales team",
+    url: ROUTES.CASE_3,
+    coverImg: "/assets/manageCRM/manage-cover.webp",
+  },
+  {
+    title: "Real Estate Sales Tool",
+    workFlow:"Trending",
+    desc: "Display all your inventory on a map reflecting availability from your CRM and close transactions from anywhere at any time",
+    url: ROUTES.CASE_7,
+    coverImg: "/assets/SalesTool/sales-cover.webp",
+  },
   {
     title: "Bitcoin Jungle",
     workFlow:"Finished",
@@ -14,20 +33,6 @@ const caseLinks = [
     desc: "Make travel between Egypt's governorates easier and more affordable for travellers by sharing trips with nearby networks",
     url: ROUTES.CASE_6,
     coverImg: "/assets/drivingApp/d-cover.webp",
-  },
-  {
-    title: "Real Estate Mobile App",
-    workFlow:"In Testing",
-    desc: "Mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics",
-    url: ROUTES.CASE_5,
-    coverImg: "/assets/sodic/banner.webp",
-  },
-  {
-    title: "Real Estate Marketplace",
-    workFlow:"In Progress",
-    desc: "Buy or sell homes in Egypt, Sakneen, the online portal that helps home buyers search for properties",
-    url: ROUTES.CASE_1,
-    coverImg: "/assets/sakneen/sak-cover.webp",
   },
 ];
 
@@ -84,7 +89,7 @@ const experience = [
     title: "design skills",
     collection: [
       {
-        bio: "design thinking, interaction design, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theory, wireframing, prototyping .",
+        bio: "design thinking, interaction design, information architecture, visual design, design tools like (Adobe xd & figma) graphics design, color theory, wireframing, prototyping, design system.",
       },
     ],
   },
@@ -135,7 +140,7 @@ const getSocial = [
 ];
 // about
 const aboutMe = {
-  avatar: "./assets/me.jpg",
+  avatar: "./assets/me.jpeg",
   primaryBio:
     "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 3 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
   secondaryBio:
@@ -149,6 +154,199 @@ const aboutMe = {
   ],
 };
 
+// dashboard-crm
+
+const DS = {
+  introDS: "Full-featured Design System.",
+  descDS: "Design language that guides how we build high-quality digital experiences with everything typography, sizes, icons, colors, spacing, patterns, tokens and full set of highly customizable components and styles ready to use inside applications.",
+  imgDS: "/assets/manageCRM/ds.png"
+}
+
+
+const CRMOverview = {
+  projectName: "Real Estate CRM",
+  desc: "Modern, powerful, affordable platform to manage your projects and supercharge your sales team",
+};
+
+const CRMintro = {
+  intro00: "We synchronize with your systems.",
+  desc00: "Ready for the next wave of personalization tools, composable backends, Everything is an API call away.",
+  img00: "/assets/manageCRM/00.png"
+}
+
+const realTimeInventory = {
+  title01: "Real Time Inventory",
+  desc01: "We synchronize with your systems to make sure your inventory is always up to date.",
+  img01: "/assets/manageCRM/01.png"
+}
+
+const workFlow = {
+  title02: "Management Workflow",
+  desc02: "Supercharge your inventory by creating fully customize projects.",
+  img02: "/assets/manageCRM/02.png"
+}
+
+const filters = {
+  title03: "Sort & Filters",
+  desc03: "Display appropriate inventory by customize your search.",
+  img03: "/assets/manageCRM/03.png"
+}
+
+const price = {
+  title04: "Price Updating",
+  desc04: "Super fast your inventory by updating the price in one-click.",
+  img04: "/assets/manageCRM/04.png"
+}
+
+const archive = {
+  title05: "Archive Units",
+  desc05: "A soft delete is available for units and we can recover them up to 30 days.",
+  img05: "/assets/manageCRM/05.png"
+}
+
+const fullManage = {
+  title06: "Fully Management",
+  desc06: "Free customize your inventory with multiple actions.",
+  img06: "/assets/manageCRM/06.png"
+}
+
+const autoWorkflow = {
+  title07: "Fully Automated Workflow",
+  desc07: "We offer Multiple unit sections of your inventory to bulk edits and synchronize your data.",
+  img07: "/assets/manageCRM/07.png"
+}
+
+const unitStatus = {
+  title08: "Update Unit Status",
+  desc08: "Control next decision by checking and updating unit status.",
+  img08: "/assets/manageCRM/08.png"
+}
+
+const trackRequests = {
+  title09: "Track Requests",
+  desc09: "Speedy close positional transactions by following current request status.",
+  img09: "/assets/manageCRM/09.png"
+}
+
+const EOI = {
+  title10: "Simple EOI System",
+  desc10: "Reach out to a large audience who desire to buy a unit for a new project.",
+  img10: "/assets/manageCRM/10.png"
+}
+
+const teamManagement = {
+  title11: "Team Management",
+  desc11: "Manage and collaborate with team members to set and get permission about projects.",
+  img11: "/assets/manageCRM/11.png"
+}
+
+const teamRole = {
+  title12: "Team Role",
+  desc12: "Collaborate in real-time, or work async with comments and version history.",
+  img12: "/assets/manageCRM/12.png"
+}
+
+const addUsers = {
+  title13: "Add Users",
+  desc13: "Synchronize your team members by uploading via spreadsheet.",
+  img13: "/assets/manageCRM/13.png"
+}
+
+const collaboration = {
+  title14: "Real Time Collaboration",
+  desc14: "Facilitate dynamic collaboration in real-time to analyze, and share insights.",
+  img14: "/assets/manageCRM/14.png"
+}
+
+// dashboard-crm
+
+
+// Sales Tool
+
+const salesOverview = {
+  projectName: "Real Estate Sales Tool",
+  desc: "Display all your inventory on a map reflecting availability from your CRM and close transactions from anywhere at any time",
+};
+
+const salesintro = {
+  intro00: "Provide a seamless, performant map experience.",
+  desc00: "Display all your inventory on a map reflecting availability from your CRM.",
+  img00: "/assets/SalesTool/00.png"
+}
+
+const mapintro = {
+  intro01: "Streamline custom data workflows.",
+  desc01: "Overlay your masterplan and easily upload and draw projects outlines on the map that are tied to latitude/longitude coordinates.",
+  img01: "/assets/SalesTool/01.png"
+}
+
+const engagement = {
+  title02: "Boost engagement with real-time projects",
+  desc02: "Control all projects with specific masterplan and grab your customer attention about available units on specific project.",
+  img02: "/assets/SalesTool/02.png"
+}
+
+const searchFilters = {
+  title03: "Instant Filter & Search",
+  desc03: "You will be able to instantly search through thousands of properties.",
+  img03: "/assets/SalesTool/03.png"
+}
+
+const customize = {
+  title04: "Customize in a click",
+  desc04: "Configuring the map for different types of work is as easy as flipping a switch.",
+  img04: "/assets/SalesTool/04.png"
+}
+
+const commuteCalculator = {
+  title05: "Commute Calculator",
+  desc05: "Distance between desired unit and your current location work or primary home.",
+  img05: "/assets/SalesTool/05.png"
+}
+
+const searchPrecisely  = {
+  title06: "Search Precisely",
+  desc06: "Speedy find desired property by searching by unit ID.",
+  img06: "/assets/SalesTool/06.png"
+}
+
+const unitManagement  = {
+  title07: "Unit Management",
+  desc07: "Sell anywhere your customers are by listing and reserve a unit for potential customer.",
+  img07: "/assets/SalesTool/07.png"
+}
+
+const Offergeneration  = {
+  title08: "One-click offer generation",
+  desc08: "Instantly create offers for all your clients - no more copy pasting offers together.",
+  img08: "/assets/SalesTool/08.png"
+}
+
+const community = {
+  intro09: "Engage with the Community.",
+  desc09: "Take a look at what's taking place inside the community, discover the amenities that are available, and stay updated on construction updates from developer. Also, learn more about the project and get in touch with available units for sale.",
+  img09: "/assets/SalesTool/09.png"
+}
+
+const sakSuccess = {
+  successTitle: "product success 🏅",
+  successDesc:
+    "The company has signed contracts with 6+ real estate developers and onboarded more than 100 salespeople. Their aim is to sell over a thousand units in 10+ projects.",
+};
+
+const sakLearning = {
+  learnTitle: "what i learned 👨🏼‍💻",
+  learnList: [
+    "Collaborated closely with management and product design team regularly in order to get feedback and show progress on designs",
+    "Increase design speed and ensure quality delivery on time by designing reusable components at Figma",
+    "Responsible for designing an expandable design system that guides how we build high-quality and consistent digital experiences",
+    "Managed incoming designs, assisted teammates and reviewed styles",
+    "Cooperated with software engineers to deliver design assets for development process",
+  ],
+};
+
+//Sales Tool
+
 // sakneen Case
 const sakCover = {
   coverImg: "/assets/sakneen/sak-cover.webp",
@@ -156,7 +354,7 @@ const sakCover = {
 
 const saknUrls = [
   {
-    label: "Sakneen Website",
+    label: "more info",
     url: "https://www.sakneen.com/en"
   },
 ]
@@ -185,10 +383,10 @@ const sakProjectStatus = [
     ],
   },
   {
-    title: "location",
+    title: "Type",
     collection: [
       {
-        bio: "Cairo, Egypt",
+        bio: "SaaS Project",
       },
     ],
   },
@@ -756,6 +954,7 @@ const sodicLearning = {
 // sodic
 
 export {
+  welcometxt,
   experience,
   contactInfo,
   getSocial,
@@ -814,4 +1013,34 @@ export {
   coinSuccess,
   cointesting,
   coinLearning,
+  CRMOverview,
+  CRMintro,
+  realTimeInventory,
+  workFlow,
+  filters,
+  price,
+  archive,
+  fullManage,
+  autoWorkflow,
+  unitStatus,
+  trackRequests,
+  EOI,
+  teamManagement,
+  teamRole,
+  addUsers,
+  collaboration,
+  DS,
+  salesOverview,
+  salesintro,
+  mapintro,
+  engagement,
+  searchFilters,
+  customize,
+  commuteCalculator,
+  searchPrecisely,
+  unitManagement,
+  Offergeneration,
+  community,
+  sakSuccess,
+  sakLearning
 };

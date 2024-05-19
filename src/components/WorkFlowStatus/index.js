@@ -52,10 +52,10 @@ export default function WorkFlowStatus({ status }) {
                 <StatusIcon /> {status}
               </span>
             );
-          case "In Testing":
+          case "Trending":
             return (
               <span style={inTesting}>
-                <StatusIcon /> {status}
+                🔥 {status}
               </span>
             );
           case "Finished":

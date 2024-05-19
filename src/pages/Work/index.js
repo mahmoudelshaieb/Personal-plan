@@ -2,13 +2,15 @@ import Abstract from "../../components/Abstraction";
 import WorkCard from "../../components/WorkCard";
 import { Link } from "react-router-dom";
 import { caseLinks } from "../../constrains/data";
+import { welcometxt } from "../../constrains/data";
 
 export default function Work() {
+  const {name, bio} = welcometxt; 
   return (
     <div className="container">
       <Abstract
-        name="mahmoud"
-        bio="I am a digital product designer with over 3 years of experience. I have completed several projects such as an e-commerce web app, a real estate marketplace, as well as SaaS projects such as dashboards and landing pages."
+        name={name}
+        bio={bio}
       />
       <div className="mt-3">
         <div className="row">

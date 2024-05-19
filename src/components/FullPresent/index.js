@@ -13,6 +13,7 @@ export default function FullPresent({
   lists = [],
   liveUrls = [],
   url,
+  urlLabel,
   background = "#ffffff",
 }) {
   return (
@@ -46,7 +47,7 @@ export default function FullPresent({
             rel="noreferrer"
             className="w-100 d-inline-block text-center fs-5"
           >
-            See Live Demo
+            {urlLabel}
           </a>
         ) : null}
       </div>
