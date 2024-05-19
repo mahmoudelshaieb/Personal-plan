@@ -1,13 +1,12 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import * as ROUTES from "../../constrains/routes";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
 import SakneenCase from "../SakneenCase";
 import DrivingApp from "../DrivingApp";
-import CourseApp from "../CourseApp";
-import AgencyPortfolio from "../AgencyPortfolio";
-import BrokerApp from "../BrokerApp";
+import CoinApp from "../CoinApp";
+// import BrokerApp from "../BrokerApp";
 import SodicCase from "../SodicApp"
 import AboutMe from "../AboutMe";
 import ContactMe from "../ContactMe";
@@ -20,17 +19,15 @@ export default function App() {
       <Nav fname="mahmoud" lname=" hassan" profession="product designer" />
       <ScrollToTop />
       <BackToTop />
-      <Switch>
-        <Route exact path={ROUTES.WORK} component={Work} />
-        <Route path={ROUTES.ABOUT} component={AboutMe} />
-        <Route path={ROUTES.CONTACT} component={ContactMe} />
-        <Route path={ROUTES.CASE_1} component={SakneenCase} />
-        <Route path={ROUTES.CASE_2} component={CourseApp} />
-        <Route path={ROUTES.CASE_3} component={AgencyPortfolio} />
-        <Route path={ROUTES.CASE_4} component={BrokerApp} />
-        <Route path={ROUTES.CASE_5} component={SodicCase} />
-        <Route path={ROUTES.CASE_6} component={DrivingApp} />
-      </Switch>
+      <Routes>
+        <Route path={ROUTES.WORK} element={<Work />} />
+        <Route path={ROUTES.ABOUT} element={<AboutMe/>} />
+        <Route path={ROUTES.CONTACT} element={<ContactMe/>} />
+        <Route path={ROUTES.CASE_1} element={<SakneenCase/>} />
+        <Route path={ROUTES.CASE_5} element={<SodicCase/>} />
+        <Route path={ROUTES.CASE_6} element={<DrivingApp/>} />
+        <Route path={ROUTES.CASE_2} element={<CoinApp/>} />
+      </Routes>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>
   );

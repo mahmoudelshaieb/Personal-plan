@@ -4,7 +4,6 @@ import SineWave from "../../components/SineWave";
 import FullPresent from "../../components/FullPresent";
 // import BackButton from "../../components/BackBtn";
 // import * as ROUTES from "../../constrains/routes";
-import { Fade } from "react-reveal";
 import {
   brokerCover,
   brokerProjectStatus,
@@ -14,11 +13,11 @@ import {
   brokerSolThree,
   brokerOnboardingFlow,
   brokerSearchFlow,
-  brokerAccountFlow
+  brokerAccountFlow,
 } from "../../constrains/data";
 
 export default function BrokerApp() {
-  const { coverTitle, strong, bio, coverImg } = brokerCover;
+  const { coverTitle, bio, coverImg } = brokerCover;
   const { probDescPrimary, probDescsecondary, probImg } = brokerProblem;
   const { solOneDescPrimary, solOneDescsecondary, solOneImg } = brokerSolOne;
   const { solTwoDescPrimary, solTwoDescsecondary, solTwoImg } = brokerSolTwo;
@@ -29,15 +28,10 @@ export default function BrokerApp() {
   const { flow3Title, flow3Img } = brokerAccountFlow;
 
   return (
-    <Fade bottom duration={500} distance="100px">
-      <Cover
-        title={coverTitle}
-        strong={strong}
-        bio={bio}
-        coverImg={coverImg}
-      />
+    <>
+      <Cover title={coverTitle} bio={bio} coverImg={coverImg} />
       <div className="container">
-        <div className="mx-2 mx-md-5 mt-3">
+        <div className="mt-3">
           {/* <BackButton url={ROUTES.WORK} /> */}
           <div className="row justify-content-center mt-3 mt-md-5">
             {brokerProjectStatus.map((item, index) => (
@@ -79,19 +73,9 @@ export default function BrokerApp() {
         RTL={true}
         containImg={true}
       />
-      <FullPresent
-        title={flow1Title}
-        img={flow1Img}
-      />
-      <FullPresent
-        title={flow2Title}
-        img={flow2Img}
-        background="#f4f4f4"
-      />
-      <FullPresent
-        title={flow3Title}
-        img={flow3Img}
-      />
-    </Fade>
+      <FullPresent title={flow1Title} img={flow1Img} />
+      <FullPresent title={flow2Title} img={flow2Img} background="#f4f4f4" />
+      <FullPresent title={flow3Title} img={flow3Img} />
+    </>
   );
 }

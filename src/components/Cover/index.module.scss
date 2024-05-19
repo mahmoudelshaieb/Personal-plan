@@ -1,22 +1,9 @@
 // @use "../../sass/fonts" as fs;
 @use "../../sass/dynamics" as ut;
-
-.cover {
-  .desc {
-    p {
-      color: #000000;
-      font-weight: 300;
-      width: 75%;
-      text-align: left;
-      @media (max-width: 1000px) {
-        width: 100%;
-      }
-    }
-  }
   .coverImg {
     @include ut.aspectRatio(40%, 2, cover, visible);
     // @media (max-width: 800px) {
     //   @include ut.aspectRatio(45%, 2, cover, visible);
     // }
   }
-}
+
