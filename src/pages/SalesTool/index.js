@@ -3,6 +3,7 @@ import FullPresent from "../../components/FullPresent";
 import BentoCard from "../../components/BentoCard";
 import ProjectIntro from "../../components/ProjectIntro";
 import DescriptiveBentoCard from "../../components/DescriptiveBentoCard";
+import ImpactMetrics from "../../components/ImpactMetrics";
 import "../../sass/_grid.scss";
 import {
   salesOverview,
@@ -20,6 +21,7 @@ import {
   community,
   sakSuccess,
   sakLearning,
+  impactmetrics
 } from "../../constrains/data";
 
 export default function SalesTool() {
@@ -45,6 +47,7 @@ export default function SalesTool() {
           projectName={projectName}
           desc={desc}
         />
+        <ImpactMetrics mertics={impactmetrics} />
         <div className="container">
           <div className="mt-3">
             <div className="row justify-content-between mt-3 mt-md-5">

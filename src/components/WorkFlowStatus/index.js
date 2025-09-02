@@ -17,6 +17,7 @@ export default function WorkFlowStatus({ status }) {
   const colors = {
     inProgress: "#007AFF",
     inTesting: "#FF9500",
+    live: "#FF3B30",
     finished: "#34C759",
     comingSoon: "#8E8E93",
   };
@@ -36,6 +37,11 @@ export default function WorkFlowStatus({ status }) {
     color: colors.finished,
     fill: colors.finished,
   };
+    const live = {
+    borderColor: colors.live,
+    color: colors.live,
+    fill: colors.live,
+  };
   const comingSoon = {
     borderColor: colors.comingSoon,
     color: colors.comingSoon,
@@ -52,15 +58,21 @@ export default function WorkFlowStatus({ status }) {
                 <StatusIcon /> {status}
               </span>
             );
-          case "Trending":
+          case "Testing":
             return (
               <span style={inTesting}>
-                🔥 {status}
+                <StatusIcon /> {status}
               </span>
             );
           case "Finished":
             return (
               <span style={finished}>
+                <StatusIcon /> {status}
+              </span>
+            );
+          case "Live":
+            return (
+              <span style={live}>
                 <StatusIcon /> {status}
               </span>
             );
