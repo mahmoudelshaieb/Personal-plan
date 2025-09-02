@@ -4,7 +4,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
 import DrivingApp from "../DrivingApp";
-import CoinApp from "../CoinApp";
+// import CoinApp from "../CoinApp";
 import ManageCRM from "../ManageCRM";
 import SalesTool from "../SalesTool";
 import AboutMe from "../AboutMe";
