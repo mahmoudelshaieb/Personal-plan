@@ -3,10 +3,8 @@ import * as ROUTES from "../../constrains/routes";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
-// import SakneenCase from "../SakneenCase";
 import DrivingApp from "../DrivingApp";
-import CoinApp from "../CoinApp";
-// import SodicCase from "../SodicApp"
+// import CoinApp from "../CoinApp";
 import ManageCRM from "../ManageCRM";
 import SalesTool from "../SalesTool";
 import AboutMe from "../AboutMe";
@@ -24,12 +22,10 @@ export default function App() {
         <Route path={ROUTES.WORK} element={<Work />} />
         <Route path={ROUTES.ABOUT} element={<AboutMe/>} />
         <Route path={ROUTES.CONTACT} element={<ContactMe/>} />
-        {/* <Route path={ROUTES.CASE_1} element={<SakneenCase/>} /> */}
-        <Route path={ROUTES.CASE_2} element={<CoinApp/>} />
         <Route path={ROUTES.CASE_3} element={<ManageCRM/>} />
-        {/* <Route path={ROUTES.CASE_5} element={<SodicCase/>} /> */}
         <Route path={ROUTES.CASE_6} element={<DrivingApp/>} />
         <Route path={ROUTES.CASE_7} element={<SalesTool/>} />
+        {/* <Route path={ROUTES.CASE_2} element={<CoinApp/>} /> */}
       </Routes>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>

@@ -2,30 +2,30 @@ import * as ROUTES from "./routes";
 
 const welcometxt = {
   name: "Mahmoud",
-  bio: "I'm currently working as a digital product designer with 4 years of experience, I've had the opportunity to work on different projects such as digital sales tools for real estate developers, learning management system, and B2B dashboard."
+  bio: "I'm currently working as a digital product designer with 5+ years of experience, I've had the opportunity to work on different projects such as digital sales tools for real estate developers, learning management system, and B2B dashboard."
 }
 
 const caseLinks = [
   {
     title: "Real Estate CRM",
-    workFlow:"Trending",
+    workFlow:"Live",
     desc: "Modern, powerful, affordable platform to manage your projects and supercharge your sales team",
     url: ROUTES.CASE_3,
     coverImg: "/assets/manageCRM/manage-cover.webp",
   },
   {
     title: "Real Estate Sales Tool",
-    workFlow:"Trending",
+    workFlow:"Live",
     desc: "Display all your inventory on a map reflecting availability from your CRM and close transactions from anywhere at any time",
     url: ROUTES.CASE_7,
     coverImg: "/assets/SalesTool/sales-cover.webp",
   },
   {
-    title: "Bitcoin Jungle",
-    workFlow:"Finished",
-    desc: "Redesigning a responsive website for an existing mobile application as a freelancer on Upwork",
-    url: ROUTES.CASE_2,
-    coverImg: "/assets/cJungle/banner.webp",
+    title: "Interactive navigation tool",
+    workFlow:"Live",
+    desc: "An interactive geographic navigation tool, enabling users to explore locations across Egypt through an intuitive zoom-and-click interface",
+    url: "https://sodic.public.sakneen.com/search/map/public#7.24/30.296/30.299",
+    coverImg: "/assets/geo-tool/banner.webp",
   },
   {
     title: "Driving Mobile App",
@@ -142,7 +142,7 @@ const getSocial = [
 const aboutMe = {
   avatar: "./assets/me.jpeg",
   primaryBio:
-    "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 3 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
+    "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 5 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
   secondaryBio:
     "I believe that good design is easy to understand, appropriate for people of various abilities and backgrounds, and solves user problems",
   lists: [
@@ -155,6 +155,22 @@ const aboutMe = {
 };
 
 // dashboard-crm
+
+const impactmetrics = [
+  {
+    title: "Real Estate Developers",
+    metric: "+10",
+  },
+  {
+    title: "Salespersons",
+    metric: "+2k",
+  },
+  {
+    title: "Inventory Management",
+    metric: "+30k",
+  },
+];
+
 
 const DS = {
   introDS: "Full-featured Design System.",
@@ -714,245 +730,6 @@ const coinLearning = {
 
 // coin app
 
-// broker
-
-const brokerCover = {
-  coverTitle: "Broker App",
-  bio: " Broker, mobile application,Because the world of real estate is complicated enough as it is, we've decided to create an app for Brokers that is simple and easy to navigate and helps them to find their preferred project and compare it to other compounds.",
-  coverImg: "/assets/broker/cover.webp",
-};
-
-const brokerProjectStatus = [
-  {
-    title: "date",
-    collection: [
-      {
-        bio: "October 2020, February 2021",
-      },
-    ],
-  },
-  {
-    title: "role",
-    collection: [
-      {
-        bio: "Product Designer",
-      },
-    ],
-  },
-  {
-    title: "location",
-    collection: [
-      {
-        bio: "Cairo, Egypt",
-      },
-    ],
-  },
-];
-
-const brokerProblem = {
-  probDescPrimary:
-    "In the real estate world, brokers suffer to find preferred projects, and compounds this wastes valuable time, money, and effort.",
-  probDescsecondary:
-    "So we've decided to create an app for Brokers to help them to find their preferred projects and compounds.",
-  probImg: "/assets/sakneen/problem2.webp",
-};
-
-const brokerSolOne = {
-  solOneDescPrimary:
-    "Make a simple and easy process to navigate and help brokers to find their preferred project and compare it to other compounds, also manage their profile account.",
-  solOneImg: "/assets/broker/sol1.webp",
-};
-
-const brokerSolTwo = {
-  solTwoDescPrimary:
-    "Because the design is a non-linear, iterative process, in iteration 0 we designed a house card containing lots of information.",
-  solTwoDescsecondary:
-    "But after user testing and reviewing user requirements, we decided to simplify the card design in the next iteration.",
-  solTwoImg: "/assets/broker/sol2.webp",
-};
-
-const brokerSolThree = {
-  solThreeDescPrimary:
-    "Build filters process, in iteration 0 we make a design that looks like google maps, but after talking with potential users we know that’s not the best solution for them.",
-  solThreeDescsecondary:
-    "So we decided to search for better solutions, and in iteration 1 make the design simple and easy to navigate.",
-  solThreeImg: "/assets/broker/sol3.webp",
-};
-
-const brokerOnboardingFlow = {
-  flow1Title: "onboarding flow",
-  flow1Img: "/assets/broker/onboarding-flow.webp",
-};
-
-const brokerSearchFlow = {
-  flow2Title: "search flow",
-  flow2Img: "/assets/broker/search-flow.webp",
-};
-
-const brokerAccountFlow = {
-  flow3Title: "account flow",
-  flow3Img: "/assets/broker/account-flow.webp",
-};
-
-// broker
-
-// sodic
-
-const sodicCover = {
-  coverImg: "/assets/sodic/cover.webp",
-};
-
-const sodicUrls = [
-  {
-    label: "Android App",
-    url: "https://play.google.com/store/apps/details?id=com.sakneen.App"
-  },
-]
-
-const sodicOverview = {
-  projectName: "Real Estate Mobile App",
-  title: "overview",
-  desc: "As a part of my work with sakneen I had the opportunity to work with a mobile application for real estate developers in Egypt alongside my teammates. This app builds a new buyer experience aims for an unprecedented level of transparency both for new buyers as well as for the existing community with features like (View Unit Details, Payment Notifications, ROI Calculator, Personalized Investment Opportunities, and Price Tracker).",
-};
-
-const sodicProjectStatus = [
-  {
-    title: "timeline",
-    collection: [
-      {
-        bio: "February 2022, Present",
-      },
-    ],
-  },
-  {
-    title: "role",
-    collection: [
-      {
-        bio: "Product Designer",
-      },
-    ],
-  },
-  {
-    title: "team size",
-    collection: [
-      {
-        bio: "4 people",
-      },
-    ],
-  },
-];
-
-const sodicProblem = {
-  probTitle: "The problem",
-  probDesc:
-    "Today, finding the right home is a time-consuming and overwhelming process that wastes valuable time, money, and effort. Sellers also lose out on opportunities simply because the buyer wasn’t aware of the seller’s offering.",
-};
-
-const sodicSolution = {
-  solTitle: "The challenge",
-  solDesc:
-    "A mobile application that makes the experience for a new buyer, homeowner, and Developer Analytics.",
-  solImages: [
-    {
-      src: "/assets/sodic/s1.webp",
-    },
-    {
-      src: "/assets/sodic/s2.webp",
-    },
-    {
-      src: "/assets/sodic/s3.webp",
-    },
-  ],
-};
-
-const sodicUserResearch = {
-  sodicResearhTitle: "User Research",
-  sodicResearhDesc:
-    "Alongside sakneen business owners, we made a survey and collect quantitative and statistical data for the SODIC Marketing budget and had able to conduct an interview with SODIC owners and offer sakneen solution.",
-  sodicResearhImg: [
-    {
-      src: "/assets/sodic/research.jpg",
-    },
-  ],
-};
-
-const sodicPersona = {
-  sodicPersonaTitle: "User Persona",
-  sodicPersonaImg: [
-    {
-      src: "/assets/sodic/persona.webp",
-    },
-  ],
-};
-
-const sodicIteration = [
-  {
-    subTitle: "Iteration 2",
-    img: "/assets/sodic/test-1.webp",
-  },
-  {
-    subTitle: "Iteration 3",
-    img: "/assets/sodic/test-2.webp",
-  },
-  {
-    subTitle: "Iteration 5",
-    img: "/assets/sodic/test-3.webp",
-  },
-];
-
-const sodicGuide = [
-  {
-    subTitle: "design system",
-    img: "/assets/sodic/style-guide.webp",
-  },
-  {
-    subTitle: "components",
-    img: "/assets/sodic/components.webp",
-  },
-];
-
-const sodicDesigns = {
-  sodicDesignsTitle: "Final designs",
-  sodicDesignsImg: [
-    {
-      src: "/assets/sodic/v1.webp",
-    },
-    {
-      src: "/assets/sodic/v2.webp",
-    },
-    {
-      src: "/assets/sodic/v3.webp",
-    },
-    {
-      src: "/assets/sodic/v4.webp",
-    },
-    {
-      src: "/assets/sodic/v5.webp",
-    },
-    {
-      src: "/assets/sodic/v6.webp",
-    },
-  ],
-};
-
-const sodicSuccess = {
-  successTitle: "product success 🏅",
-  successDesc:
-    "Enabling the startup to sign the first SaaS contract worth more than $100,000 in 1 year after initiated prototyping of this app, (Still in beta version for android and will be available soon for IOS)",
-};
-
-const sodicLearning = {
-  learnTitle: "what i learned 👨🏼‍💻",
-  learnList: [
-    "Collaborated closely with management and product design team regularly in order to get feedback and show progress on designs",
-    "Increase design speed and ensure quality delivery on time by designing reusable components in Figma",
-    "Managed incoming designs, assisted teammates and reviewed styles",
-    "Cooperated with software engineers to deliver design assets for development process",
-  ],
-};
-
-// sodic
-
 export {
   welcometxt,
   experience,
@@ -980,28 +757,6 @@ export {
   drivingLearning,
   drivingDesigns,
   drivingInsights,
-  brokerCover,
-  brokerProjectStatus,
-  brokerProblem,
-  brokerSolOne,
-  brokerSolTwo,
-  brokerSolThree,
-  brokerOnboardingFlow,
-  brokerSearchFlow,
-  brokerAccountFlow,
-  sodicCover,
-  sodicUrls,
-  sodicOverview,
-  sodicProjectStatus,
-  sodicProblem,
-  sodicSolution,
-  sodicUserResearch,
-  sodicPersona,
-  sodicIteration,
-  sodicGuide,
-  sodicDesigns,
-  sodicSuccess,
-  sodicLearning,
   coinCover,
   coinUrls,
   coinOverview,
@@ -1013,6 +768,7 @@ export {
   coinSuccess,
   cointesting,
   coinLearning,
+  impactmetrics,
   CRMOverview,
   CRMintro,
   realTimeInventory,
