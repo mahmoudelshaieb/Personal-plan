@@ -167,7 +167,7 @@ const impactmetrics = [
   },
   {
     title: "Inventory Management",
-    metric: "+30k",
+    metric: "+300k",
   },
 ];
 
@@ -347,7 +347,7 @@ const community = {
 const sakSuccess = {
   successTitle: "product success 🏅",
   successDesc:
-    "The company has signed contracts with 6+ real estate developers and onboarded more than 100 salespeople. Their aim is to sell over a thousand units in 10+ projects.",
+    "The company has signed contracts with 10+ real estate developers and onboarded more than +300k salespeople. Their aim is to sell over a thousand units in 15+ projects.",
 };
 
 const sakLearning = {
