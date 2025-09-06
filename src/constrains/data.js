@@ -159,15 +159,15 @@ const aboutMe = {
 const impactmetrics = [
   {
     title: "Real Estate Developers",
-    metric: "+10",
+    metric: "10+",
   },
   {
     title: "Salespersons",
-    metric: "+2k",
+    metric: "2k+",
   },
   {
     title: "Inventory Management",
-    metric: "+300k",
+    metric: "300k+",
   },
 ];
 
@@ -347,7 +347,7 @@ const community = {
 const sakSuccess = {
   successTitle: "product success 🏅",
   successDesc:
-    "The company has signed contracts with 10+ real estate developers and onboarded more than +300k salespeople. Their aim is to sell over a thousand units in 15+ projects.",
+    "The company has signed contracts with 10+ real estate developers and onboarded more than +400 salespeople per day. Their aim is to sell over a thousand units in 15+ projects.",
 };
 
 const sakLearning = {
