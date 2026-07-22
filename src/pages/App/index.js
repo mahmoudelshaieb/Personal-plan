@@ -15,7 +15,7 @@ import ScrollToTop from "../../constrains/FixScrollToTop";
 export default function App() {
   return (
     <Router>
-      <Nav fname="mahmoud" lname=" hassan" profession="product designer" />
+      <Nav fname="mahmoud" lname=" hassan" profession="senior product designer" />
       <ScrollToTop />
       <BackToTop />
       <Routes>
