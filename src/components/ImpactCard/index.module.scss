@@ -1,0 +1,76 @@
+@use "../../sass/dynamics" as ut;
+
+.card {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #e5e5e5;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.cardInfo {
+  flex: 1 1 46%;
+  padding: 32px;
+  @media (max-width: 600px) {
+    padding: 24px;
+  }
+  h3 {
+    color: #000000;
+    font-size: 24px;
+    margin: 0 0 24px;
+  }
+}
+
+.category {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0 0 8px;
+}
+
+.block:last-child .body {
+  margin-bottom: 0;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin: 0 0 4px;
+}
+
+.body {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+.cardImg {
+  flex: 1 1 54%;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 24px 24px 0 0;
+  @media (max-width: 992px) {
+    justify-content: center;
+    padding: 0 24px 24px;
+  }
+  img {
+    margin-left: auto;
+    @media (max-width: 992px) {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import BentoCard from "../BentoCard";
 import DescriptiveBentoCard from "../DescriptiveBentoCard";
 import FullPresent from "../FullPresent";
+import ImpactCard from "../ImpactCard";
 import ImpactMetrics from "../ImpactMetrics";
 import ProjectIntro from "../ProjectIntro";
 import Status from "../Status";
@@ -39,7 +40,15 @@ export default function BentoCaseStudy({ caseStudy }) {
                 section.className ? ` ${section.className}` : ""
               }`}
             >
-              {section.kind === "descriptive" ? (
+              {section.kind === "impact" ? (
+                <ImpactCard
+                  category={section.category}
+                  title={section.title}
+                  blocks={section.blocks}
+                  asset={section.img}
+                  assetWidth={section.assetWidth}
+                />
+              ) : section.kind === "descriptive" ? (
                 <DescriptiveBentoCard
                   introtxt={section.title}
                   desc={section.desc}

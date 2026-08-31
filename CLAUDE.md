@@ -44,7 +44,7 @@ Module shape:
 {
   meta:     { key, layout, title, status, desc, url, cover },  // desc = work-index card blurb
   overview: { title, desc },                                    // page intro; may differ from meta.desc
-  metrics:  [{ title, metric }],        // bento only  — exactly 3 (ImpactMetrics hardcodes col-4)
+  metrics:  [{ title, metric }],        // bento only  — 3 or 4; ImpactMetrics sizes columns from the count
   insights: [{ title, desc }],          // narrative only — exactly 3 (SummaryInsights hardcodes col-lg-4)
   status:   [{ title, collection: [{ subTitle?, bio?, italic? }] }],
   liveUrls: [{ label, url }],
@@ -63,7 +63,12 @@ Module shape:
 
 The page components are thin; the layout components do the rendering.
 
-- **Bento** (`components/BentoCaseStudy`) — `ManageCRM`, `SalesTool`. `sections` are grid cells with `kind: "bento" | "descriptive"` and `span` (the `cell-lg-*` width out of 12; everything is full width on mobile). Optional per-section `className`, `descWidth`, `assetWidth`. The layout imports `sass/_grid.scss`, whose `.grid` / `.cell-*` classes are a **separate** CSS Grid system, not Bootstrap's `row`/`col`.
+- **Bento** (`components/BentoCaseStudy`) — `FlynasImpact`, `ManageCRM`, `SalesTool`. `sections` are grid cells with `span` (the `cell-lg-*` width out of 12; everything is full width on mobile) and one of three kinds:
+  - `bento` (default) — `BentoCard`, title + one paragraph, stacked above its image. Built for small cells; at `span: 12` with a tall image it leaves a dead gutter, so use `impact` there instead.
+  - `descriptive` — `DescriptiveBentoCard`, one run-on paragraph beside its image.
+  - `impact` — `ImpactCard`, an optional `category` eyebrow plus a `blocks` array beside its image. Each block carries its own `label` (so one study says "Approach" where another says "Contribution") and an optional `highlight` for the outcome line. A block with no `label` renders as plain body copy.
+
+  Optional per-section `className`, `descWidth`, `assetWidth`. The layout imports `sass/_grid.scss`, whose `.grid` / `.cell-*` classes are a **separate** CSS Grid system, not Bootstrap's `row`/`col`.
 - **Narrative** (`components/NarrativeCaseStudy`) — `DrivingApp`. `sections` are `FullPresent` blocks in order, supporting `title`, `subTitle`, `desc`, `descSecondry`, `lists`, `img` (`[{ src }]`), `url`, `urlLabel`.
 
 A page is then just:

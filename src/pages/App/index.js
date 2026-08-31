@@ -3,6 +3,7 @@ import * as ROUTES from "../../constrains/routes";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Work from "../Work";
+import FlynasImpact from "../FlynasImpact";
 import DrivingApp from "../DrivingApp";
 // import CoinApp from "../CoinApp";
 import ManageCRM from "../ManageCRM";
@@ -20,6 +21,7 @@ export default function App() {
       <BackToTop />
       <Routes>
         <Route path={ROUTES.WORK} element={<Work />} />
+        <Route path={ROUTES.CASE_8} element={<FlynasImpact />} />
         <Route path={ROUTES.ABOUT} element={<AboutMe/>} />
         <Route path={ROUTES.CONTACT} element={<ContactMe/>} />
         <Route path={ROUTES.CASE_3} element={<ManageCRM/>} />

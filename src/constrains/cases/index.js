@@ -1,3 +1,4 @@
+import flynasImpact from "./flynasImpact";
 import manageCRM from "./manageCRM";
 import salesTool from "./salesTool";
 import geoTool from "./geoTool";
@@ -7,7 +8,7 @@ export { STATUS } from "./status";
 
 // Single source of truth for the work index. Array order is display order.
 // Adding a case study = add its module here; the index card comes for free.
-export const cases = [manageCRM, salesTool, geoTool, drivingApp];
+export const cases = [flynasImpact, manageCRM, salesTool, geoTool, drivingApp];
 
 // The shape components/WorkCard expects, derived so a card can never drift
 // from the study it links to.
@@ -19,4 +20,4 @@ export const caseLinks = cases.map(({ meta }) => ({
   coverImg: meta.cover,
 }));
 
-export { manageCRM, salesTool, geoTool, drivingApp };
+export { flynasImpact, manageCRM, salesTool, geoTool, drivingApp };
