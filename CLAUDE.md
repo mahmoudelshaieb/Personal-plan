@@ -16,15 +16,21 @@ yarn test    # react-scripts test (no test files exist in src/)
 
 Node 24 (`.nvmrc`, `.node-version`, and `NODE_VERSION` in `netlify.toml`); `engines` allows >=20.
 
-**Local build gotcha:** `node_modules/` on this machine is owned by `root`, so the CRA ESLint plugin fails with `EACCES ... .eslintcache`. Build locally with:
+**If you see `EACCES ... node_modules/.cache`:** `node_modules/` has become root-owned, usually from a `sudo npm install`. The dev server shows it as a full-screen `Compiled with problems:` overlay and dies on the next rebuild; `yarn build` fails outright. Do not work around it with `DISABLE_ESLINT_PLUGIN` — that only dodges the ESLint cache, and webpack's own cache write fails next.
+
+Fix it by making the tree user-owned again. With sudo:
 
 ```bash
-CI=false DISABLE_ESLINT_PLUGIN=true yarn build
+sudo chown -R "$(whoami)" node_modules
 ```
 
-The dev server hits the same wall — it dies partway through the first rebuild when webpack tries to write `node_modules/.cache/default-development`. `DISABLE_ESLINT_PLUGIN` does not prevent that one; either make `node_modules/.cache` user-writable, or serve `build/` statically for visual checks.
+Without sudo, rename it aside and reinstall (a same-parent rename only needs write permission on the repo directory, which you have; a cross-directory move does not work):
 
-Netlify runs plain `npm run build` (its own `node_modules` is writable), so don't bake these flags into `netlify.toml` or `package.json`.
+```bash
+mv node_modules node_modules_old && yarn install --frozen-lockfile
+```
+
+The leftover `node_modules_old` still needs `sudo rm -rf` to remove.
 
 ## Architecture
 
