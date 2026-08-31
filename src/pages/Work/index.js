@@ -1,7 +1,7 @@
 import Abstract from "../../components/Abstraction";
 import WorkCard from "../../components/WorkCard";
 import { Link } from "react-router-dom";
-import { caseLinks } from "../../constrains/data";
+import { caseLinks } from "../../constrains/cases";
 import { welcometxt } from "../../constrains/data";
 
 export default function Work() {
