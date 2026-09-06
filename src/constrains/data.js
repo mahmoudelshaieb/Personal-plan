@@ -8,8 +8,8 @@ import * as ROUTES from "./routes";
 
 const welcometxt = {
   name: "Mahmoud",
-  bio: "I'm currently working as a digital product designer with 5+ years of experience, I've had the opportunity to work on different projects such as digital sales tools for real estate developers, learning management system, and B2B dashboard."
-}
+  bio: "I’m Mahmoud, UI/UX & Product Designer with nearly 6 years of experience designing digital products across B2B, real estate, and aviation. At flynas, I work across customer, crew, and operational experiences, while building a scalable design system and using AI to speed up my design workflow.",
+};
 
 // Navigation bar items
 const navItems = [
@@ -48,12 +48,12 @@ const experience = [
     title: "experience",
     collection: [
       {
-        subTitle: "Product Designer at sakneen",
-        italic: "April 2020 - Present",
+        subTitle: "UX/UI Engineer at Flynas",
+        italic: "October 2025 - Present",
       },
       {
-        subTitle: "UI Developer at sakneen",
-        italic: "April 2020 - October 2021",
+        subTitle: "Product Designer at sakneen",
+        italic: "April 2020 - August 2025",
       },
       {
         subTitle: "UX/UI Designer at Pioneers",
@@ -119,7 +119,7 @@ const getSocial = [
 
 // about
 const aboutMe = {
-  avatar: "./assets/me.jpeg",
+  avatar: "./assets/me.png",
   primaryBio:
     "I'm mahmoud, have Bachelor's degree in Computer and Information Sciences graduated in 2016, I am a digital product designer with over 5 years of experience. I have completed several projects such as an e commerce web app, a real estate marketplace and SaaS projects such as dashboards and landing pages",
   secondaryBio:
@@ -133,167 +133,6 @@ const aboutMe = {
   ],
 };
 
-// Sakneen marketplace: no page renders these today (pre-existing dead content).
-const sakCover = {
-  coverImg: "/assets/sakneen/sak-cover.webp",
-};
-
-const saknUrls = [
-  {
-    label: "more info",
-    url: "https://www.sakneen.com/en"
-  },
-]
-
-const sakOverview = {
-  projectName: "Real Estate Marketplace",
-  title: "overview",
-  desc: "Sakneen, the online portal that helps home buyers search for properties, key financial service providers and prominent angel investors spanning Egypt, MENA, the US, and Europe.",
-};
-
-const sakScroll = [
-  {
-    src: "/assets/sakneen/sak-1.webp",
-  },
-  {
-    src: "/assets/sakneen/sak-2.webp",
-  },
-  {
-    src: "/assets/sakneen/sak-3.webp",
-  },
-];
-
-// sakneen Case
-
-// Bitcoin Jungle: pages/CoinApp exists but its route is commented out in pages/App.
-const coinCover = {
-  coverImg: "/assets/cJungle/cover.webp",
-};
-
-const coinUrls = [
-  {
-    label: "Figma File",
-    url: "https://www.figma.com/file/8KAKHkUXWoZLxoJ1VMJubD/Bitcoinjungle-Website-(Freelance-Copy)?node-id=0-1&t=QB5g6P0lpohXUhJR-0"
-  },
-  {
-    label: "Beta Website",
-    url: "https://market.staging.pvbtc.cloud/"
-  },
-]
-
-const coinOverview = {
-  projectName: "Bitcoin Jungle",
-  title: "overview",
-  desc: "I had the opportunity to work on a project redesigning a responsive website for an existing mobile application as a freelancer on Upwork. This project aims to display the latest posts about subjects such as vehicles, restaurants, and properties, among others. Users can search for any subject, and the app includes a map search flow that makes the search process easier.",
-};
-
-const coinInsights = [
-  {
-    title: "Tools",
-    desc: "Figma, user research, website design",
-  },
-  {
-    title: "Deliverables",
-    desc: "Accessible Figma file of 23+ components and user flows",
-  },
-  {
-    title: "Impacts",
-    desc: "Build Responsive wesite design with 2+ iterations of user flows and prototyping",
-  },
-];
-
-const coinProjectStatus = [
-  {
-    title: "Duration",
-    collection: [
-      {
-        bio: "4 Weeks",
-      },
-    ],
-  },
-  {
-    title: "role",
-    collection: [
-      {
-        bio: "UX/UI Designer",
-      },
-    ],
-  },
-  {
-    title: "location",
-    collection: [
-      {
-        bio: "Upwork",
-      },
-    ],
-  },
-];
-
-const coinProblem = {
-  probTitle: "The Problem, Research Summary",
-  probDesc:
-    "Before considering redesigning, I needed to learn more about the concept.",
-  probDesc2:
-    "Analyzed an existing mobile app and Looked at similar apps, and get some insights:",
-  probLists: [
-    "lack of text accessibility for map pins and Text sizes, white spacing, and the layout grid are all inconsistent",
-    "unclear toggle control between map and list view",
-    "The filter experience is overwhelming because it appears above the main view",
-    "Many users are unable to install the mobile app on their smartphones, so they need a website to access via a laptop or phone browser",
-  ],
-};
-
-const coinFlow = {
-  flowTitle: "User Flow",
-  flowImages: [
-    {
-      src: "/assets/cJungle/user-flow.png",
-    },
-  ],
-};
-
-const coinDesigns = {
-  designsTitle: "Designs, Iterations",
-  designsImg: [
-    {
-      src: "/assets/cJungle/s1.webp",
-    },
-    {
-      src: "/assets/cJungle/s2.webp",
-    },
-    {
-      src: "/assets/cJungle/s3.webp",
-    },
-  ],
-};
-
-const coinSuccess = {
-  successTitle: "product success 🏅",
-  successDesc:
-    "Collaborated with a software engineer to deliver assets and components for the development process. (Still in the testing phase).",
-};
-
-const cointesting = {
-  testTitle: "Feedbacks",
-  testDesc:
-    "We evaluated the designs with a group of users and received some feedback.",
-  testImages: [
-    {
-      src: "/assets/cJungle/feedback.webp",
-    },
-  ],
-};
-
-const coinLearning = {
-  learnTitle: "what i learned 👨🏼‍💻",
-  learnList: [
-    "Conducted user research with a group of target users",
-    "Collaborated with a software engineer to deliver user flows for the implementation process",
-    "Think and look for ways to make the user's search experience better",
-    "Learned to work per hour and organize tasks and milestones on upwork",
-  ],
-};
-
 export {
   welcometxt,
   navItems,
@@ -301,19 +140,4 @@ export {
   contactInfo,
   getSocial,
   aboutMe,
-  sakCover,
-  saknUrls,
-  sakOverview,
-  sakScroll,
-  coinCover,
-  coinUrls,
-  coinOverview,
-  coinInsights,
-  coinProjectStatus,
-  coinProblem,
-  coinFlow,
-  coinDesigns,
-  coinSuccess,
-  cointesting,
-  coinLearning,
 };

@@ -16,7 +16,7 @@ export default function NarrativeCaseStudy({ caseStudy }) {
 
   return (
     <>
-      <Cover coverImg={meta.cover} />
+      <Cover coverImg={meta.cover} alt={meta.title} />
       <div className="compact-page">
         <FullPresent
           projectName={meta.title}

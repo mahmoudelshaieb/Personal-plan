@@ -38,7 +38,7 @@ export default function FullPresent({
         {subTitle ? <h5 className="">{subTitle}</h5> : null}
         {desc ? <p className="present-p">{desc}</p> : null}
         {descSecondry ? <p className="present-p">{descSecondry}</p> : null}
-        {img ? <ClassicScroll images={img} /> : null}
+        {img ? <ClassicScroll images={img} alt={title} /> : null}
         {lists ? <ListItem lists={lists} /> : null}
         {url ? (
           <a

@@ -72,6 +72,7 @@ export default function BentoCaseStudy({ caseStudy }) {
             title={block.title}
             desc={block.desc}
             lists={block.lists}
+            img={block.img}
             url={block.url}
             urlLabel={block.urlLabel}
           />

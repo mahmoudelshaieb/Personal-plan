@@ -29,7 +29,7 @@ export default function ImpactCard({
         ))}
       </div>
       {asset ? (
-        <div className={`${styles.cardImg}`}>
+        <div className={`${styles.cardImg} text-center`}>
           <Zoom>
             <img
               className="img-fluid"

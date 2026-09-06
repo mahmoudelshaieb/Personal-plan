@@ -10,14 +10,14 @@ const flynasImpact = {
     layout: "bento",
     title: "Design Impact at flynas",
     status: STATUS.LIVE,
-    desc: "Six months of design work across flynas operations, customer experience and cabin crew — from connectivity monitoring to the airline's first design system",
+    desc: "Design work across flynas operations, customer experience and cabin crew — from connectivity monitoring to the airline's first design system",
     url: ROUTES.CASE_8,
     cover: "/assets/flynas/cover.webp",
   },
 
   overview: {
     title: "overview",
-    desc: "Summary of six months of design work spanning operations, customer experience, and cabin crew.",
+    desc: "Summary of design work spanning operations, customer experience, and cabin crew.",
   },
 
   // ImpactMetrics sizes its columns from this count. Four fits; five would not.
@@ -25,11 +25,11 @@ const flynasImpact = {
     { title: "Areas of the business touched", metric: "4" },
     { title: "More business users", metric: "+20%" },
     { title: "Design system in use", metric: "1" },
-    { title: "Penalty avoided per LDM message", metric: "~$5k" },
+    { title: "Penalty avoided / LDM Msg", metric: "~$5k" },
   ],
 
   status: [
-    { title: "duration", collection: [{ bio: "6 months" }] },
+    { title: "duration", collection: [{ bio: "October 2025 - Present" }] },
     { title: "role", collection: [{ bio: "Senior Product Designer" }] },
     { title: "Type", collection: [{ bio: "Airline business systems" }] },
   ],
@@ -152,11 +152,13 @@ const flynasImpact = {
   outro: [
     {
       title: "A design system for flynas",
-      desc: "I initiated flynas's first comprehensive design system — one source of truth for colour, type, spacing and components, so every business application looks and behaves like flynas.",
-    },
-    {
-      title: "A shared component library",
-      desc: "Buttons, inputs, controls, tags and more — real, reusable components every flynas product is built from.",
+      desc: "I initiated flynas's first comprehensive design system — one source of truth for colour, type, spacing and components, and a shared library of real, reusable buttons, inputs, controls and tags every flynas product is built from, so every business application looks and behaves like flynas.",
+      img: [
+        {
+          src: "/assets/flynas/component-library.webp",
+          alt: "flynas component library — buttons, selection controls, text inputs, tags and badges, avatars, pagination and progress",
+        },
+      ],
     },
     {
       title: "An AI-augmented design workflow",
