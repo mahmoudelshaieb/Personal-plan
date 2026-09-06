@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import Work from "../Work";
 import FlynasImpact from "../FlynasImpact";
 import DrivingApp from "../DrivingApp";
-// import CoinApp from "../CoinApp";
 import ManageCRM from "../ManageCRM";
 import SalesTool from "../SalesTool";
 import AboutMe from "../AboutMe";
@@ -27,7 +26,6 @@ export default function App() {
         <Route path={ROUTES.CASE_3} element={<ManageCRM/>} />
         <Route path={ROUTES.CASE_6} element={<DrivingApp/>} />
         <Route path={ROUTES.CASE_7} element={<SalesTool/>} />
-        {/* <Route path={ROUTES.CASE_2} element={<CoinApp/>} /> */}
       </Routes>
       <Footer fname="mahmoud" lname={`Hassan ${new Date().getFullYear()}`} />
     </Router>
